@@ -1,0 +1,42 @@
+@import 'common';
+
+body {
+	@media (min-width: $lg) {
+		padding-top: 30px;
+	}
+}
+
+#header {
+	@media (min-width: $lg) {
+		background-color: transparent;
+		#nav {
+			> ul {
+				> li {
+					> a {
+						color: #fff;
+						&:hover, &:focus {
+							color: #e00014;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body.scrolled {
+	#header {
+		@media (min-width: $lg) {
+			background-color: #fff;
+			#nav {
+				> ul {
+					> li {
+						> a {
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+}

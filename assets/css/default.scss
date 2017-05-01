@@ -26,7 +26,7 @@ body {
 		padding-top: 80px;
 	}
 	@media (min-width: $lg) {
-		padding-top: 30px;
+		padding-top: 120px;
 		&.nav-opened {
 			overflow: auto;
 		}
@@ -90,7 +90,7 @@ a {
     }
 }
 
-#global-nav {
+#top-nav {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -237,8 +237,7 @@ a {
 	@media (min-width: $lg) {
 		margin-top: 30px;
 		height: 90px;
-		background-color: transparent;
-		//background-color: #fff;
+		background-color: #fff;
 		.logo {
 			margin-top: 30px;
 		}
@@ -259,7 +258,6 @@ a {
 						height: 90px;
 						font-size: 18px;
 						line-height: 90px;
-						color: #fff;
 						text-decoration: none;
 						@include trans();
 						> span {
@@ -272,28 +270,19 @@ a {
 							background-color: #e40009;
 							@include trans();
 						}
-						&:hover, &:focus {
-							color: #e00014;
-							> span {
-								margin-left: -35px;
-								width: 70px;
-							}
-							& + ul {
-								height: auto;
-							}
-						}
 					}
 					> ul {
 						overflow: hidden;
 						position: absolute;
 						top: 90px;
 						left: 50%;
-						padding-top: 30px;
-						padding-bottom: 30px;
+						padding-top: 0;
+						padding-bottom: 0;
 						margin-left: -85px;
 						width: 170px;
 						height: 0;
 						background-color: #fff;
+						@include trans();
 						> li {
 							> a {
 								display: block;
@@ -302,7 +291,25 @@ a {
 								font-size: 14px;
 								line-height: 20px;
 								text-align: center;
+								text-decoration: none;
+								&:hover, &:focus {
+									color: #ef4600;
+								}
 							}
+						}
+					}
+					&.active {
+						> a {
+							color: #e00014;
+							> span {
+								margin-left: -35px;
+								width: 70px;
+							}
+						}
+						> ul {
+							height: auto;
+							padding-top: 30px;
+							padding-bottom: 30px;
 						}
 					}
 				}
@@ -415,6 +422,9 @@ a {
 								border-top: 1px solid #dadada;
 								background-color: #f4f4f4;
 								text-decoration: none;
+								&:focus, &:hover {
+									color: #ef4600;
+								}
 							}
 						}
 					}
@@ -517,6 +527,8 @@ a {
 				> ul {
 					> li {
 						> a {
+							padding-left: 20px;
+							padding-right: 20px;
 							font-size: 18px;
 						}
 						> ul {
@@ -542,30 +554,83 @@ body.nav-opened {
 	}
 }
 
-/*
-#header-1 {
-	background-color: #fff;
-	border-bottom: 0;
-	.navbar-header {
-		.navbar-toggle {
-			margin-right: 10px;
-			padding: 0;
-			width: 40px;
-			border: 0;
-			background-color: #fff;
-			i {
-				font-size: 30px;
-				line-height: 30px;
+#content {
+	min-height: 500px;
+}
+
+#foot-nav {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+	.sitemap {
+		> ul {
+			> li {
+				float: left;
+				width: 150px;
+				> h5 {
+					margin-bottom: 20px;
+					font-size: 16px;
+				}
+				> ul {
+					> li {
+						> a {
+							color: #666;
+							font-size: 14px;
+							line-height: 18px;
+						}
+						& + li {
+							margin-top: 10px;
+						}
+					}
+				}
 			}
 		}
-		.navbar-brand {
-			img {
-				width: 129px;
+	}
+	.contact {
+		margin-left: -30px;
+		h4 {
+			margin-bottom: 20px;
+		}
+		dl {
+			dt, dd {
+				display: inline;
+				font-size: 14px;
+				line-height: 26px;
+				color: #666;
+				font-weight: thin;
+			}
+			dt {
+				font-weight: normal;
+				&:after {
+					content: ':';
+				}
+				& ~ dt {
+					&:before {
+						margin-left: 5px;
+						margin-right: 5px;
+						content: '|';
+						font-size: 0.8em;
+						vertical-align: 1px;
+					}
+				}
+			}
+			dd {
+				address {
+					display: inline;
+				}
+				a {
+					color: #666;
+				}
+			}
+			&.phone, &.email {
+				dt, dd {
+					@include titi();
+					font-weight: 600;
+				}
 			}
 		}
 	}
 }
-*/
 
 #footer {
 	padding-top: 10px;
@@ -598,6 +663,49 @@ body.nav-opened {
 		.copyright {
 			p {
 				text-align: left;
+				line-height: 40px;
+			}
+		}
+		.family-sites {
+			.btn {
+				height: 40px;
+				border-radius: 0;
+				font-size: 12px;
+				font-weight: 300;
+				color: #666;
+				text-align: left;
+				border-color: #d7d7d7;
+			}
+			.dropdown-menu {
+				margin-top: 0;
+				margin-bottom: -1px;
+				margin-left: -1px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				width: 202px;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				border-radius: 0;
+				li {
+					a {
+						padding-left: 10px;
+						padding-right: 10px;
+						font-size: 12px;
+						line-height: 30px;
+					}
+				}
+			}
+			.dropup {
+				float: right;
+				width: 200px;
+				height: 40px;
+				.btn{
+					&:after {
+						float: right;
+						font-family: 'fontello';
+						content: '\E809';
+					}
+				}
 			}
 		}
 	}

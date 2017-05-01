@@ -1,5 +1,4 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/dochead.php'); ?>
-<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,8 +15,7 @@
 	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
 	
-	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>	
-	<script src="/assets/js/main.js"></script>
+	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
 	
 </body>
 </html>
