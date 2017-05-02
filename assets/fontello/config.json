@@ -107,6 +107,12 @@
       "css": "angle-double-right",
       "code": 61697,
       "src": "fontawesome"
+    },
+    {
+      "uid": "661bd5ba1dad15ad9acbfcd8b8af76f3",
+      "css": "quote-left",
+      "code": 59402,
+      "src": "iconic"
     }
   ]
 }

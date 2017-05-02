@@ -1,0 +1,127 @@
+@import 'common';
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@font-face{
+    font-family: 'Daehan';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/yoon/Daehan/DaehanR.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/korean-webfonts/1/corps/yoon/Daehan/DaehanR.woff') format('woff');
+}
+
+// CEO인사말 
+.greeting {
+    .visual-content {
+        text-align: center;
+        padding: 60px 0;
+        background-image: url(/assets/images/introduce/greeting_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        .icon-quote-left {
+            font-size: 25px;
+            color: #fff;
+        }
+        .intro {
+            font-size: 20px;
+            font-weight: 300;
+            font-family:'Daehan';
+            color: #fff;
+            line-height: 35px;
+            margin-top: 30px;
+        }
+        @media(min-width: $sm) {
+            padding: 125px 0 105px;
+            .icon-quote-left {
+                font-size: 30px;
+            }
+            .intro {
+                font-size: 26px;
+                line-height: 43px;
+            }
+        }
+    }
+    .section-content {
+        padding-top: 50px;
+        @media(min-width: $sm) {
+            padding-top: 70px;
+        }
+        @media(min-width: $md) {
+            padding-top: 100px;
+        }
+        p {
+            font-size: 13px;
+            color: #333;
+            line-height: 22px;
+            & + p {
+                margin-top: 20px;
+            }
+            @media(min-width: $sm) {
+                font-size: 16px;
+                line-height: 28px;
+                & + p {
+                    margin-top: 10px;
+                }
+                &:nth-of-type(4) {
+                    margin-top: 60px;
+                }
+            }
+        }
+        h5 {
+            font-size: 25px;
+            color: #111;
+            font-weight: 400;
+            font-family: 'Jeju Myeongjo', serif;
+            margin-top: 50px;
+            @media(min-width: $sm) {
+                font-size: 32px;
+                margin-top: 70px;
+            }
+            small {
+                font-size: 13px;
+                color: #111;
+                display: inline-block;
+                font-weight: 400;
+                margin-right: 10px;
+                @include noto();
+                @media(min-width: $sm) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

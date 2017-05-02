@@ -20,11 +20,26 @@
         > header {
             padding: 50px 15px;
             text-align: center;
+            @media(min-width: $sm) {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            @media(min-width: $md) {
+                padding-top: 100px;
+                padding-bottom: 95px;
+            }
             h3 {
                 font-size: 26px;
                 color: #2b2b2b;
                 font-weight: 300;
                 margin-bottom: 40px;
+                @media(min-width: $sm) {
+                    font-size: 45px;
+                    margin-bottom: 50px;
+                }
+                @media(min-width: $md) {
+                    margin-bottom: 70px;
+                }
             }
             h4 {
                 font-size: 30px;
@@ -34,12 +49,23 @@
                 letter-spacing: 1px;
                 font-weight: 600;
                 margin-bottom: 40px;
+                @media(min-width: $sm) {
+                    font-size: 44px;
+                    margin-bottom: 50px;
+                }
+                @media(min-width: $md) {
+                    margin-bottom: 70px;
+                }
             }
             .summary {
                 font-size: 14px;
                 color: #2b2b2b;
                 line-height: 25px;
                 font-weight: 300;
+                @media(min-width: $sm) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
         }
     }

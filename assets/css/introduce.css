@@ -1,0 +1,96 @@
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700");
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+@font-face {
+  font-family: 'Daehan';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/yoon/Daehan/DaehanR.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/yoon/Daehan/DaehanR.woff") format("woff"); }
+.greeting .visual-content {
+  text-align: center;
+  padding: 60px 0;
+  background-image: url(/assets/images/introduce/greeting_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed; }
+  .greeting .visual-content .icon-quote-left {
+    font-size: 25px;
+    color: #fff; }
+  .greeting .visual-content .intro {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Daehan';
+    color: #fff;
+    line-height: 35px;
+    margin-top: 30px; }
+  @media (min-width: 768px) {
+    .greeting .visual-content {
+      padding: 125px 0 105px; }
+      .greeting .visual-content .icon-quote-left {
+        font-size: 30px; }
+      .greeting .visual-content .intro {
+        font-size: 26px;
+        line-height: 43px; } }
+.greeting .section-content {
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .greeting .section-content {
+      padding-top: 70px; } }
+  @media (min-width: 992px) {
+    .greeting .section-content {
+      padding-top: 100px; } }
+  .greeting .section-content p {
+    font-size: 13px;
+    color: #333;
+    line-height: 22px; }
+    .greeting .section-content p + p {
+      margin-top: 20px; }
+    @media (min-width: 768px) {
+      .greeting .section-content p {
+        font-size: 16px;
+        line-height: 28px; }
+        .greeting .section-content p + p {
+          margin-top: 10px; }
+        .greeting .section-content p:nth-of-type(4) {
+          margin-top: 60px; } }
+  .greeting .section-content h5 {
+    font-size: 25px;
+    color: #111;
+    font-weight: 400;
+    font-family: 'Jeju Myeongjo', serif;
+    margin-top: 50px; }
+    @media (min-width: 768px) {
+      .greeting .section-content h5 {
+        font-size: 32px;
+        margin-top: 70px; } }
+    .greeting .section-content h5 small {
+      font-size: 13px;
+      color: #111;
+      display: inline-block;
+      font-weight: 400;
+      margin-right: 10px;
+      font-family: 'Noto Sans KR', sans-serif; }
+      @media (min-width: 768px) {
+        .greeting .section-content h5 small {
+          font-size: 16px; } }
+
+/*# sourceMappingURL=introduce.css.map */

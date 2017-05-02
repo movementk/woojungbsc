@@ -25,7 +25,7 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="#">뉴스레터</a></li>
+                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
                     <li><a href="#">E-카달로그</a></li>
                     <li><a href="#">고객문의</a></li>
                 </ul>
