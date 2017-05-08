@@ -113,6 +113,12 @@
       "css": "quote-left",
       "code": 59402,
       "src": "iconic"
+    },
+    {
+      "uid": "7yekfd0qlkgp6emwfbo10sjdmf8pewli",
+      "css": "download",
+      "code": 59403,
+      "src": "typicons"
     }
   ]
 }

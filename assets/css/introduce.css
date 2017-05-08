@@ -93,4 +93,247 @@ address {
         .greeting .section-content h5 small {
           font-size: 16px; } }
 
+.history .section-content .visual-img img {
+  width: 100%; }
+  .history .section-content .visual-img img.sm-img {
+    display: block;
+    margin: 0 auto; }
+    @media (min-width: 992px) {
+      .history .section-content .visual-img img.sm-img {
+        display: none; } }
+  .history .section-content .visual-img img.lg-img {
+    display: none; }
+    @media (min-width: 992px) {
+      .history .section-content .visual-img img.lg-img {
+        display: block;
+        margin: 0 auto; } }
+.history .section-content .history-list {
+  margin-top: 70px; }
+  @media (min-width: 992px) {
+    .history .section-content .history-list {
+      margin-top: 120px; } }
+  .history .section-content .history-list > li {
+    padding-bottom: 60px; }
+    .history .section-content .history-list > li:last-child {
+      padding-bottom: 0; }
+    @media (min-width: 768px) {
+      .history .section-content .history-list > li {
+        padding-bottom: 80px; } }
+    .history .section-content .history-list > li h5 {
+      width: 100%;
+      font-size: 22px;
+      color: #555;
+      font-weight: bold;
+      font-family: 'Titillium Web', sans-serif;
+      padding-top: 25px;
+      border-top: 3px solid #555; }
+      .history .section-content .history-list > li h5.currently {
+        color: #e10012;
+        border-color: #e10012; }
+      @media (min-width: 768px) {
+        .history .section-content .history-list > li h5 {
+          font-size: 26px; } }
+    .history .section-content .history-list > li .list {
+      margin-left: 10px;
+      padding-top: 25px;
+      border-top: 1px solid #c1c1c1; }
+      .history .section-content .history-list > li .list li {
+        display: block;
+        font-size: 14px;
+        color: #555;
+        line-height: 18px; }
+        .history .section-content .history-list > li .list li + li {
+          margin-top: 15px; }
+      @media (min-width: 768px) {
+        .history .section-content .history-list > li .list {
+          margin-left: 30px; }
+          .history .section-content .history-list > li .list li {
+            font-size: 15px;
+            padding-left: 15px; } }
+
+.ci-introduce .section-content .concept {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  border: 1px solid #eaeaea;
+  background-image: url(/assets/images/introduce/concept_bg.gif); }
+  @media (min-width: 768px) {
+    .ci-introduce .section-content .concept {
+      padding-top: 80px; } }
+  @media (min-width: 1280px) {
+    .ci-introduce .section-content .concept {
+      padding-top: 95px;
+      padding-bottom: 114px; } }
+  .ci-introduce .section-content .concept .ci-logo {
+    padding: 0 5px;
+    margin-bottom: 65px; }
+    .ci-introduce .section-content .concept .ci-logo .img-responsive {
+      display: block;
+      margin: 0 auto; }
+    @media (min-width: 768px) {
+      .ci-introduce .section-content .concept .ci-logo {
+        padding: 0;
+        margin-bottom: 70px; } }
+    @media (min-width: 1280px) {
+      .ci-introduce .section-content .concept .ci-logo {
+        margin-bottom: 0;
+        padding-top: 140px;
+        text-align: left; }
+        .ci-introduce .section-content .concept .ci-logo .img-responsive {
+          display: inline-block; } }
+  .ci-introduce .section-content .concept .details h5 {
+    font-size: 23px;
+    color: #555;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px; }
+  .ci-introduce .section-content .concept .details .ci-summary {
+    font-size: 14px;
+    color: #555;
+    line-height: 28px;
+    font-weight: 300; }
+  .ci-introduce .section-content .concept .details .btn-area {
+    margin-top: 55px; }
+    .ci-introduce .section-content .concept .details .btn-area p .btn {
+      width: 100%;
+      font-size: 15px;
+      text-align: center;
+      line-height: 49px;
+      margin-bottom: 10px; }
+      .ci-introduce .section-content .concept .details .btn-area p .btn .icon-download {
+        margin-right: 5px; }
+      .ci-introduce .section-content .concept .details .btn-area p .btn:last-child {
+        margin-bottom: 0; }
+    .ci-introduce .section-content .concept .details .btn-area p .btn-white {
+      color: #222;
+      border: 1px solid #bfbfbf !important;
+      background-color: #fff; }
+    .ci-introduce .section-content .concept .details .btn-area p .btn-orange {
+      color: #fff;
+      border: 1px solid #f08501 !important;
+      background-color: #f08501; }
+  @media (min-width: 768px) {
+    .ci-introduce .section-content .concept .details {
+      width: 535px;
+      margin: 0 auto; }
+      .ci-introduce .section-content .concept .details h5 {
+        text-align: left;
+        margin-bottom: 45px; }
+      .ci-introduce .section-content .concept .details .ci-summary {
+        font-size: 15px; }
+      .ci-introduce .section-content .concept .details .btn-area {
+        margin-top: 60px; }
+        .ci-introduce .section-content .concept .details .btn-area p .btn {
+          display: inline-block;
+          width: 170px;
+          margin: 0;
+          margin-right: 8px; }
+          .ci-introduce .section-content .concept .details .btn-area p .btn:last-child {
+            margin: 0; } }
+  @media (min-width: 1280px) {
+    .ci-introduce .section-content .concept .details {
+      width: 100%; }
+      .ci-introduce .section-content .concept .details hr {
+        text-align: left;
+        display: inline-block !important;
+        width: 25px;
+        margin-top: 0;
+        margin-bottom: 11px;
+        border-top: 3px solid #e10012; }
+      .ci-introduce .section-content .concept .details h5 {
+        font-size: 30px; } }
+.ci-introduce .section-content .logo-color {
+  padding-top: 70px; }
+  @media (min-width: 768px) {
+    .ci-introduce .section-content .logo-color {
+      padding-top: 100px; } }
+  @media (min-width: 1280px) {
+    .ci-introduce .section-content .logo-color {
+      padding-top: 120px; }
+      .ci-introduce .section-content .logo-color hr {
+        text-align: left;
+        display: inline-block !important;
+        width: 25px;
+        margin-top: 0;
+        margin-bottom: 11px;
+        border-top: 3px solid #e10012; } }
+  .ci-introduce .section-content .logo-color h5 {
+    font-size: 23px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 45px; }
+    @media (min-width: 1280px) {
+      .ci-introduce .section-content .logo-color h5 {
+        font-size: 30px; } }
+  .ci-introduce .section-content .logo-color > ul > li .colors {
+    text-align: center;
+    padding: 25px 15px;
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .ci-introduce .section-content .logo-color > ul > li .colors {
+        margin-bottom: 0;
+        padding-top: 36px;
+        padding-bottom: 36px; } }
+    .ci-introduce .section-content .logo-color > ul > li .colors.red-color {
+      background-color: #e10013; }
+    .ci-introduce .section-content .logo-color > ul > li .colors.orange-color {
+      background-color: #f08501; }
+    .ci-introduce .section-content .logo-color > ul > li .colors.gray-color {
+      background-color: #595757; }
+    .ci-introduce .section-content .logo-color > ul > li .colors h6 {
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 300;
+      line-height: 66px;
+      vertical-align: top;
+      margin-right: 24px; }
+      @media (min-width: 768px) {
+        .ci-introduce .section-content .logo-color > ul > li .colors h6 {
+          font-size: 22px;
+          line-height: 22px;
+          margin-right: 0;
+          margin-bottom: 20px; } }
+      @media (min-width: 1280px) {
+        .ci-introduce .section-content .logo-color > ul > li .colors h6 {
+          line-height: 75px;
+          margin-bottom: 0;
+          margin-right: 30px; } }
+    .ci-introduce .section-content .logo-color > ul > li .colors .details-color {
+      text-align: left;
+      display: inline-block; }
+      .ci-introduce .section-content .logo-color > ul > li .colors .details-color > li {
+        font-size: 14px;
+        color: #fff;
+        line-height: 22px;
+        font-weight: 300;
+        font-family: 'Titillium Web', sans-serif; }
+        @media (min-width: 768px) {
+          .ci-introduce .section-content .logo-color > ul > li .colors .details-color > li {
+            font-size: 15px;
+            line-height: 25px; } }
+  .ci-introduce .section-content .logo-color .summary {
+    font-size: 14px;
+    color: #555;
+    padding-top: 30px;
+    line-height: 22px;
+    font-weight: 300; }
+    @media (min-width: 768px) {
+      .ci-introduce .section-content .logo-color .summary {
+        font-size: 15px;
+        padding-top: 40px;
+        line-height: 28px; } }
+
+.pd-bo #content {
+  padding-bottom: 0; }
+
+.group header h4 {
+  letter-spacing: 0 !important; }
+@media (min-width: 768px) {
+  .group header {
+    padding-bottom: 100px !important; } }
+.group .section-content .group-table .img-responsive {
+  width: 100%;
+  display: block;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=introduce.css.map */

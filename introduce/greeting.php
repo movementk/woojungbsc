@@ -25,10 +25,10 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="active"><a href="/introduce/greeting.php">CEO인사말</a></li>
-                    <li><a href="#">비전</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">조직도</a></li>
-                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="/introduce/vision.php">비전</a></li>
+                    <li><a href="/introduce/history.php">연혁</a></li>
+                    <li><a href="/introduce/ci_introduce.php">CI 소개</a></li>
+                    <li><a href="/introduce/group.php">조직도</a></li>
                     <li><a href="#">협력사</a></li>
                     <li><a href="#">오시는길</a></li>
                 </ul>
