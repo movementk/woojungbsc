@@ -364,4 +364,18 @@ address {
     .news-letter .paging {
       margin-top: 60px; } }
 
+.e-catalog .section-content .catalog-list ul li .info {
+  padding: 0 34px; }
+  @media (min-width: 768px) {
+    .e-catalog .section-content .catalog-list ul li .info {
+      padding: 0 40px; } }
+  .e-catalog .section-content .catalog-list ul li .info a {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px; }
+    .e-catalog .section-content .catalog-list ul li .info a figure .img-responsive {
+      box-shadow: 10px 10px 30px #999; }
+    .e-catalog .section-content .catalog-list ul li .info a:hover figure .img-responsive {
+      background-color: orange; }
+
 /*# sourceMappingURL=center.css.map */

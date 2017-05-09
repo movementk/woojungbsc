@@ -466,8 +466,40 @@
     }
 }
 
-
-
+// E-카탈로그
+.e-catalog {
+    .section-content {
+        .catalog-list {
+            ul {
+                li {
+                    .info {
+                        padding: 0 34px;
+                        @media(min-width: $sm) {
+                            padding: 0 40px;
+                        }
+                        a {
+                            display: block;
+                            text-align: center;
+                            margin-bottom: 80px;
+                            figure {
+                                .img-responsive {
+                                    box-shadow: 10px 10px 30px #999;
+                                }
+                            }
+                            &:hover {
+                                figure {
+                                    .img-responsive {
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
