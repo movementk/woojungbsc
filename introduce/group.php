@@ -2,7 +2,7 @@
 <link href="/assets/css/sub.css" rel="stylesheet">
 <link href="/assets/css/introduce.css" rel="stylesheet">
 </head>
-<body class="sub pd-bo">
+<body class="sub group-main">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/nav-aside.php'); ?>

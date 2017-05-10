@@ -93,9 +93,20 @@
 
 
 // 비전
+.vision-main {
+    #content {
+        padding-bottom: 0 !important;
+    }
+}
 .vision {
     .section-content {
-        
+        height: 1927px;
+        padding-top: 60px;
+        padding-bottom: 120px;
+        background-image: url(/assets/images/introduce/vision_xs_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 50% 50%;
     }
 }
 
@@ -394,7 +405,7 @@
 }
 
 // 조직도
-.pd-bo {
+.group-main {
     #content {
         padding-bottom: 0;
     }
@@ -420,12 +431,14 @@
 }
 
 // 협력사
-.partner-pb {
-    @media(min-width: $sm) {
-        padding-bottom: 100px !important;
-    }
-    @media(min-width: $lg) {
-        padding-bottom: 70px !important;
+.partner-main {
+    #content {
+        @media(min-width: $sm) {
+            padding-bottom: 100px !important;
+        }
+        @media(min-width: $lg) {
+            padding-bottom: 70px !important;
+        }
     }
 }
 .partner {
@@ -735,26 +748,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

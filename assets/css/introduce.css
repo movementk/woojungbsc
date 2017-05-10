@@ -93,6 +93,18 @@ address {
         .greeting .section-content h5 small {
           font-size: 16px; } }
 
+.vision-main #content {
+  padding-bottom: 0 !important; }
+
+.vision .section-content {
+  height: 1927px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-image: url(/assets/images/introduce/vision_xs_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+
 .history .section-content .visual-img img {
   width: 100%; }
   .history .section-content .visual-img img.sm-img {
@@ -323,7 +335,7 @@ address {
         padding-top: 40px;
         line-height: 28px; } }
 
-.pd-bo #content {
+.group-main #content {
   padding-bottom: 0; }
 
 .group header h4 {
@@ -337,10 +349,10 @@ address {
   margin: 0 auto; }
 
 @media (min-width: 768px) {
-  .partner-pb {
+  .partner-main #content {
     padding-bottom: 100px !important; } }
 @media (min-width: 1280px) {
-  .partner-pb {
+  .partner-main #content {
     padding-bottom: 70px !important; } }
 
 .partner header .summary {

@@ -2,7 +2,7 @@
 <link href="/assets/css/sub.css" rel="stylesheet">
 <link href="/assets/css/introduce.css" rel="stylesheet">
 </head>
-<body class="sub">
+<body class="sub vision-main">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/nav-aside.php'); ?>
@@ -19,6 +19,7 @@
                     </p>
                 </div>
             </div>
+<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     비전
@@ -33,6 +34,7 @@
                     <li><a href="#">오시는길</a></li>
                 </ul>
             </div>
+-->
         </div>
         <!-- Sub Page 공통 -->
         <section class="vision">

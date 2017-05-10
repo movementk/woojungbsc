@@ -2,12 +2,12 @@
 <link href="/assets/css/sub.css" rel="stylesheet">
 <link href="/assets/css/introduce.css" rel="stylesheet">
 </head>
-<body class="sub">
+<body class="sub partner-main">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/nav-aside.php'); ?>
     <!-- Sub Content Start -->
-    <main id="content" class="introduce partner-pb">
+    <main id="content" class="introduce">
         <!-- Page Header -->
         <div class="page-header">
             <div class="visual-header">

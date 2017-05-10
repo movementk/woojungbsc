@@ -52,27 +52,77 @@
                                             <img src="/assets/images/center/catalog_img01.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 04월호">
                                             <figcaption>이노비바 뉴스레터 17년 04월호</figcaption>
                                         </figure>
-                                        <div class="hover-more" style="display:none;">
-                                            <i class="icon-"></i>
-                                            뉴스레터보기
+                                        <div class="hover-more">
+                                            뉴스레터 보기
                                         </div>
                                     </a>
                                 </div>
                             </li>
-<!--
                             <li class="col-xs-12 col-sm-6 col-md-4">
-                                <a href="#">
-                                    <figure>
-                                        <img src="/assets/images/center/catalog_img02.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 04월호">
-                                        <figcaption>이노비바 뉴스레터 17년 04월호</figcaption>
-                                    </figure>
-                                    <div class="hover-more" style="display:none;">
-                                        <i class="icon-"></i>
-                                        뉴스레터보기
-                                    </div>
-                                </a>
+                                <div class="info">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/assets/images/center/catalog_img02.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 03월호">
+                                            <figcaption>이노비바 뉴스레터 17년 03월호</figcaption>
+                                        </figure>
+                                        <div class="hover-more">
+                                            뉴스레터 보기
+                                        </div>
+                                    </a>
+                                </div>
                             </li>
--->
+                            <li class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+                                <div class="info">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/assets/images/center/catalog_img01.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 04월호">
+                                            <figcaption>이노비바 뉴스레터 17년 04월호</figcaption>
+                                        </figure>
+                                        <div class="hover-more">
+                                            뉴스레터 보기
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+                                <div class="info">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/assets/images/center/catalog_img02.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 03월호">
+                                            <figcaption>이노비바 뉴스레터 17년 03월호</figcaption>
+                                        </figure>
+                                        <div class="hover-more">
+                                            뉴스레터 보기
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+                                <div class="info">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/assets/images/center/catalog_img01.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 04월호">
+                                            <figcaption>이노비바 뉴스레터 17년 04월호</figcaption>
+                                        </figure>
+                                        <div class="hover-more">
+                                            뉴스레터 보기
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+                                <div class="info">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/assets/images/center/catalog_img02.gif" class="img-responsive" alt="이노비바 뉴스레터 17년 03월호">
+                                            <figcaption>이노비바 뉴스레터 17년 03월호</figcaption>
+                                        </figure>
+                                        <div class="hover-more">
+                                            뉴스레터 보기
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
                     </article>
                     <nav class="paging" aria-label="Page navigation">
