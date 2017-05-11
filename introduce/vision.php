@@ -51,7 +51,47 @@
             </header>
             <div class="section-content">
                 <div class="container">
-                    
+                    <h5><img src="/assets/images/introduce/logo_img.png" class="img-responsive" alt="logo"></h5>
+                    <p class="title">생명 과학 연구 솔루션 전문기업</p>
+                    <ul class="vision-list">
+                        <li class="present">
+                            <p class="figure">
+                                <img src="/assets/images/introduce/present_icon.png" class="img-responsive" alt="present">
+                            </p>
+                            <div class="details">
+                                <h6>우정비에스씨</h6>
+                                <ul>
+                                    <li>연구시설구축</li>
+                                    <li>감염관리</li>
+                                    <li>정밀의학 CRO</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tomorrow">
+                            <p class="figure">
+                                <img src="/assets/images/introduce/tomorrow_icon.png" class="img-responsive" alt="tomorrow">
+                            </p>
+                            <div class="details">
+                                <h6>감염방지 토탈 솔루션</h6>
+                                <ul>
+                                    <li>MERS사태 시 중추적<br class="hidden-lg"> 역할 경험</li>
+                                    <li>HPV멸균기 국산화 성공</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="next">
+                            <p class="figure">
+                                <img src="/assets/images/introduce/next_icon.png" class="img-responsive" alt="next">
+                            </p>
+                            <div class="details">
+                                <h6>新 물질개발</h6>
+                                <ul>
+                                    <li>천연물 유래 감염병 예방용<br> 살충제 개발</li>
+                                    <li>유전자 재조합세포배양기술<br> 기반 항체치료제 개발</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

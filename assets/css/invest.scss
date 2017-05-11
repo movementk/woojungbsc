@@ -22,104 +22,102 @@
                 }
             }
         }
-        .article-content {
-            .table-wrap {
-                .table {
-                    border: 0;
-                    border-top: 3px solid #595757;
-                    margin-bottom: 0;
-                    thead {
-                        tr {
-                            th {
-                                font-size: 14px;
-                                color: #333;
-                                font-weight: 300;
-                                vertical-align: middle;
-                                text-align: center;
-                                padding: 18px 0;
-                                border: 0;
-                                border-bottom: 1px solid #dfdfdf;
-                                border-right: 1px solid #dfdfdf;
-                                background-color: #f8f8f8;
-                                &:last-child {
-                                    border-right: 0;
-                                }
-                                @media(min-width: $sm) {
-                                    font-size: 15px;
-                                }
+        .table-wrap {
+            .table {
+                border: 0;
+                border-top: 3px solid #595757;
+                margin-bottom: 0;
+                thead {
+                    tr {
+                        th {
+                            font-size: 14px;
+                            color: #333;
+                            font-weight: 300;
+                            vertical-align: middle;
+                            text-align: center;
+                            padding: 18px 0;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            border-right: 1px solid #dfdfdf;
+                            background-color: #f8f8f8;
+                            &:last-child {
+                                border-right: 0;
                             }
-                        }
-                    }
-                    tbody {
-                        tr {
-                            td {
-                                font-size: 13px;
-                                color: #666;
-                                font-weight: 300;
-                                text-align: center;
-                                vertical-align: middle;
-                                padding: 18px 0;
-                                border: 0;
-                                border-bottom: 1px solid #dfdfdf;
-                                border-right: 1px solid #dfdfdf;
-                                &:last-child {
-                                    border-right: 0;
-                                }
-                                @media(min-width: $sm) {
-                                    font-size: 15px;
-                                }
+                            @media(min-width: $sm) {
+                                font-size: 15px;
                             }
                         }
                     }
                 }
-                .unit {
-                    text-align: right;
-                    font-size: 0;
-                    margin-top: 5px;
-                    margin-bottom: 10px;
-                    @media(min-width: $sm) {
-                        margin-top: 25px;
-                    }
-                    @media(min-width: $lg) {
-                        margin-bottom: 15px;
-                    }
-                    &:before {
-                        font-size: 12px;
-                        color: #333;
-                        content: "(";
-                        @media(min-width: $sm) {
+                tbody {
+                    tr {
+                        td {
                             font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            text-align: center;
+                            vertical-align: middle;
+                            padding: 18px 0;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            border-right: 1px solid #dfdfdf;
+                            &:last-child {
+                                border-right: 0;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 15px;
+                            }
                         }
+                    }
+                }
+            }
+            .unit {
+                text-align: right;
+                font-size: 0;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    margin-top: 25px;
+                }
+                @media(min-width: $lg) {
+                    margin-bottom: 15px;
+                }
+                &:before {
+                    font-size: 12px;
+                    color: #333;
+                    content: "(";
+                    @media(min-width: $sm) {
+                        font-size: 13px;
+                    }
+                }
+                &:after {
+                    font-size: 12px;
+                    color: #333;
+                    content: ")";
+                    @media(min-width: $sm) {
+                        font-size: 13px;
+                    }
+                }
+                dt {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #333;
+                    font-weight: 300;
+                    @media(min-width: $sm) {
+                        font-size: 13px;
                     }
                     &:after {
-                        font-size: 12px;
-                        color: #333;
-                        content: ")";
-                        @media(min-width: $sm) {
-                            font-size: 13px;
-                        }
+                        content: ":";
+                        padding: 0 2px;
                     }
-                    dt {
-                        display: inline-block;
-                        font-size: 12px;
-                        color: #333;
-                        font-weight: 300;
-                        @media(min-width: $sm) {
-                            font-size: 13px;
-                        }
-                        &:after {
-                            content: ":";
-                            padding: 0 2px;
-                        }
-                    }
-                    dd {
-                        display: inline-block;
-                        font-size: 12px;
-                        color: #333;
-                        font-weight: 300;
-                        @media(min-width: $sm) {
-                            font-size: 13px;
-                        }
+                }
+                dd {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #333;
+                    font-weight: 300;
+                    @media(min-width: $sm) {
+                        font-size: 13px;
                     }
                 }
             }
@@ -543,7 +541,256 @@
     }
 }
 
+// 주식정보 
+.stocks-info {
+    header {
+        h3 {
+            margin-bottom: 0 !important;
+        }
+    }
+    .section-content {
+        .information {
+            margin-bottom: 20px;
+            @media(min-width: $sm) {
+                margin-bottom: 30px;
+            }
+            @media(min-width: $lg) {
+                margin-bottom: 60px;
+            }
+            .attention {
+                font-size: 12px;
+                color: #333;
+                margin-bottom: 10px;
+                b {
+                    color: #e10013;
+                    font-weight: 500;
+                }
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                    margin-bottom: 20px;
+                }
+            }
+            .price {
+                overflow: hidden;
+                text-aligmn: center;
+                padding: 25px 0;
+                border-top: 3px solid #595757;
+                border-bottom: 1px solid #ccc;
+                @media(min-width: $sm) {
+                    padding: 38px 0;
+                }
+                > div {
+                    float: left;
+                    width: 50%;
+                    &.high-price {
+                        text-align: center;
+                        border-right: 1px solid #ccc;
+                        .up-price {
+                            font-size: 28px;
+                            color: #e10013;
+                            font-weight: 400;
+                            line-height: 55px;
+                            font-family: 'Maven Pro', sans-serif;
+                            &:before {
+                                position: relative;
+                                bottom: -5px;
+                                font-size: 40px;
+                                margin-right: 10px;
+                                content: "\E809";
+                                font-family: "fontello";
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 50px;
+                                line-height: 65px;
+                                &:before {
+                                    font-size: 55px;
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                    &.low-price {
+                        display: table;
+                        > div {
+                            display: table-cell;
+                            height: 58px;
+                            vertical-align: middle;
+                            text-align: center;
+                            @media(min-width: $sm) {
+                                height: 66px;
+                            }
+                            dl {
+                                overflow: hidden;
+                                display: inline-block;
+                                dt {
+                                    width: 75px;
+                                    float: left;
+                                    clear: both;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    color: #2b2b2b;
+                                    line-height: 25px;
+                                    text-align: left;
+                                    @media(min-width: $sm) {
+                                        width: 102px;
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                    }
+                                }
+                                dd {
+                                    float: left;
+                                    font-size: 15px;
+                                    color: #33aeff;
+                                    font-weight: bold;
+                                    @include titi();
+                                    &.down-price {
+                                        &:before {
+                                            content: "\E808";
+                                            font-family: "fontello";
+                                            margin-right: 3px;
+                                        }
+                                    }
+                                    &.percent {
+                                        &:before {
+                                            content: "+";
+                                        }
+                                        &:after {
+                                            content: "%";
+                                        }
+                                    }
+                                    @media(min-width: $sm) {
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                    }
+                                }
 
+                            }
+                        }
+                    }
+                }
+            }
+            .table-wrap {
+                margin-top: 20px;
+                @media(min-width: $sm) {
+                    margin-top: 30px;
+                }
+                @media(min-width: $lg) {
+                    margin-top: 0;
+                }
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                @media(min-width: $lg) {
+                                    padding: 23px 0;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                @include titi();
+                                font-weight: bold;
+                                font-size: 15px;
+                                color: #333;
+                                &.red-txt {
+                                    color: #e10013;
+                                }
+                                &.blue-txt {
+                                    color: #33aeff
+                                }
+                                @media(min-width: $sm) {
+                                    font-size: 20px;
+                                }
+                                @media(min-width: $lg) {
+                                    padding: 23px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stocks-info-all {
+            margin-top: 20px;
+            @media(min-width: $sm) {
+                margin-top: 30px;
+            }
+            @media(min-width: $lg) {
+                margin-top: 60px;
+            }
+            .table-wrap {
+                border: 0;
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                border-right: 0;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                border-right: 0;
+                                &.up-arrow {
+                                    &:before {
+                                        content: "\E809";
+                                        font-family: "fontello";
+                                        margin-right: 3px;
+                                    }
+                                    
+                                }
+                                &.down-arrow {
+                                    &:before {
+                                        content: "\E808";
+                                        font-family: "fontello";
+                                        margin-right: 3px;
+                                    }
+                                }
+                                &.percent {
+                                    &:after {
+                                        content: "%";
+                                        margin-left: 2px;
+                                    }
+                                }
+                                &.plus {
+                                    &:before {
+                                        content: "+";
+                                        margin-right: 2px;
+                                    }
+                                }
+                                &.minus {
+                                    &:before {
+                                        content: "-";
+                                        margin-right: 2px;
+                                    }
+                                }
+                                &.red-txt {
+                                    color: #e10013;
+                                }
+                                &.blue-txt {
+                                    color: #33aeff
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 20px;
+            @media(min-width: $sm) {
+                margin-top: 60px;
+            }
+        }
+    }
+}
 
 
 

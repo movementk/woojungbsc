@@ -1,0 +1,171 @@
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700");
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+.patent .section-content .list {
+  width: 100%;
+  border-top: 3px solid #595757; }
+  .patent .section-content .list > li {
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px solid #ccc; }
+    .patent .section-content .list > li.hidden-xs {
+      background-color: #f8f8f8; }
+      .patent .section-content .list > li.hidden-xs .list-header > li {
+        text-align: center;
+        font-size: 15px;
+        color: #333;
+        display: inline-block; }
+        @media (min-width: 768px) {
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(1) {
+            display: none; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(2) {
+            width: 60%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(3) {
+            width: 20%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(4) {
+            display: none; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(5) {
+            display: none; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(6) {
+            width: 20%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(7) {
+            display: none; } }
+        @media (min-width: 1280px) {
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(1) {
+            width: 5%;
+            display: inline-block; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(2) {
+            width: 40%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(3) {
+            width: 13%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(4) {
+            width: 6%;
+            display: inline-block; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(5) {
+            width: 13%;
+            display: inline-block; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(6) {
+            width: 10%; }
+          .patent .section-content .list > li.hidden-xs .list-header > li:nth-of-type(7) {
+            width: 13%;
+            display: inline-block; } }
+    .patent .section-content .list > li > ul {
+      font-size: 0; }
+      .patent .section-content .list > li > ul > li {
+        display: inline-block;
+        font-size: 15px;
+        color: #666;
+        padding: 0 10px;
+        font-weight: 300;
+        vertical-align: top;
+        text-align: center; }
+        @media (min-width: 1280px) {
+          .patent .section-content .list > li > ul > li {
+            vertical-align: middle; } }
+        .patent .section-content .list > li > ul > li .hidden-txt {
+          display: inline-block;
+          font-size: 12px; }
+          @media (min-width: 768px) {
+            .patent .section-content .list > li > ul > li .hidden-txt {
+              display: none; } }
+        .patent .section-content .list > li > ul > li.count {
+          display: none; }
+          @media (min-width: 1280px) {
+            .patent .section-content .list > li > ul > li.count {
+              display: inline-block; } }
+        .patent .section-content .list > li > ul > li.subject {
+          display: block;
+          text-align: left; }
+          @media (min-width: 768px) {
+            .patent .section-content .list > li > ul > li.subject {
+              display: inline-block;
+              padding-left: 20px; } }
+        .patent .section-content .list > li > ul > li.apply-num {
+          position: relative;
+          display: inline-block;
+          font-size: 12px; }
+          .patent .section-content .list > li > ul > li.apply-num:after {
+            position: absolute;
+            top: 0;
+            right: -2px;
+            font-size: 10px;
+            color: #666;
+            content: "|"; }
+          @media (min-width: 768px) {
+            .patent .section-content .list > li > ul > li.apply-num {
+              font-size: 15px; }
+              .patent .section-content .list > li > ul > li.apply-num:after {
+                content: ""; } }
+        .patent .section-content .list > li > ul > li.state {
+          display: none; }
+          @media (min-width: 1280px) {
+            .patent .section-content .list > li > ul > li.state {
+              display: inline-block; } }
+        .patent .section-content .list > li > ul > li.origin {
+          display: none; }
+          @media (min-width: 1280px) {
+            .patent .section-content .list > li > ul > li.origin {
+              display: inline-block; } }
+        .patent .section-content .list > li > ul > li.date {
+          display: inline-block;
+          font-size: 12px; }
+          @media (min-width: 768px) {
+            .patent .section-content .list > li > ul > li.date {
+              font-size: 15px; } }
+        .patent .section-content .list > li > ul > li.public-num {
+          display: none; }
+          @media (min-width: 1280px) {
+            .patent .section-content .list > li > ul > li.public-num {
+              display: inline-block; } }
+        .patent .section-content .list > li > ul > li a {
+          display: block;
+          font-size: 15px;
+          color: #666;
+          font-weight: 300;
+          margin-bottom: 10px; }
+          @media (min-width: 768px) {
+            .patent .section-content .list > li > ul > li a {
+              margin-bottom: 0; } }
+        @media (min-width: 768px) {
+          .patent .section-content .list > li > ul > li:nth-of-type(2) {
+            width: 60%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(3) {
+            width: 20%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(6) {
+            width: 20%; } }
+        @media (min-width: 1280px) {
+          .patent .section-content .list > li > ul > li:nth-of-type(1) {
+            width: 5%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(2) {
+            width: 40%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(3) {
+            width: 13%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(4) {
+            width: 6%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(5) {
+            width: 13%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(6) {
+            width: 10%; }
+          .patent .section-content .list > li > ul > li:nth-of-type(7) {
+            width: 13%; } }
+
+/*# sourceMappingURL=research.css.map */

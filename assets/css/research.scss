@@ -1,0 +1,202 @@
+@import 'common';
+
+// 특허
+.patent {
+    .section-content {
+        .list {
+            width: 100%;
+            border-top: 3px solid #595757;
+            > li {
+                display: block;
+                width: 100%;
+                padding: 18px 0;
+                border-bottom: 1px solid #ccc;
+                &.hidden-xs {
+                    background-color: #f8f8f8;
+                    .list-header {
+                        > li {
+                            text-align: center;
+                            font-size: 15px;
+                            color: #333;
+                            display: inline-block;
+                            @media(min-width: $sm) {
+                                &:nth-of-type(1) {
+                                    display: none;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 60%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(4) {
+                                    display: none;
+                                }
+                                &:nth-of-type(5) {
+                                    display: none;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(7) {
+                                    display: none;
+                                }
+                            }
+                            @media(min-width: $lg) {
+                                &:nth-of-type(1) {
+                                    width: 5%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 40%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 13%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 6%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 13%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 13%;
+                                    display: inline-block;
+                                }   
+                            }
+                        }
+                    }
+                }
+                > ul {
+                    font-size: 0;
+                    > li {
+                        display: inline-block;
+                        font-size: 15px;
+                        color: #666;
+                        padding: 0 10px;
+                        font-weight: 300;
+                        vertical-align: top;
+                        text-align: center;
+                        @media(min-width: $lg) {
+                            vertical-align: middle;
+                        }
+                        .hidden-txt {
+                            display: inline-block;
+                            font-size: 12px;
+                            @media(min-width: $sm) {
+                                display: none;
+                            }
+                        }
+                        &.count {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.subject {
+                            display: block;
+                            text-align: left;
+                            @media(min-width: $sm) {
+                                display: inline-block;
+                                padding-left: 20px;
+                            }
+                        }
+                        &.apply-num {
+                            position: relative;
+                            display: inline-block;
+                            font-size: 12px;
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                right: -2px;
+                                font-size: 10px;
+                                color: #666;
+                                content: "|";
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 15px;
+                                &:after {
+                                    content: "";
+                                }
+                            }
+                        }
+                        &.state {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.origin {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.date {
+                            display: inline-block;
+                            font-size: 12px;
+                            @media(min-width: $sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        &.public-num {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        a {
+                            display: block;
+                            font-size: 15px;
+                            color: #666;
+                            font-weight: 300;
+                            margin-bottom: 10px;
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            &:nth-of-type(2) {
+                                width: 60%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 20%;
+                            }
+                            &:nth-of-type(6) {
+                                width: 20%;
+                            }
+                        }
+                        @media(min-width: $lg) {
+                            &:nth-of-type(1) {
+                                width: 5%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 40%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 13%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 6%;
+                            }
+                            &:nth-of-type(5) {
+                                width: 13%;
+                            }
+                            &:nth-of-type(6) {
+                                width: 10%;
+                            }
+                            &:nth-of-type(7) {
+                                width: 13%;
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

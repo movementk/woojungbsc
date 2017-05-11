@@ -45,11 +45,13 @@
                </p>
             </header>
             <div class="section-content">
-                <p class="group-table">
-                    <img src="/assets/images/introduce/group_table_xs.jpg" class="img-responsive visible-xs" alt="조직도">
-                    <img src="/assets/images/introduce/group_table_sm.jpg" class="img-responsive visible-sm" alt="조직도">
-                    <img src="/assets/images/introduce/group_table_lg.jpg" class="img-responsive visible-md visible-lg" alt="조직도">
-                </p>
+                <div class="group-table">
+                    <p class="figure">
+                        <img src="/assets/images/introduce/group_table_xs.png" class="img-responsive visible-xs" alt="조직도">
+                        <img src="/assets/images/introduce/group_table_sm.png" class="img-responsive visible-sm" alt="조직도">
+                        <img src="/assets/images/introduce/group_table_lg.png" class="img-responsive visible-md visible-lg" alt="조직도">
+                    </p>
+                </div>
                 <ul class="sr-only">
                     <li>
                         <h1>CEO</h1>
