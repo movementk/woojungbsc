@@ -207,7 +207,7 @@
                                 
                             </div>
                             
-                            <!-- tab-2 -->
+                            <!-- tab-3 -->
                             <div role="tabpanel" class="tab-pane" id="tab-3">
                                 
                                 <div class="maps">

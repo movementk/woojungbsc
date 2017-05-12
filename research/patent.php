@@ -12,7 +12,7 @@
         <div class="page-header">
             <div class="visual-header">
                 <div class="header-intro">
-                    <h2>INVESTMENT INFO</h2>
+                    <h2>R&amp;D</h2>
                     <p class="hidden-xs">
                         국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
                         지금까지 걸어온 30년... 이제부터가 시작입니다.
