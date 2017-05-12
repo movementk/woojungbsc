@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url("/assets/fontello/css/fontello.css");
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; }
@@ -437,6 +438,7 @@ a {
           padding-right: 15px; } }
 
 #top-nav {
+  z-index: 1001;
   position: fixed;
   top: 0;
   left: 0;
@@ -509,7 +511,7 @@ a {
         font-size: 15px; }
 
 #header {
-  z-index: 1000;
+  z-index: 1001;
   position: fixed;
   top: 0;
   width: 100%;

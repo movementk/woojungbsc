@@ -1,6 +1,8 @@
 @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url("/assets/fontello/css/fontello.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; }
@@ -36,5 +38,946 @@ address {
     background-color: #fff; }
     body.scrolled #header #nav > ul > li > a {
       color: inherit; } }
+
+#introduce {
+  position: relative; }
+  #introduce .intro-item {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+    #introduce .intro-item .content {
+      position: relative;
+      z-index: 1;
+      margin-left: auto;
+      margin-right: auto;
+      height: 320px;
+      background-color: rgba(0, 0, 0, 0.75); }
+      #introduce .intro-item .content .text {
+        padding-top: 30px;
+        color: #fff;
+        text-align: center; }
+        #introduce .intro-item .content .text h2 {
+          font-family: 'Titillium Web', sans-serif;
+          font-weight: 100;
+          font-size: 35px;
+          line-height: 40px;
+          letter-spacing: 5px;
+          opacity: 0;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+        #introduce .intro-item .content .text hr {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 0;
+          border-top: 1px solid #fff;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s; }
+        #introduce .intro-item .content .text p {
+          font-size: 12px;
+          line-height: 25px;
+          opacity: 0;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 1s;
+          transition-delay: 1s; }
+      #introduce .intro-item .content .bar {
+        position: relative;
+        margin-top: 25px;
+        width: 100%;
+        height: 1px; }
+        #introduce .intro-item .content .bar .dot {
+          z-index: 1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -4px;
+          margin-left: -3px;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: #fff;
+          opacity: 0; }
+        #introduce .intro-item .content .bar .left {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          right: 50%;
+          width: 0;
+          height: 1px;
+          background-color: #e40009; }
+        #introduce .intro-item .content .bar .right {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 0;
+          height: 1px;
+          background-color: #f0840c; }
+    #introduce .intro-item.active .content .text h2 {
+      opacity: 1; }
+    #introduce .intro-item.active .content .text hr {
+      width: 70px; }
+    #introduce .intro-item.active .content .text p {
+      opacity: 1; }
+    #introduce .intro-item.active .content .bar .dot {
+      opacity: 1;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 4s;
+      transition-delay: 4s; }
+    #introduce .intro-item.active .content .bar .left {
+      width: 45%;
+      max-width: 120px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 4.5s;
+      transition-delay: 4.5s; }
+    #introduce .intro-item.active .content .bar .right {
+      width: 45%;
+      max-width: 120px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 4.5s;
+      transition-delay: 4.5s; }
+  #introduce .bx-controls .bx-controls-direction {
+    display: none; }
+  #introduce .bx-controls .bx-pager {
+    z-index: 51;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    text-align: center; }
+    #introduce .bx-controls .bx-pager .bx-pager-item {
+      display: inline-block; }
+      #introduce .bx-controls .bx-pager .bx-pager-item .bx-pager-link {
+        float: left;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #fff; }
+        #introduce .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active {
+          background-color: #fff; }
+      #introduce .bx-controls .bx-pager .bx-pager-item + .bx-pager-item .bx-pager-link {
+        margin-left: 5px; }
+  @media (min-width: 768px) {
+    #introduce .intro-item {
+      padding-top: 120px;
+      padding-bottom: 175px;
+      height: 750px; }
+      #introduce .intro-item .content {
+        height: 455px; }
+        #introduce .intro-item .content .text {
+          padding-top: 70px; }
+          #introduce .intro-item .content .text h2 {
+            font-size: 55px;
+            line-height: 60px;
+            letter-spacing: 10px; }
+          #introduce .intro-item .content .text hr {
+            margin-top: 30px;
+            margin-bottom: 35px; }
+          #introduce .intro-item .content .text p {
+            font-size: 16px;
+            line-height: 30px; }
+      #introduce .intro-item.active .content .bar .left {
+        max-width: 160px; }
+      #introduce .intro-item.active .content .bar .right {
+        max-width: 160px; }
+    #introduce .bx-controls .bx-pager {
+      bottom: 40px;
+      height: 16px;
+      line-height: 16px; }
+      #introduce .bx-controls .bx-pager .bx-pager-item {
+        display: inline-block; }
+        #introduce .bx-controls .bx-pager .bx-pager-item .bx-pager-link {
+          width: 16px;
+          height: 16px; }
+        #introduce .bx-controls .bx-pager .bx-pager-item + .bx-pager-item .bx-pager-link {
+          margin-left: 10px; } }
+  @media (min-width: 1280px) {
+    #introduce .intro-item {
+      padding-top: 270px;
+      padding-bottom: 200px;
+      height: 930px; }
+      #introduce .intro-item .content {
+        width: 686px;
+        height: 460px; }
+    #introduce .bx-controls .bx-pager {
+      bottom: 50px; } }
+
+.section-header {
+  margin-bottom: 30px;
+  text-align: center; }
+  .section-header h3 {
+    font-size: 28px;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: -1px; }
+  .section-header hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50px;
+    border-top: 4px solid #e40009; }
+  .section-header p {
+    font-size: 13px;
+    ine-height: 22px; }
+  @media (min-width: 768px) {
+    .section-header {
+      margin-bottom: 60px; }
+      .section-header h3 {
+        font-size: 40px; }
+      .section-header hr {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      .section-header p {
+        font-size: 15px;
+        line-height: 24px; } }
+  @media (min-width: 1280px) {
+    .section-header {
+      margin-bottom: 85px; }
+      .section-header hr {
+        margin-top: 25px;
+        margin-bottom: 25px; } }
+
+#business-area {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background-image: url(/assets/images/main/bg_business_area.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+  #business-area > .container.section-body > .row > div:nth-of-type(odd) {
+    clear: both; }
+  #business-area .business-item {
+    display: table;
+    margin-bottom: 10px;
+    height: 165px;
+    width: 100%;
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    #business-area .business-item > div {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      #business-area .business-item > div i:before {
+        display: block;
+        margin-bottom: 15px;
+        height: 67px; }
+      #business-area .business-item > div h4 {
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px; }
+      #business-area .business-item > div p {
+        display: none; }
+      #business-area .business-item > div .btn {
+        display: none;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+    #business-area .business-item:hover, #business-area .business-item:focus {
+      background-color: #ef4600;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+  #business-area .project i:before {
+    content: url(/assets/images/ico_microscope.png); }
+  #business-area .project:hover i:before, #business-area .project:focus i:before {
+    content: url(/assets/images/ico_microscope_white.png); }
+  #business-area .product i:before {
+    content: url(/assets/images/ico_beaker.png); }
+  #business-area .product:hover i:before, #business-area .product:focus i:before {
+    content: url(/assets/images/ico_beaker_white.png); }
+  #business-area .service i:before {
+    margin-top: 15px;
+    margin-bottom: 0 !important;
+    content: url(/assets/images/ico_monitor.png); }
+  #business-area .service:hover i:before, #business-area .service:focus i:before {
+    content: url(/assets/images/ico_monitor_white.png); }
+  #business-area .cro i:before {
+    content: url(/assets/images/ico_atom.png); }
+  #business-area .cro:hover i:before, #business-area .cro:focus i:before {
+    content: url(/assets/images/ico_atom_white.png); }
+  @media (min-width: 768px) {
+    #business-area .business-item {
+      margin-bottom: 20px;
+      padding-top: 80px;
+      padding-bottom: 50px;
+      height: 485px; }
+      #business-area .business-item > div i:before {
+        margin-top: 0;
+        margin-bottom: 30px !important; }
+      #business-area .business-item > div h4 {
+        font-size: 21px;
+        line-height: normal;
+        font-weight: 700; }
+      #business-area .business-item > div .bar {
+        display: block;
+        margin: 20px auto;
+        width: 1px;
+        height: 32px;
+        background-color: #ccc; }
+      #business-area .business-item > div p {
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        color: #777; }
+      #business-area .business-item > div .btn {
+        display: inline-block;
+        margin-top: 5px;
+        width: 170px;
+        height: 35px;
+        border-radius: 0;
+        background-color: #fff;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 12px;
+        color: #666;
+        box-shadow: none;
+        line-height: 21px;
+        border-color: #ccc; }
+      #business-area .business-item:hover .bar, #business-area .business-item:focus .bar {
+        background-color: #fff; }
+      #business-area .business-item:hover p, #business-area .business-item:focus p {
+        color: #fff; }
+      #business-area .business-item:hover .btn, #business-area .business-item:focus .btn {
+        background-color: #ef4600;
+        color: #fff;
+        border-color: #fff; } }
+  @media (min-width: 992px) {
+    #business-area .business-item {
+      margin-bottom: 30px;
+      padding-bottom: 40px; } }
+  @media (min-width: 1600px) {
+    #business-area {
+      padding-top: 85px;
+      padding-bottom: 155px; }
+      #business-area > .container.section-body {
+        width: 100%;
+        max-width: 1600px; }
+        #business-area > .container.section-body > .row > div {
+          width: 25%; }
+          #business-area > .container.section-body > .row > div:nth-of-type(odd) {
+            clear: none; }
+      #business-area .business-item {
+        margin-bottom: 0;
+        padding-top: 70px;
+        height: 500px; }
+        #business-area .business-item > div i:before {
+          margin-bottom: 25px !important; }
+        #business-area .business-item > div .bar {
+          margin: 15px auto; } }
+
+#rnd {
+  position: relative; }
+  #rnd .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
+  #rnd .figure {
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+  #rnd .details {
+    background-image: url(/assets/images/main/bg_rnd_details.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+    #rnd .details div {
+      padding: 45px 20px 90px; }
+      #rnd .details div .field {
+        font-family: 'Maven Pro', sans-serif;
+        color: rgba(255, 255, 255, 0.15);
+        font-size: 12px; }
+      #rnd .details div h4 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: normal; }
+      #rnd .details div p {
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+        word-break: keep-all;
+        word-wrap: normal; }
+        #rnd .details div p br {
+          line-height: 2.4em; }
+  #rnd .bx-controls .bx-controls-direction {
+    z-index: 51;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 45px;
+    background-color: #fff; }
+    #rnd .bx-controls .bx-controls-direction .bx-prev {
+      float: left;
+      width: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-size: 30px;
+      color: #ccc;
+      text-decoration: none; }
+      #rnd .bx-controls .bx-controls-direction .bx-prev:hover, #rnd .bx-controls .bx-controls-direction .bx-prev:focus {
+        color: #e40009; }
+    #rnd .bx-controls .bx-controls-direction .bx-next {
+      float: left;
+      width: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-size: 30px;
+      text-decoration: none;
+      color: #ccc;
+      background-image: url(/assets/images/main/bar_rnd_controls.gif);
+      background-repeat: no-repeat;
+      background-position: 0 50%; }
+      #rnd .bx-controls .bx-controls-direction .bx-next:hover, #rnd .bx-controls .bx-controls-direction .bx-next:focus {
+        color: #e40009; }
+  #rnd .pager {
+    display: none; }
+  @media (min-width: 768px) {
+    #rnd .figure {
+      height: 490px; }
+    #rnd .details div {
+      padding: 75px 85px 150px; }
+      #rnd .details div h4 {
+        margin-top: 5px;
+        margin-bottom: 50px;
+        font-size: 50px; }
+      #rnd .details div p {
+        font-size: 14px;
+        line-height: 25px; }
+        #rnd .details div p br {
+          line-height: 3em; }
+    #rnd .bx-controls .bx-controls-direction {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -100px;
+      width: 200px;
+      height: 45px;
+      background-color: #fff; } }
+  @media (min-width: 992px) {
+    #rnd {
+      overflow: hidden; }
+      #rnd .figure {
+        margin-right: -15px;
+        height: 700px; }
+      #rnd .details {
+        margin-left: -15px;
+        height: 700px; }
+      #rnd .bx-controls .bx-controls-direction {
+        left: 58.5%;
+        margin-left: -100px;
+        box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.45); } }
+  @media (min-width: 1280px) {
+    #rnd .figure {
+      height: 970px; }
+    #rnd .details {
+      height: 970px; }
+      #rnd .details div {
+        padding: 120px 100px; }
+        #rnd .details div .field {
+          font-size: 13px; }
+        #rnd .details div h4 {
+          margin-top: 10px;
+          margin-bottom: 60px; }
+    #rnd .bx-controls .bx-controls-direction {
+      margin-left: -135px;
+      width: 270px;
+      height: 70px; }
+      #rnd .bx-controls .bx-controls-direction .bx-prev {
+        line-height: 70px; }
+      #rnd .bx-controls .bx-controls-direction .bx-next {
+        line-height: 70px; }
+    #rnd .pager {
+      z-index: 51;
+      position: absolute;
+      top: 500px;
+      left: 58.5%;
+      display: block;
+      margin-left: 100px;
+      width: 200px;
+      border-left: 3px solid rgba(255, 255, 255, 0.15); }
+      #rnd .pager a {
+        display: block;
+        padding-left: 30px;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+        text-decoration: none;
+        opacity: .15;
+        color: #fff;
+        text-align: left;
+        font-weight: 300; }
+        #rnd .pager a .num {
+          font-family: 'Maven Pro', sans-serif;
+          font-size: 18px;
+          display: inline-block;
+          min-width: 35px; }
+        #rnd .pager a:hover, #rnd .pager a:focus {
+          opacity: .5; }
+        #rnd .pager a.active {
+          opacity: 1;
+          font-size: 18px; }
+          #rnd .pager a.active .num {
+            font-size: 20px; }
+        #rnd .pager a + a {
+          margin-top: 10px; }
+      #rnd .pager .bar {
+        position: absolute;
+        left: -3px;
+        top: 0;
+        width: 3px;
+        height: 35px;
+        background-color: #fff;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; } }
+
+#news {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: #f4f7ff; }
+  #news .section-header hr {
+    margin-bottom: 0; }
+  #news .news-item {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; }
+    #news .news-item figure {
+      position: relative; }
+      #news .news-item figure img {
+        width: 100%; }
+      #news .news-item figure figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        #news .news-item figure figcaption > div {
+          display: table;
+          width: 100%;
+          height: 100%; }
+          #news .news-item figure figcaption > div > div {
+            display: table-cell;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+            vertical-align: bottom;
+            background: transparent;
+            background: -webkit-linear-gradient(transparent 50%, #000 100%);
+            background: -o-linear-gradient(transparent 50%, #000 100%);
+            background: -moz-linear-gradient(transparent 50%, #000 100%);
+            background: linear-gradient(transparent 50%, #000 100%); }
+            #news .news-item figure figcaption > div > div p {
+              margin-bottom: 5px; }
+            #news .news-item figure figcaption > div > div span {
+              font-family: 'Maven Pro', sans-serif;
+              opacity: .5; }
+              #news .news-item figure figcaption > div > div span:before {
+                margin-right: 10px;
+                font-family: 'fontello';
+                content: '\e803'; }
+    #news .news-item:hover figure figcaption > div > div p, #news .news-item:focus figure figcaption > div > div p {
+      text-decoration: underline; }
+  #news .btn-more {
+    border-radius: 0;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: #666;
+    background-color: #f4f7ff; }
+  @media (min-width: 768px) {
+    #news {
+      padding-top: 70px;
+      padding-bottom: 70px; }
+      #news .news-item {
+        margin-bottom: 20px; }
+        #news .news-item figure figcaption > div > div {
+          padding: 40px; }
+          #news .news-item figure figcaption > div > div p {
+            font-size: 15px; }
+      #news .btn-more {
+        font-size: 13px;
+        line-height: 23px; } }
+  @media (min-width: 992px) {
+    #news {
+      padding-top: 80px;
+      padding-bottom: 80px; }
+      #news .news-item {
+        margin-bottom: 30px; }
+        #news .news-item figure figcaption > div > div {
+          padding: 30px; } }
+
+#campaign {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background-color: #eee;
+  background-image: url(/assets/images/main/bg_campaign.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff; }
+  #campaign h3 {
+    margin-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+    line-height: 45px; }
+  #campaign p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300; }
+    #campaign p b {
+      display: inline-block;
+      width: 51px;
+      height: 37px;
+      line-height: 37px;
+      font-size: 15px;
+      background-image: url(/assets/images/main/ico_circle_o.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100% 100%; }
+  @media (min-width: 768px) {
+    #campaign {
+      padding-top: 100px;
+      padding-bottom: 80px; }
+      #campaign h3 {
+        font-size: 70px;
+        line-height: 90px; }
+      #campaign p {
+        font-size: 18px;
+        line-height: 30px; }
+        #campaign p b {
+          width: 64px;
+          height: 46px;
+          line-height: 46px;
+          font-size: 22px; } }
+  @media (min-width: 1280px) {
+    #campaign {
+      padding-top: 125px;
+      padding-bottom: 125px; }
+      #campaign h3 {
+        font-size: 80px; } }
+
+#information {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+  #information section {
+    margin-bottom: 10px;
+    border: 1px solid #dfdfdf; }
+    @media (min-width: 768px) {
+      #information section {
+        margin-bottom: 20px; } }
+    @media (min-width: 1280px) {
+      #information section {
+        margin-bottom: 30px; } }
+  #information #press .label {
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e40009;
+    border-radius: 0;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px; }
+  #information #press h5 {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    line-height: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    #information #press h5 a {
+      color: #333;
+      text-decoration: none; }
+      #information #press h5 a:hover, #information #press h5 a:focus {
+        color: #e40009; }
+  #information #press p {
+    clear: both;
+    padding: 20px 10px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #666; }
+  #information #press .figure {
+    margin-bottom: -1px;
+    width: 100%;
+    height: 110px;
+    background-size: cover;
+    background-position: 50% 50%; }
+  #information #contact {
+    height: 135px; }
+    #information #contact a {
+      display: block;
+      padding: 25px;
+      text-align: center;
+      color: #333;
+      text-decoration: none; }
+      #information #contact a i {
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        background-image: url(/assets/images/ico_building.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 100%; }
+      #information #contact a h5 {
+        margin-top: 10px;
+        font-size: 13px; }
+      #information #contact a p {
+        display: none; }
+      #information #contact a:hover h5, #information #contact a:focus h5 {
+        color: #e40009; }
+  #information #ir {
+    height: 135px; }
+    #information #ir a {
+      display: block;
+      padding: 25px;
+      text-align: center;
+      color: #333;
+      text-decoration: none; }
+      #information #ir a i {
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        background-image: url(/assets/images/ico_chart.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 100%; }
+      #information #ir a h5 {
+        margin-top: 10px;
+        font-size: 13px; }
+      #information #ir a p {
+        display: none; }
+      #information #ir a:hover h5, #information #ir a:focus h5 {
+        color: #e40009; }
+  #information #cs .cs-info {
+    padding: 25px 20px; }
+    #information #cs .cs-info h5 {
+      margin-bottom: 10px;
+      font-size: 13px; }
+    #information #cs .cs-info .num {
+      margin-bottom: 5px;
+      font-size: 33px;
+      font-family: 'Lato', sans-serif;
+      font-weight: bolder;
+      color: #e40009; }
+    #information #cs .cs-info .time {
+      color: #666;
+      line-height: 16px; }
+  @media (min-width: 768px) {
+    #information {
+      padding-top: 60px;
+      padding-bottom: 40px; }
+      #information #press {
+        position: relative;
+        height: 334px; }
+        #information #press .label {
+          width: 80px;
+          height: 80px;
+          line-height: 80px; }
+        #information #press h5 {
+          line-height: 80px;
+          font-size: 20px; }
+        #information #press p {
+          padding: 25px 20px;
+          height: 100px;
+          font-size: 13px;
+          line-height: 25px; }
+        #information #press .figure {
+          margin: 0;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 150px;
+          background-size: cover;
+          background-position: 50% 50%; }
+      #information #contact {
+        height: 157px; }
+        #information #contact a {
+          position: relative;
+          text-align: left; }
+          #information #contact a div {
+            width: 120px; }
+            #information #contact a div i {
+              position: absolute;
+              top: 50%;
+              right: 40px;
+              margin-top: -35px;
+              width: 70px;
+              height: 70px;
+              background-size: auto; }
+            #information #contact a div h5 {
+              margin-bottom: 10px;
+              font-size: 16px; }
+            #information #contact a div p {
+              display: block;
+              font-size: 13px;
+              line-height: 20px;
+              color: #666;
+              word-break: keep-all;
+              word-wrap: normal; }
+      #information #ir {
+        height: 157px; }
+        #information #ir a {
+          position: relative;
+          text-align: left; }
+          #information #ir a div {
+            width: 120px; }
+            #information #ir a div i {
+              position: absolute;
+              top: 50%;
+              right: 40px;
+              margin-top: -35px;
+              width: 70px;
+              height: 70px;
+              background-size: auto; }
+            #information #ir a div h5 {
+              margin-bottom: 10px;
+              font-size: 16px; }
+            #information #ir a div p {
+              display: block;
+              font-size: 13px;
+              line-height: 20px;
+              color: #666;
+              word-break: keep-all; }
+      #information #cs {
+        height: 180px; }
+        #information #cs .cs-info {
+          padding-right: 0;
+          padding-left: 30px; }
+          #information #cs .cs-info h5 {
+            font-size: 16px; }
+          #information #cs .cs-info .num {
+            margin-bottom: 10px; }
+          #information #cs .cs-info .time {
+            line-height: 20px;
+            font-size: 13px; }
+        #information #cs .cs-menu {
+          margin-top: 13px;
+          margin-left: -20px;
+          padding-right: 30px; }
+          #information #cs .cs-menu ul li {
+            position: relative; }
+            #information #cs .cs-menu ul li a {
+              display: block;
+              padding-left: 35px;
+              color: #666;
+              font-size: 13px;
+              line-height: 50px;
+              text-decoration: none; }
+              #information #cs .cs-menu ul li a:after {
+                float: right;
+                margin-right: 18px;
+                font-family: 'fontello';
+                content: '\e80c'; }
+              #information #cs .cs-menu ul li a:hover, #information #cs .cs-menu ul li a:focus {
+                color: #e40009; }
+                #information #cs .cs-menu ul li a:hover:after, #information #cs .cs-menu ul li a:focus:after {
+                  color: #666; }
+            #information #cs .cs-menu ul li:before {
+              position: absolute;
+              top: 18px;
+              left: 16px;
+              font-family: 'fontello'; }
+            #information #cs .cs-menu ul li.notice:before {
+              content: '\f0f7'; }
+            #information #cs .cs-menu ul li.inquiry:before {
+              content: '\f128'; }
+            #information #cs .cs-menu ul li.catalog:before {
+              left: 15px;
+              content: '\e804'; }
+            #information #cs .cs-menu ul li + li {
+              border-top: 1px solid #dee2e5; } }
+  @media (min-width: 992px) {
+    #information #cs .cs-menu {
+      margin-left: -30px; } }
+  @media (min-width: 1280px) {
+    #information {
+      padding-top: 80px;
+      padding-bottom: 50px; }
+      #information #contact {
+        height: 152px; }
+        #information #contact a div i {
+          right: 30px; }
+      #information #ir {
+        height: 152px; }
+        #information #ir a div i {
+          right: 30px; }
+      #information #cs {
+        height: 334px; }
+        #information #cs .cs-info {
+          padding: 25px 30px 30px; }
+        #information #cs .cs-menu {
+          margin-top: 0;
+          margin-left: 0;
+          padding-left: 30px;
+          padding-right: 30px; }
+          #information #cs .cs-menu ul {
+            border-top: 2px solid #666; } }
 
 /*# sourceMappingURL=main.css.map */
