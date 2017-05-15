@@ -72,7 +72,7 @@
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <th><label for="u-name">이름</label></th>
+                                                <th class="needs"><label for="u-name">이름</label></th>
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" id="u-name" class="form-control">
@@ -80,7 +80,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th><label for="u-phone">연락처</label></th>
+                                                <th class="needs"><label for="u-phone">연락처</label></th>
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" id="u-phone" class="form-control">
@@ -88,7 +88,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th><label for="e-mail">이메일</label></th>
+                                                <th class="needs"><label for="e-mail">이메일</label></th>
                                                 <td class="e-mail">
                                                     <div class="form-group">
                                                         <input type="email" id="e-mail" class="form-control">
@@ -96,12 +96,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>문의부서</th>
+                                                <th class="needs"><label for="affiliation">소속</label></th>
                                                 <td>
                                                     <div class="form-group">
-                                                        <select class="form-control">
-                                                            <option>부서선택</option>
-                                                        </select>
+                                                        <input type="text" id="affiliation" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="department">부서</label></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" id="department" class="form-control">
                                                     </div>
                                                 </td>
                                             </tr>

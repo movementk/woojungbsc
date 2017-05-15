@@ -596,6 +596,13 @@
                                 @media(min-width: $lg) {
                                     width: 15%;
                                 }
+                                &.needs {
+                                    &:before {
+                                        content: "*";
+                                        color: #e10013;
+                                        padding-right: 5px;
+                                    }
+                                }
                             }
                             td {
                                 width: 65%;
