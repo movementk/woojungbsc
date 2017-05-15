@@ -10,37 +10,36 @@
     height: 35px;
     padding: 5px;
     margin: 0;
-    box-shadow: none;
-}
-.btn {
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    @media(min-width: $lg) {
-        @include trans();
-        &:hover {
-            opacity: .7;
-        }
-    }
+    box-shadow: none; 
 }
 
-
-body {
-    overflow: auto !important;
-}
 
 .sub {
-    height: auto;
     section, 
     article {
         > header {
             padding: 50px 15px;
             text-align: center;
+            @media(min-width: $sm) {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            @media(min-width: $md) {
+                padding-top: 100px;
+                padding-bottom: 95px;
+            }
             h3 {
                 font-size: 26px;
                 color: #2b2b2b;
                 font-weight: 300;
                 margin-bottom: 40px;
+                @media(min-width: $sm) {
+                    font-size: 45px;
+                    margin-bottom: 50px;
+                }
+                @media(min-width: $md) {
+                    margin-bottom: 70px;
+                }
             }
             h4 {
                 font-size: 30px;
@@ -50,12 +49,44 @@ body {
                 letter-spacing: 1px;
                 font-weight: 600;
                 margin-bottom: 40px;
+                @media(min-width: $sm) {
+                    font-size: 44px;
+                    line-height: 40px;
+                    margin-bottom: 50px;
+                }
+                @media(min-width: $md) {
+                    margin-bottom: 70px;
+                }
             }
             .summary {
                 font-size: 14px;
                 color: #2b2b2b;
                 line-height: 25px;
                 font-weight: 300;
+                @media(min-width: $sm) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    #content {
+        padding-bottom: 100px;
+        @media(min-width: $sm) {
+            padding-bottom: 150px;
+        }
+        @media(min-width: $md) {
+            padding-bottom: 200px;
+        }
+        .btn {
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            @media(min-width: $lg) {
+                @include trans();
+                &:hover {
+                    opacity: .7;
+                }
             }
         }
     }
@@ -134,7 +165,7 @@ body {
             padding: 0;
             border: 0;
             border-radius: 0;
-            border-bottom: 3px solid #e00014;
+            border-bottom: 3px solid #e00014 !important;
             &:after {
                 position: absolute;
                 right: 10px;
@@ -183,9 +214,7 @@ body {
                     color: #666;
                     padding: 0;
                     line-height: 40px;
-                    &:hover {
-                        background: none;
-                    }
+                    @include trans();
                 }
                 &.active {
                     a {
@@ -228,9 +257,6 @@ body {
                     a {
                         display: block;
                         @include trans();
-                        &:hover {
-
-                        }
                     }
                     &.active {
                         border-bottom: 0;
@@ -378,59 +404,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

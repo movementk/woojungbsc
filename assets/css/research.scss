@@ -1,0 +1,685 @@
+@import 'common';
+
+// 특허
+.patent {
+    .section-content {
+        .list {
+            width: 100%;
+            border-top: 3px solid #595757;
+            > li {
+                display: block;
+                width: 100%;
+                padding: 18px 0;
+                border-bottom: 1px solid #ccc;
+                &.hidden-xs {
+                    background-color: #f8f8f8;
+                    .list-header {
+                        > li {
+                            text-align: center;
+                            font-size: 15px;
+                            color: #333;
+                            display: inline-block;
+                            @media(min-width: $sm) {
+                                &:nth-of-type(1) {
+                                    display: none;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 60%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(4) {
+                                    display: none;
+                                }
+                                &:nth-of-type(5) {
+                                    display: none;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(7) {
+                                    display: none;
+                                }
+                            }
+                            @media(min-width: $lg) {
+                                &:nth-of-type(1) {
+                                    width: 5%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 40%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 13%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 6%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 13%;
+                                    display: inline-block;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 13%;
+                                    display: inline-block;
+                                }   
+                            }
+                        }
+                    }
+                }
+                > ul {
+                    font-size: 0;
+                    > li {
+                        display: inline-block;
+                        font-size: 15px;
+                        color: #666;
+                        padding: 0 10px;
+                        font-weight: 300;
+                        vertical-align: top;
+                        text-align: center;
+                        @media(min-width: $lg) {
+                            vertical-align: middle;
+                        }
+                        .hidden-txt {
+                            display: inline-block;
+                            font-size: 12px;
+                            @media(min-width: $sm) {
+                                display: none;
+                            }
+                        }
+                        &.count {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.subject {
+                            display: block;
+                            text-align: left;
+                            @media(min-width: $sm) {
+                                display: inline-block;
+                                padding-left: 20px;
+                            }
+                        }
+                        &.apply-num {
+                            position: relative;
+                            display: inline-block;
+                            font-size: 12px;
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                right: -2px;
+                                font-size: 10px;
+                                color: #666;
+                                content: "|";
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 15px;
+                                &:after {
+                                    content: "";
+                                }
+                            }
+                        }
+                        &.state {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.origin {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        &.date {
+                            display: inline-block;
+                            font-size: 12px;
+                            @media(min-width: $sm) {
+                                font-size: 15px;
+                            }
+                        }
+                        &.public-num {
+                            display: none;
+                            @media(min-width: $lg) {
+                                display: inline-block;
+                            }
+                        }
+                        a {
+                            display: block;
+                            font-size: 15px;
+                            color: #666;
+                            font-weight: 300;
+                            margin-bottom: 10px;
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            &:nth-of-type(2) {
+                                width: 60%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 20%;
+                            }
+                            &:nth-of-type(6) {
+                                width: 20%;
+                            }
+                        }
+                        @media(min-width: $lg) {
+                            &:nth-of-type(1) {
+                                width: 5%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 40%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 13%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 6%;
+                            }
+                            &:nth-of-type(5) {
+                                width: 13%;
+                            }
+                            &:nth-of-type(6) {
+                                width: 10%;
+                            }
+                            &:nth-of-type(7) {
+                                width: 13%;
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 장비연구소
+.equipment {
+    .section-content {
+        article {
+            hr {
+                width: 25px;
+                display: inline-block;
+                margin: 0;
+                border-top: 3px solid #e00014;
+            }
+            h4 {
+                font-size: 25px;
+                color: #2b2b2b;
+                font-weight: 300;
+                margin-top: 10px;
+                margin-bottom: 35px;
+                @media(min-width: $sm) {
+                    margin-top: 15px;
+                    font-size: 30px;
+                    margin-bottom: 50px;
+                }
+                @media(min-width: $lg) {
+                    margin-bottom: 30px;
+                }
+            }
+            &.develop-backdrop {
+                padding-bottom: 50px;
+                @media(min-width: $sm) {
+                    padding-bottom: 90px;
+                }
+                @media(min-width: $lg) {
+                    padding-bottom: 150px;
+                }
+                figure {
+                    .img-responsive {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                        max-width: 158px;
+                        @media(min-width: $sm) {
+                            max-width: 691px;
+                        }
+                        @media(min-width: $lg) {
+                            max-width: 1171px;
+                        }
+                    }
+                }
+            }
+            &.outline {
+                padding: 50px 0;
+                background-image: url(/assets/images/research/equipment_bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 15% 80%;
+                @media(min-width: $sm) {
+                    padding-top: 80px;
+                    padding-bottom: 90px;
+                    background-position: 40% 50%;
+                }
+                @media(min-width: $lg) {
+                    padding: 110px 0;
+                    background-position: 50% 50%;
+                }
+                h4 {
+                    color: #fff;
+                }
+                .table-wrap {
+                    margin-bottom: 15px;
+                    .table {
+                        margin-bottom: 0;
+                        border-top: 3px solid #fff;
+                        tbody {
+                            th {
+                                width: 30%;
+                                font-size: 13px;
+                                color: #fff;
+                                font-weight: 400;
+                                padding: 20px 0 20px 20px;
+                                vertical-align: top;
+                                border-right: 1px solid rgba(255, 255, 255, .4);
+                                border-bottom: 1px solid rgba(255, 255, 255, .4);
+                                background-color: rgba(89, 87, 87, .3);
+                                @media(min-width: $sm) {
+                                    font-size: 15px;
+                                    padding-left: 30px;
+                                }
+                                @media(min-width: $lg) {
+                                    padding-top: 17px;
+                                    padding-bottom: 17px;
+                                }
+                            }
+                            td {
+                                width: 70%;
+                                font-size: 13px;
+                                color: #fff;
+                                font-weight: 300;
+                                line-height: 22px;
+                                padding: 20px;
+                                vertical-align: middle;
+                                border-bottom: 1px solid rgba(255, 255, 255, .4);
+                                @media(min-width: $sm) {
+                                    font-size: 15px;
+                                    padding-left: 30px;
+                                }
+                                @media(min-width: $lg) {
+                                    padding-top: 17px;
+                                    padding-bottom: 17px;
+                                }
+                                ul {
+                                    li {
+                                        position: relative;
+                                        font-size: 13px;
+                                        line-height: 22px;
+                                        margin-bottom: 10px;
+                                        padding-left: 10px;
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                        &:before {
+                                            position: absolute;
+                                            left: 0;
+                                            content: "·";
+                                        }
+                                        @media(min-width: $sm) {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                figure {
+                    .img-responsive {
+                        width: 100%;
+                        @media(min-width: $lg) {
+                            height: 480px;
+                        }
+                    }
+                }
+            }
+            &.hpv {
+                padding-top: 50px;
+                @media(min-width: $sm) {
+                    padding-top: 90px;
+                }
+                @media(min-width: $lg) {
+                    padding-top: 120px;
+                }
+                figure {
+                    margin-bottom: 15px;
+                    @media(min-width: $sm) {
+                        margin-bottom: 20px;
+                    }
+                    @media(min-width: $lg) {
+                        margin-bottom: 60px;
+                    }
+                    .img-responsive {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                .table-wrap {
+                    .table {
+                        margin-bottom: 0;
+                        border-top: 3px solid #595757;
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                    color: #333;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    font-weight: 400;
+                                    padding: 18px 0;
+                                    border-bottom: 1px solid #ccc;
+                                    border-right: 1px solid #ccc;
+                                    background-color: #f8f8f8;
+                                    &:last-child {
+                                        border-right: 0;
+                                    }
+                                    @media(min-width: $sm) {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 13px;
+                                    color: #666;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    font-weight: 300;
+                                    line-height: 22px;
+                                    padding: 18px 0;
+                                    border-bottom: 1px solid #ccc;
+                                    border-right: 1px solid #ccc;
+                                    &:last-child {
+                                        border-right: 0;
+                                    }
+                                    @media(min-width: $sm) {
+                                        font-size: 15px;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 바이오연구소 
+.current-state {
+    header {
+        .summary {
+            letter-spacing: -.5px;
+        }
+    }
+    .section-content {
+        .tab-list {
+            .nav-tabs {
+                border-bottom: 0;
+                margin-bottom: 50px;
+                @media(min-width: $sm) {
+                    margin-bottom: 65px;
+                }
+                @media(min-width: $md) {
+                    margin-bottom: 80px;
+                }
+                li {
+                    width: 33.33%;
+                    a {
+                        display: block;
+                        font-size: 13px;
+                        color: #2b2b2b;
+                        line-height: 38px;
+                        text-align: center;
+                        padding: 0;
+                        margin: 0;
+                        border: 1px solid #dfdfdf;
+                        border-left: 0;
+                        border-radius: 0;
+                        &:hover {
+                            background: none;
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 15px;
+                            line-height: 43px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: #fff;
+                            border-color: #f0840c;
+                            background-color: #f0840c;
+                        }
+                    }
+                    &:first-child {
+                        a {
+                            border-left: 1px solid #dfdfdf;
+                        }
+                        &.active {
+                            a {
+                                border-left-color: #f0840c !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    article {
+                        .article-header {
+                            hr {
+                                width: 25px;
+                                display: inline-block;
+                                margin: 0;
+                                border-top: 3px solid #e00014;
+                            }
+                            h4 {
+                                font-size: 25px;
+                                color: #2b2b2b;
+                                font-weight: 300;
+                                margin-top: 10px;
+                                margin-bottom: 30px;
+                                @media(min-width: $sm) {
+                                    margin-top: 15px;
+                                    font-size: 30px;
+                                    margin-bottom: 45px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #tab-1 {
+                    article {
+                        &.current-state-info {
+                            .article-header {
+                                padding-bottom: 50px;
+                                @media(min-width: $sm) {
+                                    padding-bottom: 85px;
+                                }
+                                @media(min-width: $lg) {
+                                    padding-bottom: 120px;
+                                }
+                                p {
+                                    font-size: 13px;
+                                    color: #555;
+                                    font-weight: 300;
+                                    line-height: 22px;
+                                    & + p {
+                                        margin-top: 20px;
+                                    }
+                                    @media(min-width: $sm) {
+                                        font-size: 15px;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                        }
+                        &.study-field {
+                            .article-header {
+                                h4 {
+                                    color: #fff;
+                                }
+                            }
+                            padding: 50px 0 85px;
+                            background-image: url(/assets/images/research/field_xs_bg.jpg);
+                            background-repeat: no-repeat;
+                            background-size: 100% auto;
+                            background-position: 50% 50%;
+                            @media(min-width: $sm) {
+                                padding: 80px 0 90px;
+                                background-image: url(/assets/images/research/field_lg_bg.jpg);
+                                background-size: cover;
+                            }
+                            @media(min-width: $lg) {
+                                padding: 120px 0;
+                            }
+                            .article-header {
+                                margin-bottom: 68px;
+                                @media(min-width: $sm) {
+                                    margin-bottom: 35px;
+                                }
+                                @media(min-width: $lg) {
+                                    margin-bottom: 84px;
+                                }
+                            }
+                            figure {
+                                .img-responsive {
+                                    width: 100%;
+                                    max-width: 268px;
+                                    display: block;
+                                    margin: 0 auto;
+                                    @media(min-width: $sm) {
+                                        max-width: 547px;
+                                    }
+                                    @media(min-width: $lg) {
+                                        max-width: 1191px;
+                                    }
+                                }
+                            }
+                        }
+                        &.result {
+                            padding-top: 50px;
+                            @media(min-width: $sm) {
+                                padding-top: 95px;
+                            }
+                            @media(min-width: $lg) {
+                                padding-top: 120px;
+                            }
+                            .article-header {
+                                margin-bottom: 20px;
+                                @media(min-width: $sm) {
+                                    margin-bottom: 40px;
+                                }
+                                @media(min-width: $lg) {
+                                    margin-bottom: 50px;
+                                }
+                            }
+                            .table-wrap {
+                                border: 0;
+                                .table {
+                                    border-top: 3px solid #595757;
+                                    thead {
+                                        tr {
+                                            th {
+                                                font-size: 13px;
+                                                color: #333;
+                                                font-weight: 300;
+                                                text-align: center;
+                                                vertical-align: middle;
+                                                padding-top: 18px;
+                                                padding-bottom: 18px;
+                                                border: 0;
+                                                border-bottom: 1px solid #ccc;
+                                                background-color: #f8f8f8;
+                                                @media(min-width: $lg) {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            td {
+                                                font-size: 13px;
+                                                color: #666;
+                                                font-weight: 300;
+                                                text-align: center;
+                                                line-height: 22px;
+                                                vertical-align: middle;
+                                                padding-top: 18px;
+                                                padding-bottom: 18px;
+                                                border-bottom: 1px solid #ccc;
+                                                &.content {
+                                                    text-align: left;
+                                                    padding-left: 20px;
+                                                }
+                                                @media(min-width: $lg) {
+                                                    font-size: 14px;
+                                                    line-height: 28px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
