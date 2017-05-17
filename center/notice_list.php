@@ -19,6 +19,7 @@
                     </p>
                 </div>
             </div>
+<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     공지사항
@@ -30,6 +31,7 @@
                     <li><a href="#">고객문의</a></li>
                 </ul>
             </div>
+-->
         </div>
         <!-- Sub Page 공통 -->
         <section class="notice-list">
