@@ -11,7 +11,7 @@
 
 	<main id="content">
 	
-		<section id="introduce">
+		<section id="introduce" class="scene">
 			<div class="slider">
 				<div class="intro-item intro-item-1" style="background-image: url(/assets/images/main/bg_intro_1.jpg);">
 					<div class="container">
@@ -73,7 +73,7 @@
 			</div>
 		</section>
 	
-		<section id="business-area">
+		<section id="business-area" class="scene">
 			<div class="container section-header">
 				<div class="row">
 					<div class="col-xs-12">
@@ -164,7 +164,7 @@
 			</div>	
 		</section>
 		
-		<section id="rnd">
+		<section id="rnd" class="scene">
 			<div class="slider">
 				<div class="container-fluid">
 					<div class="row">
@@ -232,7 +232,7 @@
 			</div>
 		</section>
 
-		<section id="news">
+		<section id="news" class="scene">
 			<div class="container section-header">
 				<div class="row">
 					<div class="col-xs-12">
@@ -308,7 +308,7 @@
 			</div>
 		</section>
 		
-		<section id="campaign">
+		<section id="campaign" class="scene">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -323,7 +323,7 @@
 			</div>
 		</section>
 		
-		<div id="information">
+		<div id="information" class="scene">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-lg-5">
@@ -399,7 +399,49 @@
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
 	<script src="/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
 	<script src="/assets/jquery.unityping/jquery.unityping.js"></script>
+	<script src="/assets/jquery.mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="/assets/jquery.easing.1.3.js"></script>
 	<script src="/assets/js/main.js"></script>
+	<script>
+		(function($) {
+			
+			var sceneIndex = 0;
+			var $scene = $('.scene');
+			var isScrolling = false;
+
+			function moveScene() {
+				isScrolling = true;
+				$('html, body').stop().animate({
+					scrollTop: $scene.eq(sceneIndex).offset().top - ($(this).width() > 1280 ? $('#top-nav').height() + $('#header').height() : $('#header').height())
+				}, 1000, 'easeOutQuint', function() {
+					$scene.removeClass('on');
+					$scene.eq(sceneIndex).addClass('on');
+					isScrolling = false;
+				});
+			}
+
+			$(document).on('mousewheel', function(event) {
+				if (event.deltaY == 1) {
+					if (isScrolling == false && sceneIndex > 0) {
+						sceneIndex--;
+						moveScene();
+					}
+				}
+				if (event.deltaY == -1) {
+					if (isScrolling == false && sceneIndex < $scene.length - 1) {
+						sceneIndex++;
+						moveScene();
+					}
+				}
+				event.preventDefault();
+			});
+			
+			$(window).on('load resize', function() {
+				moveScene();
+			});
+
+		})(jQuery);
+	</script>
 	
 </body>
 </html>
