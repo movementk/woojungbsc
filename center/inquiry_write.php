@@ -45,108 +45,145 @@
             </header>
             <div class="section-content">
                 <div class="container">
-                    <div class="select-list">
-                        <ul class="row">
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#" class="active">1</a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#">2</a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#">3</a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#">4</a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#">5</a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-lg-2">
-                                <a href="#">6</a>
-                            </li>
-                        </ul>
-                        <div class="write">
-                            <form action="#">
-                                <div class="table-wrap">
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th class="needs"><label for="u-name">이름</label></th>
-                                                <td>
-                                                    <div class="form-group">
-                                                        <input type="text" id="u-name" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="needs"><label for="u-phone">연락처</label></th>
-                                                <td>
-                                                    <div class="form-group">
-                                                        <input type="text" id="u-phone" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="needs"><label for="e-mail">이메일</label></th>
-                                                <td class="e-mail">
-                                                    <div class="form-group">
-                                                        <input type="email" id="e-mail" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="needs"><label for="affiliation">소속</label></th>
-                                                <td>
-                                                    <div class="form-group">
-                                                        <input type="text" id="affiliation" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th><label for="department">부서</label></th>
-                                                <td>
-                                                    <div class="form-group">
-                                                        <input type="text" id="department" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th><label for="subject">문의제목</label></th>
-                                                <td class="subject">
-                                                    <div class="form-group">
-                                                        <input type="text" id="subject" class="form-control">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="subject"><label for="u-content">문의내용</label></th>
-                                                <td>
-                                                    <div class="form-group">
-                                                        <textarea id="u-content" class="form-control"></textarea>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>파일첨부</th>
-                                                <td class="file">
-                                                    <div class="form-group">
-                                                        <input type="file" id="file" class="form-control">
-                                                        <label for="file">찾아보기</label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="btn-area">
-                                    <p>
-                                        <button type="submit" class="btn btn-orange">등록하기</button>
-                                        <a href="#" class="btn btn-gray" role="button">취소하기</a>
-                                    </p>
-                                </div>
-                            </form>
-                        </div>
+                    <ul class="inquiry-type">
+                        <li>
+                            <p class="figure">
+                                <img src="/assets/images/center/inquiry_img01.png" class="basic-img" alt="Vivarium E&C">
+                                <img src="/assets/images/center/inquiry_img01_on.png" class="over-img" alt="Vivarium E&C">
+                            </p>
+                            <div class="figcaption">
+                                <h4>VIVARIEM E&amp;C</h4>
+                                <a href="tel:0318889352" class="call">031-888-9352</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="figure">
+                                <img src="/assets/images/center/inquiry_img02.png" class="basic-img" alt="DIO decontamination">
+                                <img src="/assets/images/center/inquiry_img02_on.png" class="over-img" alt="DIO decontamination">
+                            </p>
+                            <div class="figcaption">
+                                <h4>DIO DECONTAMINATION</h4>
+                                <a href="tel:0318889347" class="call">031-888-9347</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="figure">
+                                <img src="/assets/images/center/inquiry_img03.png" class="basic-img" alt="Aquatic solution">
+                                <img src="/assets/images/center/inquiry_img03_on.png" class="over-img" alt="Aquatic solution">
+                            </p>
+                            <div class="figcaption">
+                                <h4>AQUATIC SOLUTION</h4>
+                                <a href="tel:0318889358" class="call">031-888-9358</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="figure">
+                                <img src="/assets/images/center/inquiry_img04.png" class="basic-img" alt="생명과학분석서비스">
+                                <img src="/assets/images/center/inquiry_img04_on.png" class="over-img" alt="생명과학분석서비스">
+                            </p>
+                            <div class="figcaption">
+                                <h4>생명과학분석서비스</h4>
+                                <dl>
+                                    <dt>CRO</dt>
+                                    <dd><a href="tel:0318889888" class="call">031-888-9888</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>PRODUCT</dt>
+                                    <dd><a href="tel:0318889269" class="call">031-888-9269</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="figure">
+                                <img src="/assets/images/center/inquiry_img05.png" class="basic-img" alt="A/S 접수">
+                                <img src="/assets/images/center/inquiry_img05_on.png" class="over-img" alt="A/S 접수">
+                            </p>
+                            <div class="figcaption">
+                                <h4>A/S 접수</h4>
+                                <a href="tel:15221277" class="call">1522-1277</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="write">
+                        <form action="#">
+                            <div class="table-wrap">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th class="needs"><label for="u-name">이름</label></th>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="text" id="u-name" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="needs"><label for="u-phone">연락처</label></th>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="text" id="u-phone" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="needs"><label for="e-mail">이메일</label></th>
+                                            <td class="e-mail">
+                                                <div class="form-group">
+                                                    <input type="email" id="e-mail" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="needs"><label for="affiliation">소속</label></th>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="text" id="affiliation" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="department">부서</label></th>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="text" id="department" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="subject">문의제목</label></th>
+                                            <td class="subject">
+                                                <div class="form-group">
+                                                    <input type="text" id="subject" class="form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="subject"><label for="u-content">문의내용</label></th>
+                                            <td>
+                                                <div class="form-group">
+                                                    <textarea id="u-content" class="form-control"></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>파일첨부</th>
+                                            <td class="file">
+                                                <div class="form-group">
+                                                    <input type="file" id="file" class="form-control">
+                                                    <label for="file">찾아보기</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn-area">
+                                <p>
+                                    <button type="submit" class="btn btn-orange">등록하기</button>
+                                    <a href="#" class="btn btn-gray" role="button">취소하기</a>
+                                </p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

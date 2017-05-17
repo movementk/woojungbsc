@@ -554,8 +554,160 @@
         }
     }
     .section-content {
-        .select-list {
-            
+        .inquiry-type {
+            font-size: 0;
+            margin-bottom: 50px;
+            @media(min-width: $sm) {
+                margin-bottom: 60px;
+            }
+            li {
+                width: 50%;
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                &:nth-of-type(5) {
+                    width: 100%;
+                    .figcaption {
+                        margin-bottom: 0;
+                    }
+                }
+                @media(min-width: $sm) {
+                    width: 33.33%;
+                    &:nth-of-type(4) {
+                        width: 50%;
+                        padding-left: 110px;
+                        .figcaption {
+                            margin-bottom: 0;
+                        }
+                    }
+                    &:nth-of-type(5) {
+                        width: 50%;
+                        padding-right: 110px;
+                    }
+                }
+                @media(min-width: $md) {
+                    width: 20% !important;
+                    padding: 0 !important;
+                }
+                @media(min-width: $lg) {
+                    .figure {
+                        @include trans();
+                    }
+                    h4 {
+                        @include trans();
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        .figure {
+                            border-color: #f08501;
+                            background-color: #f08501;
+                            img {
+                                &.basic-img {
+                                    display: none;
+                                }
+                                &.over-img {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .figcaption {
+                            h4 {
+                                color: #e10013;
+                            }
+                        }
+                    }
+                }
+                .figure {
+                    display: inline-block;
+                    width: 130px;
+                    height: 130px;
+                    line-height: 130px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    vertical-align: middle;
+                    img {
+                        &.basic-img {
+                            display: inline-block;
+                        }
+                        &.over-img {
+                            display: none;
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        width: 150px;
+                        height: 150px;
+                        line-height: 150px;
+                    }
+                }
+                .figcaption {
+                    margin-bottom: 30px;
+                    @media(min-width: $sm) {
+                        margin-bottom: 50px;
+                    }
+                    @media(min-width: $md) {
+                        margin-bottom: 0;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: bold;
+                        @include titi();
+                        margin-top: 15px;
+                        margin-bottom: 5px;
+                        @media(min-width: $sm) {
+                            font-size: 15px;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .call {
+                        font-size: 13px;
+                        color: #666;
+                        @include titi();
+                        font-weight: 400;
+                        line-height: 18px;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                    dl {
+                        font-size: 0;
+                        &:after {
+                            content: " ";
+                            clear: both;
+                            display: inline-block;
+                        }
+                        dt {
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 400;
+                            @include titi();
+                            &:after {
+                                content: ":";
+                                padding: 0 2px;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 16px;
+                            }
+                        }
+                        dd {
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 400;
+                            @include titi();
+                            @media(min-width: $sm) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .write {
             .table-wrap {
