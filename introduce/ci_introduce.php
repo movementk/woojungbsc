@@ -19,6 +19,7 @@
                     </p>
                 </div>
             </div>
+<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     CI 소개
@@ -33,6 +34,7 @@
                     <li><a href="#">오시는길</a></li>
                 </ul>
             </div>
+-->
         </div>
         <!-- Sub Page 공통 -->
         <section class="ci-introduce">

@@ -46,7 +46,7 @@ address {
     margin-top: 30px; }
   @media (min-width: 768px) {
     .greeting .visual-content {
-      padding: 125px 0 105px; }
+      padding: 125px 0 145px; }
       .greeting .visual-content .icon-quote-left {
         font-size: 30px; }
       .greeting .visual-content .intro {
@@ -60,31 +60,46 @@ address {
   @media (min-width: 992px) {
     .greeting .section-content {
       padding-top: 100px; } }
-  .greeting .section-content p {
+  @media (min-width: 992px) {
+    .greeting .section-content .ceo-greeting {
+      padding-right: 70px; } }
+  .greeting .section-content .ceo-greeting p {
     font-size: 13px;
     color: #333;
-    line-height: 22px; }
-    .greeting .section-content p + p {
+    line-height: 22px;
+    text-align: justify; }
+    .greeting .section-content .ceo-greeting p + p {
       margin-top: 20px; }
     @media (min-width: 768px) {
-      .greeting .section-content p {
+      .greeting .section-content .ceo-greeting p {
         font-size: 16px;
         line-height: 28px; }
-        .greeting .section-content p + p {
-          margin-top: 10px; }
-        .greeting .section-content p:nth-of-type(4) {
-          margin-top: 60px; } }
-  .greeting .section-content h5 {
+        .greeting .section-content .ceo-greeting p + p {
+          margin-top: 10px; } }
+  .greeting .section-content figure {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    padding-top: 35px; }
+    .greeting .section-content figure .img-responsive {
+      width: 100%;
+      max-width: 370px; }
+    @media (min-width: 768px) {
+      .greeting .section-content figure {
+        padding-top: 0; } }
+  .greeting .section-content .woojung-ceo {
+    text-align: right;
     font-size: 25px;
     color: #111;
     font-weight: 400;
     font-family: 'Jeju Myeongjo', serif;
-    margin-top: 50px; }
+    margin-top: 20px; }
     @media (min-width: 768px) {
-      .greeting .section-content h5 {
+      .greeting .section-content .woojung-ceo {
         font-size: 32px;
-        margin-top: 70px; } }
-    .greeting .section-content h5 small {
+        margin-top: 35px; } }
+    .greeting .section-content .woojung-ceo small {
       font-size: 13px;
       color: #111;
       display: inline-block;
@@ -92,7 +107,7 @@ address {
       margin-right: 10px;
       font-family: 'Noto Sans KR', sans-serif; }
       @media (min-width: 768px) {
-        .greeting .section-content h5 small {
+        .greeting .section-content .woojung-ceo small {
           font-size: 16px; } }
 
 .vision-main #content {
