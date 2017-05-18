@@ -138,6 +138,28 @@
                 }
             }
         }
+        .btn-area {
+            margin-top: 30px;
+            text-align: right;
+            p {
+                .btn-orange {
+                    display: inline-block;
+                    width: 110px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 13px;
+                    color: #fff;
+                    background-color: #f08501;
+                    @media(min-width: $sm) {
+                        width: 150px;
+                        font-size: 15px;
+                    }
+                    @media(min-width: $md) {
+                        width: 170px;
+                    }
+                }
+            }
+        }
         .paging {
             margin-top: 30px;
             @media(min-width: $sm) {
