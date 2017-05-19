@@ -254,9 +254,9 @@
             }
             .view-content {
                 text-align: center;
-                padding: 40px 0 30px;
+                padding-top: 40px;
                 @media(min-width: $sm) {
-                    padding: 70px 0 100px;
+                    padding-top: 70px;
                 }
                 .view-txt {
                     font-size: 13px;
@@ -275,6 +275,72 @@
                     }
                     @media(min-width: $sm) {
                         margin-top: 60px;
+                    }
+                }
+            }
+            .attach {
+                overflow: hidden;
+                font-size: 0;
+                margin: 80px 0 30px;
+                padding: 30px 10px;
+                background-color: #fafafa;
+                @media(min-width: $sm) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                dt {
+                    position: relative;
+                    display: inline-block;
+                    width: 62px;
+                    font-size: 13px;
+                    color: #2b2b2b;
+                    font-weight: 300;
+                    vertical-align: top;
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        content: "|";
+                        color: #ccc;
+                    }
+                    @media(min-width: $sm) {
+                        width: 70px;
+                        font-size: 14px;
+                    }
+                }
+                dd {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 80%;
+                    padding-left: 15px;
+                    @media(min-width: $sm) {
+                        padding-left: 30px;
+                    }
+                    &:before {
+                        content: "\E80D";
+                        font-family: "fontello";
+                        font-size: 12px;
+                        color: #888;
+                        padding-right: 10px;
+                    }
+                    a {
+                        display: inline-block;
+                        font-size: 13px;
+                        color: #888;
+                        font-weight: 300;
+                        &:after {
+                            content: ",";
+                            padding-right: 10px;
+                        }
+                        &:last-child {
+                            &:after {
+                                content: "";
+                                padding: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -350,35 +416,40 @@
         .btn-area {
             margin-top: 30px;
             p {
-                text-align: right;
-                .btn-orange {
+                font-size: 0;
+                text-align: center;
+                .btn {
                     display: inline-block;
-                    width: 120px;
+                    width: 90px;
                     height: 40px;
                     font-size: 13px;
                     color: #fff;
                     line-height: 40px;
                     text-align: center;
-                    background-color: #f08501;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.btn-orange {
+                        background-color: #f08501;
+                    }
+                    &.btn-gray {
+                        background-color: #595757;
+                    }
+                    @media(min-width: $sm) {
+                        width: 166px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                    @media(min-width: $lg) {
+                        width: 170px;
+                    }
                 }
             }
             @media(min-width: $sm) {
                 margin-top: 60px;
-                p {
-                    .btn-orange {
-                        width: 166px;
-                        height: 45px;
-                        font-size: 15px;
-                        line-height: 45px;
-                    }
-                }
-            }
-            @media(min-width: $lg) {
-                p {
-                    .btn-orange {
-                        width: 170px;
-                    }
-                }
             }
         }
     }
@@ -480,6 +551,28 @@
             }
         }
     }
+    .btn-area {
+        margin-top: 30px;
+        text-align: right;
+        p {
+            .btn-orange {
+                display: inline-block;
+                width: 110px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 13px;
+                color: #fff;
+                background-color: #f08501;
+                @media(min-width: $sm) {
+                    width: 150px;
+                    font-size: 15px;
+                }
+                @media(min-width: $md) {
+                    width: 170px;
+                }
+            }
+        }
+    }
     .paging {
         margin-top: 30px;
         @media(min-width: $sm) {
@@ -560,9 +653,29 @@
                 }
             }
         }
-        .paging {
+        .btn-area {
+            margin-bottom: 30px;
+            text-align: right;
             @media(min-width: $sm) {
-                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+            p {
+                .btn-orange {
+                    display: inline-block;
+                    width: 110px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 13px;
+                    color: #fff;
+                    background-color: #f08501;
+                    @media(min-width: $sm) {
+                        width: 150px;
+                        font-size: 15px;
+                    }
+                    @media(min-width: $md) {
+                        width: 170px;
+                    }
+                }
             }
         }
     }

@@ -69,6 +69,12 @@
                                 <img src="/assets/images/center/view_img_txt.jpg" class="img-responsive" alt="">
                             </p>
                         </div>
+                        <dl class="attach">
+                            <dt>첨부파일</dt>
+                            <dd>
+                                <a href="#">결산공고(16년).pdf</a>
+                            </dd>
+                        </dl>
                         <ul class="next-link">
                             <li>
                                 <dl>
@@ -90,7 +96,9 @@
                     </article>
                     <div class="btn-area">
                         <p>
-                            <a href="/center/notice_list.php" class="btn btn-orange" role="button">목록으로</a>
+                            <a href="#" class="btn btn-gray" role="button">수정하기</a>
+                            <a href="#" class="btn btn-gray" role="button">삭제하기</a>
+                            <a href="#" class="btn btn-orange" role="button">목록으로</a>
                         </p>
                     </div>
                 </div>

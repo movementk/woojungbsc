@@ -423,6 +423,24 @@ address {
           @media (min-width: 1280px) {
             .news-list .section-content .list > li > ul > li.hit {
               font-size: 15px; } }
+.news-list .section-content .btn-area {
+  margin-top: 30px;
+  text-align: right; }
+  .news-list .section-content .btn-area p .btn-orange {
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #f08501; }
+    @media (min-width: 768px) {
+      .news-list .section-content .btn-area p .btn-orange {
+        width: 150px;
+        font-size: 15px; } }
+    @media (min-width: 992px) {
+      .news-list .section-content .btn-area p .btn-orange {
+        width: 170px; } }
 .news-list .section-content .paging {
   margin-top: 30px; }
   @media (min-width: 768px) {
