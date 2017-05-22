@@ -1,0 +1,658 @@
+@import 'common';
+
+.business {
+    .section-content {
+        .nav-tabs {
+            border-bottom: 0;
+            margin-bottom: 50px;
+            @media(min-width: $sm) {
+                margin-bottom: 65px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 80px;
+            }
+            li {
+                width: 50%;
+                a {
+                    display: block;
+                    font-size: 13px;
+                    color: #2b2b2b;
+                    line-height: 38px;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    border: 1px solid #dfdfdf;
+                    border-left: 0;
+                    border-radius: 0;
+                    &:hover {
+                        background: none;
+                    }
+                    @media(min-width: $sm) {
+                        font-size: 15px;
+                        line-height: 43px;
+                    }
+                }
+                &.active {
+                    a {
+                        color: #fff;
+                        border-color: #f0840c;
+                        background-color: #f0840c;
+                    }
+                }
+                &:first-child {
+                    a {
+                        border-left: 1px solid #dfdfdf;
+                    }
+                    &.active {
+                        a {
+                            border-left-color: #f0840c !important;
+                        }
+                    }
+                }
+            }
+        }
+        article {
+            hr {
+                display: inline-block;
+                width: 24px;
+                border-top: 3px solid #e00014;
+                padding-bottom: 10px;
+                margin: 0;
+                @media(min-width: $sm) {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// 연구시설구축 tab-1
+.vivarium {
+    header {
+        .summary {
+            letter-spacing: -.5px;
+        }
+    }
+    .section-content {
+        .innoviva {
+                background-image: url(/assets/images/business/vivarium_visual_bg.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: auto 100%;
+                background-attachment: fixed;
+            .article-header {
+                text-align: center;
+                padding: 65px 0 90px;
+                @media(min-width: $sm) {
+                    padding: 120px 0 80px;
+                }
+                @media(min-width: $md) {
+                    padding-bottom: 60px;
+                }
+                h4 {
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 34px;
+                    @include titi();
+                    margin-bottom: 45px;
+                    @media(min-width: $sm) {
+                        font-size: 36px;
+                        line-height: 46px;
+                        margin-bottom: 40px;
+                    }
+                }
+                .summary {
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 400;
+                    @include titi();
+                    line-height: 24px;
+                    i {
+                        font-style: normal;
+                        color: #f0840c;
+                    }
+                    @media(min-width: $sm) {
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                    @media(min-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .article-content {
+                padding-bottom: 85px;
+                @media(min-width: $sm) {
+                    padding-bottom: 90px;
+                }
+                @media(min-width: $md) {
+                    padding-bottom: 120px;
+                }
+                figure {
+                    .img-responsive {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 연구시설 공통 
+.viva-solution {
+    padding-top: 50px;
+    @media(min-width: $sm) {
+        padding-top: 80px;
+    }
+    @media(min-width: $md) {
+        padding-top: 110px;
+    }
+    h5 {
+        font-size: 25px;
+        color: #2b2b2b;
+        font-weight: 300;
+        margin-bottom: 55px;
+        @media(min-width: $sm) {
+            font-size: 30px;
+            margin-bottom: 100px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 80px;
+        }
+    }
+    ul {
+        li {
+            & + li {
+                .solution {
+                    margin-top: 130px;
+                    @media(min-width: $sm) {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .solution {
+                .figure {
+                    height: 184px;
+                    line-height: 184px;
+                    text-align: center;
+                    .img-responsive {
+                        display: inline-block;
+                    }
+                }
+                .details {
+                    hr {
+                        margin-top: 45px;
+                        @media(min-width: $sm) {
+                            padding-bottom: 10px;
+                        }
+                        @media(min-width: $md) {
+                            margin-top: 40px;
+                        }
+                    }
+                    text-align: center;
+                    h6 {
+                        font-size: 16px;
+                        color: #333;
+                        font-weight: 400;
+                        margin-bottom: 25px;
+                        @media(min-width: $sm) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .summary {
+                        font-size: 13px;
+                        color: #555;
+                        line-height: 22px;
+                        @media(min-width: $sm) {
+                            font-size: 15px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 연구시설구축 tab-2 
+.pharma {
+    .section-content {
+        .Perfect {
+            background-image: url(/assets/images/business/pharma_visual_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: auto 100%;
+            background-attachment: fixed;
+            .article-header {
+                text-align: center;
+                padding: 65px 0 90px;
+                @media(min-width: $sm) {
+                    padding: 120px 0 125px;
+                }
+                h4 {
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 34px;
+                    @include titi();
+                    margin-bottom: 45px;
+                    @media(min-width: $sm) {
+                        font-size: 36px;
+                        line-height: 46px;
+                        margin-bottom: 40px;
+                    }
+                }
+                .summary {
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 400;
+                    @include titi();
+                    line-height: 24px;
+                    i {
+                        font-style: normal;
+                        color: #f0840c;
+                    }
+                    @media(min-width: $sm) {
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                    @media(min-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .article-content {
+                padding-bottom: 80px;
+                @media(min-width: $sm) {
+                    padding-bottom: 135px;
+                }
+                ul {
+                    li {
+                        &:nth-of-type(1) {
+                            .figcaption {
+                                margin-bottom: 65px;
+                                @media(min-width: $sm) {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            .figcaption {
+                                margin-bottom: 65px;
+                                @media(min-width: $sm) {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        p {
+                            text-align: center;
+                            &.figure {
+                                height: 82px;
+                                line-height: 82px;
+                                .img-responsive {
+                                    display: inline-block;
+                                }
+                            }
+                            &.figcaption {
+                                font-size: 16px;
+                                color: #fff;
+                                line-height: 24px;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 환경감염관리
+.infection {
+    .section-content {
+        article {
+            h4 {
+                font-size: 25px;
+                color: #fff;
+                font-weight: 300;
+                @media(min-width: $sm) {
+                    font-size: 30px;
+                }
+            }
+        }
+        .relevant-field {
+            background-image: url(/assets/images/business/infection_visual_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            padding: 70px 0 85px;
+            @media(min-width: $sm) {
+                padding: 85px 0 105px;
+            }
+            @media(min-width: $lg) {
+                padding: 88px 0 110px;
+            }
+            h4 {
+                margin-bottom: 40px;
+                @media(min-width: $sm) {
+                    margin-bottom: 65px;
+                }
+            }
+            .figure {
+                margin-bottom: 50px;
+                @media(min-width: $sm) {
+                    margin-bottom: 45px;
+                }
+                @media(min-width: $lg) {
+                    margin-bottom: 60px;
+                }
+                .img-responsive {
+                    margin: 0 auto;
+                }
+            }
+            p {
+                font-size: 13px;
+                color: #fff;
+                line-height: 22px;
+                & + p {
+                    margin-top: 30px;
+                    @media(min-width: $sm) {
+                        margin-top: 0;
+                    }
+                }
+                &.attention {
+                    &:before {
+                        content: "※";
+                    }
+                    @media(min-width: $sm) {
+                        position: relative;
+                        font-size: 15px;
+                        line-height: 30px;
+                        padding-left: 18px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    @media(min-width: $lg) {
+                        width: 845px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .security-solution {
+            padding-top: 50px;
+            @media(min-width: $sm) {
+                padding-top: 115px;
+            }
+            @media(min-width: $lg) {
+                padding-top: 110px;
+            }
+            h4 {
+                color: #333;
+                margin-bottom: 30px;
+                @media(min-width: $sm) {
+                    margin-bottom: 35px;
+                }
+                @media(min-width: $lg) {
+                    margin-bottom: 40px;
+                }
+            }
+            .solution-list {
+                > li {
+                    > div {
+                        display: block;
+                        width: 300px;
+                        height: 472px;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                        padding: 30px 0 189px 30px;
+                        padding-bottom: 189px;
+                        border: 1px solid #d8d8d8;
+                        background-color: #fafafa;
+                        background-repeat: no-repeat;
+                        background-size: 100% auto;
+                        background-position: 50% 100%;
+                        @media(min-width: $sm) {
+                            width: 350px;
+                            height: 610px;
+                            padding-right: 30px;
+                            padding-bottom: 256px;
+                            background-size: 100% 256px;
+                        }
+                        @media(min-width: $lg) {
+                            height: 371px;
+                            width: 100%;
+                            padding-bottom: 0;
+                            padding-right: 285px;
+                            background-size: 253px 369px;
+                            background-position: 100% 50%;
+                        }
+                        h5 {
+                            font-size: 16px;
+                            color: #e00014;
+                            font-weight: 400;
+                            line-height: 22px;
+                            margin-bottom: 20px;
+                            i {
+                                display: block;
+                                font-style: normal;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 18px;
+                                line-height: 26px;
+                                i {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        > ul {
+                            > li {
+                                position: relative;
+                                padding-left: 14px;
+                                font-size: 13px;
+                                color: #555;
+                                font-weight: 300;
+                                line-height: 24px;
+                                &:before {
+                                    position: absolute;
+                                    top: 0;
+                                    left: -6px;
+                                    font-size: 20px;
+                                    content: "ㆍ";
+                                    color: #e00014;
+                                }
+                                @media(min-width: $sm) {
+                                    font-size: 15px;
+                                    line-height: 30px;
+                                }
+                                @media(min-width: $lg) {
+                                    line-height: 25px;
+                                    margin-bottom: 5px;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &.architecture {
+                            background-image: url(/assets/images/business/solution_list_xs_bg01.jpg);
+                            @media(min-width: $sm) {
+                                background-image: url(/assets/images/business/solution_list_sm_bg01.jpg);
+                            }
+                            @media(min-width: $lg) {
+                                background-image: url(/assets/images/business/solution_list_lg_bg01.jpg);
+                            }
+                        }
+                        &.equipment {
+                            background-image: url(/assets/images/business/solution_list_xs_bg02.jpg);
+                            @media(min-width: $sm) {
+                                background-image: url(/assets/images/business/solution_list_sm_bg02.jpg);
+                            }
+                            @media(min-width: $lg) {
+                                background-image: url(/assets/images/business/solution_list_lg_bg02.jpg);
+                            }
+                        }
+                        &.service {
+                            background-image: url(/assets/images/business/solution_list_xs_bg03.jpg);
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                                background-image: url(/assets/images/business/solution_list_sm_bg03.jpg);
+                            }
+                            @media(min-width: $lg) {
+                                background-image: url(/assets/images/business/solution_list_lg_bg03.jpg);
+                            }
+                        }
+                        &.infection {
+                            background-image: url(/assets/images/business/solution_list_xs_bg04.jpg);
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                                background-image: url(/assets/images/business/solution_list_sm_bg04.jpg);
+                            }
+                            @media(min-width: $lg) {
+                                background-image: url(/assets/images/business/solution_list_lg_bg04.jpg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 전문유지보수서비스
+.sub {
+    .business.maintenance-info {
+        padding-bottom: 0 !important;
+    }
+}
+.maintenance {
+    header {
+        .summary {
+            i {
+                font-style: normal;
+                color: #f0840c;
+            }
+        }
+    }
+    .section-content {
+        padding: 50px 0 100px;
+        background-image: url(/assets/images/business/maintenance_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+        @media(min-width: $sm) {
+            padding: 110px 0 150px;
+            background-size: 100% 100%;
+        }
+        @media(min-width: $lg) {
+            padding: 140px 0 145px;
+        }
+        ul {
+            li {
+                figure {
+                    margin-bottom: 20px;
+                    .img-responsive {
+                        vertical-align: top;
+                        width: 100%;
+                    }
+                    figcaption {
+                        width: 100%;
+                        height: 170px;
+                        padding-top: 35px;
+                        text-align: center;
+                        background-color: #fff;
+                        hr {
+                            display: inline-block;
+                            width: 24px;
+                            border-top: 3px solid #e00014;
+                            padding-bottom: 10px;
+                            margin: 0;
+                            @media(min-width: $sm) {
+                                padding-bottom: 15px;
+                            }
+                        }
+                        h5 {
+                            font-size: 16px;
+                            color: #333;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 15px;
+                            color: #555;
+                            font-weight: 300;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
