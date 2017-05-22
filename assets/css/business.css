@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url("/assets/fontello/css/fontello.css");
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+.business .section-content .nav-tabs {
+  border-bottom: 0;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .business .section-content .nav-tabs {
+      margin-bottom: 65px; } }
+  @media (min-width: 992px) {
+    .business .section-content .nav-tabs {
+      margin-bottom: 80px; } }
+  .business .section-content .nav-tabs li {
+    width: 50%; }
+    .business .section-content .nav-tabs li a {
+      display: block;
+      font-size: 13px;
+      color: #2b2b2b;
+      line-height: 38px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #dfdfdf;
+      border-left: 0;
+      border-radius: 0; }
+      .business .section-content .nav-tabs li a:hover {
+        background: none; }
+      @media (min-width: 768px) {
+        .business .section-content .nav-tabs li a {
+          font-size: 15px;
+          line-height: 43px; } }
+    .business .section-content .nav-tabs li.active a {
+      color: #fff;
+      border-color: #f0840c;
+      background-color: #f0840c; }
+    .business .section-content .nav-tabs li:first-child a {
+      border-left: 1px solid #dfdfdf; }
+    .business .section-content .nav-tabs li:first-child.active a {
+      border-left-color: #f0840c !important; }
+.business .section-content article hr {
+  display: inline-block;
+  width: 24px;
+  border-top: 3px solid #e00014;
+  padding-bottom: 10px;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .business .section-content article hr {
+      padding-bottom: 15px; } }
+
+.vivarium header .summary {
+  letter-spacing: -.5px; }
+.vivarium .section-content .innoviva {
+  background-image: url(/assets/images/business/vivarium_visual_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-attachment: fixed; }
+  .vivarium .section-content .innoviva .article-header {
+    text-align: center;
+    padding: 65px 0 90px; }
+    @media (min-width: 768px) {
+      .vivarium .section-content .innoviva .article-header {
+        padding: 120px 0 80px; } }
+    @media (min-width: 992px) {
+      .vivarium .section-content .innoviva .article-header {
+        padding-bottom: 60px; } }
+    .vivarium .section-content .innoviva .article-header h4 {
+      font-size: 25px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 34px;
+      font-family: 'Titillium Web', sans-serif;
+      margin-bottom: 45px; }
+      @media (min-width: 768px) {
+        .vivarium .section-content .innoviva .article-header h4 {
+          font-size: 36px;
+          line-height: 46px;
+          margin-bottom: 40px; } }
+    .vivarium .section-content .innoviva .article-header .summary {
+      font-size: 14px;
+      color: #fff;
+      font-weight: 400;
+      font-family: 'Titillium Web', sans-serif;
+      line-height: 24px; }
+      .vivarium .section-content .innoviva .article-header .summary i {
+        font-style: normal;
+        color: #f0840c; }
+      @media (min-width: 768px) {
+        .vivarium .section-content .innoviva .article-header .summary {
+          font-size: 15px;
+          line-height: 30px; } }
+      @media (min-width: 992px) {
+        .vivarium .section-content .innoviva .article-header .summary {
+          font-size: 16px; } }
+  .vivarium .section-content .innoviva .article-content {
+    padding-bottom: 85px; }
+    @media (min-width: 768px) {
+      .vivarium .section-content .innoviva .article-content {
+        padding-bottom: 90px; } }
+    @media (min-width: 992px) {
+      .vivarium .section-content .innoviva .article-content {
+        padding-bottom: 120px; } }
+    .vivarium .section-content .innoviva .article-content figure .img-responsive {
+      margin: 0 auto; }
+
+.viva-solution {
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .viva-solution {
+      padding-top: 80px; } }
+  @media (min-width: 992px) {
+    .viva-solution {
+      padding-top: 110px; } }
+  .viva-solution h5 {
+    font-size: 25px;
+    color: #2b2b2b;
+    font-weight: 300;
+    margin-bottom: 55px; }
+    @media (min-width: 768px) {
+      .viva-solution h5 {
+        font-size: 30px;
+        margin-bottom: 100px; } }
+    @media (min-width: 992px) {
+      .viva-solution h5 {
+        margin-bottom: 80px; } }
+  .viva-solution ul li + li .solution {
+    margin-top: 130px; }
+    @media (min-width: 768px) {
+      .viva-solution ul li + li .solution {
+        margin-top: 0; } }
+  .viva-solution ul li .solution .figure {
+    height: 184px;
+    line-height: 184px;
+    text-align: center; }
+    .viva-solution ul li .solution .figure .img-responsive {
+      display: inline-block; }
+  .viva-solution ul li .solution .details {
+    text-align: center; }
+    .viva-solution ul li .solution .details hr {
+      margin-top: 45px; }
+      @media (min-width: 768px) {
+        .viva-solution ul li .solution .details hr {
+          padding-bottom: 10px; } }
+      @media (min-width: 992px) {
+        .viva-solution ul li .solution .details hr {
+          margin-top: 40px; } }
+    .viva-solution ul li .solution .details h6 {
+      font-size: 16px;
+      color: #333;
+      font-weight: 400;
+      margin-bottom: 25px; }
+      @media (min-width: 768px) {
+        .viva-solution ul li .solution .details h6 {
+          margin-bottom: 20px; } }
+    .viva-solution ul li .solution .details .summary {
+      font-size: 13px;
+      color: #555;
+      line-height: 22px; }
+      @media (min-width: 768px) {
+        .viva-solution ul li .solution .details .summary {
+          font-size: 15px;
+          line-height: 24px; } }
+
+.pharma .section-content .Perfect {
+  background-image: url(/assets/images/business/pharma_visual_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-attachment: fixed; }
+  .pharma .section-content .Perfect .article-header {
+    text-align: center;
+    padding: 65px 0 90px; }
+    @media (min-width: 768px) {
+      .pharma .section-content .Perfect .article-header {
+        padding: 120px 0 125px; } }
+    .pharma .section-content .Perfect .article-header h4 {
+      font-size: 25px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 34px;
+      font-family: 'Titillium Web', sans-serif;
+      margin-bottom: 45px; }
+      @media (min-width: 768px) {
+        .pharma .section-content .Perfect .article-header h4 {
+          font-size: 36px;
+          line-height: 46px;
+          margin-bottom: 40px; } }
+    .pharma .section-content .Perfect .article-header .summary {
+      font-size: 14px;
+      color: #fff;
+      font-weight: 400;
+      font-family: 'Titillium Web', sans-serif;
+      line-height: 24px; }
+      .pharma .section-content .Perfect .article-header .summary i {
+        font-style: normal;
+        color: #f0840c; }
+      @media (min-width: 768px) {
+        .pharma .section-content .Perfect .article-header .summary {
+          font-size: 15px;
+          line-height: 30px; } }
+      @media (min-width: 992px) {
+        .pharma .section-content .Perfect .article-header .summary {
+          font-size: 16px; } }
+  .pharma .section-content .Perfect .article-content {
+    padding-bottom: 80px; }
+    @media (min-width: 768px) {
+      .pharma .section-content .Perfect .article-content {
+        padding-bottom: 135px; } }
+    .pharma .section-content .Perfect .article-content ul li:nth-of-type(1) .figcaption {
+      margin-bottom: 65px; }
+      @media (min-width: 768px) {
+        .pharma .section-content .Perfect .article-content ul li:nth-of-type(1) .figcaption {
+          margin-bottom: 0; } }
+    .pharma .section-content .Perfect .article-content ul li:nth-of-type(2) .figcaption {
+      margin-bottom: 65px; }
+      @media (min-width: 768px) {
+        .pharma .section-content .Perfect .article-content ul li:nth-of-type(2) .figcaption {
+          margin-bottom: 0; } }
+    .pharma .section-content .Perfect .article-content ul li p {
+      text-align: center; }
+      .pharma .section-content .Perfect .article-content ul li p.figure {
+        height: 82px;
+        line-height: 82px; }
+        .pharma .section-content .Perfect .article-content ul li p.figure .img-responsive {
+          display: inline-block; }
+      .pharma .section-content .Perfect .article-content ul li p.figcaption {
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 30px; }
+
+.infection .section-content article h4 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    .infection .section-content article h4 {
+      font-size: 30px; } }
+.infection .section-content .relevant-field {
+  background-image: url(/assets/images/business/infection_visual_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding: 70px 0 85px; }
+  @media (min-width: 768px) {
+    .infection .section-content .relevant-field {
+      padding: 85px 0 105px; } }
+  @media (min-width: 1280px) {
+    .infection .section-content .relevant-field {
+      padding: 88px 0 110px; } }
+  .infection .section-content .relevant-field h4 {
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .infection .section-content .relevant-field h4 {
+        margin-bottom: 65px; } }
+  .infection .section-content .relevant-field .figure {
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      .infection .section-content .relevant-field .figure {
+        margin-bottom: 45px; } }
+    @media (min-width: 1280px) {
+      .infection .section-content .relevant-field .figure {
+        margin-bottom: 60px; } }
+    .infection .section-content .relevant-field .figure .img-responsive {
+      margin: 0 auto; }
+  .infection .section-content .relevant-field p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 22px; }
+    .infection .section-content .relevant-field p + p {
+      margin-top: 30px; }
+      @media (min-width: 768px) {
+        .infection .section-content .relevant-field p + p {
+          margin-top: 0; } }
+    .infection .section-content .relevant-field p.attention:before {
+      content: "※"; }
+    @media (min-width: 768px) {
+      .infection .section-content .relevant-field p.attention {
+        position: relative;
+        font-size: 15px;
+        line-height: 30px;
+        padding-left: 18px; }
+        .infection .section-content .relevant-field p.attention:before {
+          position: absolute;
+          top: 0;
+          left: 0; } }
+    @media (min-width: 1280px) {
+      .infection .section-content .relevant-field p.attention {
+        width: 845px;
+        margin: 0 auto; } }
+.infection .section-content .security-solution {
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .infection .section-content .security-solution {
+      padding-top: 115px; } }
+  @media (min-width: 1280px) {
+    .infection .section-content .security-solution {
+      padding-top: 110px; } }
+  .infection .section-content .security-solution h4 {
+    color: #333;
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .infection .section-content .security-solution h4 {
+        margin-bottom: 35px; } }
+    @media (min-width: 1280px) {
+      .infection .section-content .security-solution h4 {
+        margin-bottom: 40px; } }
+  .infection .section-content .security-solution .solution-list > li > div {
+    display: block;
+    width: 300px;
+    height: 472px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px 0 189px 30px;
+    padding-bottom: 189px;
+    border: 1px solid #d8d8d8;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 100%; }
+    @media (min-width: 768px) {
+      .infection .section-content .security-solution .solution-list > li > div {
+        width: 350px;
+        height: 610px;
+        padding-right: 30px;
+        padding-bottom: 256px;
+        background-size: 100% 256px; } }
+    @media (min-width: 1280px) {
+      .infection .section-content .security-solution .solution-list > li > div {
+        height: 371px;
+        width: 100%;
+        padding-bottom: 0;
+        padding-right: 285px;
+        background-size: 253px 369px;
+        background-position: 100% 50%; } }
+    .infection .section-content .security-solution .solution-list > li > div h5 {
+      font-size: 16px;
+      color: #e00014;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 20px; }
+      .infection .section-content .security-solution .solution-list > li > div h5 i {
+        display: block;
+        font-style: normal; }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div h5 {
+          font-size: 18px;
+          line-height: 26px; }
+          .infection .section-content .security-solution .solution-list > li > div h5 i {
+            font-size: 15px; } }
+    .infection .section-content .security-solution .solution-list > li > div > ul > li {
+      position: relative;
+      padding-left: 14px;
+      font-size: 13px;
+      color: #555;
+      font-weight: 300;
+      line-height: 24px; }
+      .infection .section-content .security-solution .solution-list > li > div > ul > li:before {
+        position: absolute;
+        top: 0;
+        left: -6px;
+        font-size: 20px;
+        content: "ㆍ";
+        color: #e00014; }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div > ul > li {
+          font-size: 15px;
+          line-height: 30px; } }
+      @media (min-width: 1280px) {
+        .infection .section-content .security-solution .solution-list > li > div > ul > li {
+          line-height: 25px;
+          margin-bottom: 5px; }
+          .infection .section-content .security-solution .solution-list > li > div > ul > li:last-child {
+            margin-bottom: 0; } }
+    .infection .section-content .security-solution .solution-list > li > div.architecture {
+      background-image: url(/assets/images/business/solution_list_xs_bg01.jpg); }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div.architecture {
+          background-image: url(/assets/images/business/solution_list_sm_bg01.jpg); } }
+      @media (min-width: 1280px) {
+        .infection .section-content .security-solution .solution-list > li > div.architecture {
+          background-image: url(/assets/images/business/solution_list_lg_bg01.jpg); } }
+    .infection .section-content .security-solution .solution-list > li > div.equipment {
+      background-image: url(/assets/images/business/solution_list_xs_bg02.jpg); }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div.equipment {
+          background-image: url(/assets/images/business/solution_list_sm_bg02.jpg); } }
+      @media (min-width: 1280px) {
+        .infection .section-content .security-solution .solution-list > li > div.equipment {
+          background-image: url(/assets/images/business/solution_list_lg_bg02.jpg); } }
+    .infection .section-content .security-solution .solution-list > li > div.service {
+      background-image: url(/assets/images/business/solution_list_xs_bg03.jpg); }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div.service {
+          margin-bottom: 0;
+          background-image: url(/assets/images/business/solution_list_sm_bg03.jpg); } }
+      @media (min-width: 1280px) {
+        .infection .section-content .security-solution .solution-list > li > div.service {
+          background-image: url(/assets/images/business/solution_list_lg_bg03.jpg); } }
+    .infection .section-content .security-solution .solution-list > li > div.infection {
+      background-image: url(/assets/images/business/solution_list_xs_bg04.jpg); }
+      @media (min-width: 768px) {
+        .infection .section-content .security-solution .solution-list > li > div.infection {
+          margin-bottom: 0;
+          background-image: url(/assets/images/business/solution_list_sm_bg04.jpg); } }
+      @media (min-width: 1280px) {
+        .infection .section-content .security-solution .solution-list > li > div.infection {
+          background-image: url(/assets/images/business/solution_list_lg_bg04.jpg); } }
+
+.sub .business.maintenance-info {
+  padding-bottom: 0 !important; }
+
+.maintenance header .summary i {
+  font-style: normal;
+  color: #f0840c; }
+.maintenance .section-content {
+  padding: 50px 0 100px;
+  background-image: url(/assets/images/business/maintenance_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%; }
+  @media (min-width: 768px) {
+    .maintenance .section-content {
+      padding: 110px 0 150px;
+      background-size: 100% 100%; } }
+  @media (min-width: 1280px) {
+    .maintenance .section-content {
+      padding: 140px 0 145px; } }
+  .maintenance .section-content ul li figure {
+    margin-bottom: 20px; }
+    .maintenance .section-content ul li figure .img-responsive {
+      vertical-align: top;
+      width: 100%; }
+    .maintenance .section-content ul li figure figcaption {
+      width: 100%;
+      height: 170px;
+      padding-top: 35px;
+      text-align: center;
+      background-color: #fff; }
+      .maintenance .section-content ul li figure figcaption hr {
+        display: inline-block;
+        width: 24px;
+        border-top: 3px solid #e00014;
+        padding-bottom: 10px;
+        margin: 0; }
+        @media (min-width: 768px) {
+          .maintenance .section-content ul li figure figcaption hr {
+            padding-bottom: 15px; } }
+      .maintenance .section-content ul li figure figcaption h5 {
+        font-size: 16px;
+        color: #333;
+        font-weight: 400;
+        margin-bottom: 20px; }
+      .maintenance .section-content ul li figure figcaption p {
+        font-size: 15px;
+        color: #555;
+        font-weight: 300;
+        line-height: 24px; }
+
+/*# sourceMappingURL=business.css.map */
