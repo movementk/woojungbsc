@@ -45,13 +45,13 @@
                 font-size: 30px;
                 color: #ef4600;
                 @include titi();
-                line-height: 30px;
+                line-height: 38px;
                 letter-spacing: 1px;
                 font-weight: 600;
                 margin-bottom: 40px;
                 @media(min-width: $sm) {
                     font-size: 44px;
-                    line-height: 40px;
+                    line-height: 50px;
                     margin-bottom: 50px;
                 }
                 @media(min-width: $md) {
