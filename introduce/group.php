@@ -19,7 +19,6 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     조직도
@@ -30,11 +29,10 @@
                     <li><a href="/introduce/history.php">연혁</a></li>
                     <li><a href="/introduce/ci_introduce.php">CI 소개</a></li>
                     <li class="active"><a href="/introduce/group.php">조직도</a></li>
-                    <li><a href="#">협력사</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="/introduce/partner.php">협력사</a></li>
+                    <li><a href="/introduce/location.php">오시는길</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="group">
@@ -63,7 +61,6 @@
                                 <h3>사업개발본부</h3>
                                 <ul>
                                     <li>사업관리팀</li>
-                                    <li>기술팀</li>
                                     <li>신규사업팀</li>
                                 </ul>
                             </li>
@@ -72,7 +69,6 @@
                                 <ul>
                                     <li>영업관리팀</li>
                                     <li>영업팀</li>
-                                    <li>공장</li>
                                 </ul>
                             </li>
                             <li>
@@ -95,7 +91,14 @@
                                 <h3>연구개발</h3>
                                 <ul>
                                     <li>바이오연구소</li>
-                                    <li>장비연구소</li>
+                                    <li>장비개발연구소</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>생산본부</h3>
+                                <ul>
+                                    <li>장비생산팀</li>
+                                    <li>기술</li>
                                 </ul>
                             </li>
                         </ul>

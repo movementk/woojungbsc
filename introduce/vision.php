@@ -19,7 +19,6 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     비전
@@ -30,29 +29,26 @@
                     <li><a href="/introduce/history.php">연혁</a></li>
                     <li><a href="/introduce/ci_introduce.php">CI 소개</a></li>
                     <li><a href="/introduce/group.php">조직도</a></li>
-                    <li><a href="#">협력사</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="/introduce/partner.php">협력사</a></li>
+                    <li><a href="/introduce/location.php">오시는길</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="vision">
             <header>
                 <h3>비전</h3>
-                <h4>A company that<br class="visible-xs"> creates<br class="hidden-xs"> a rich and<br class="visible-xs"> happy life</h4>
-                <p class="summary">
-                   끊임없는 노력과 배움의 자세로 국내 생명과학<br class="visible-xs">
-                   분야의 발전에 이바지하고자 합니다.<br class="hidden-xs"> 고객만족<br class="visible-xs">
-                   바탕으로 기업성장을 지속하여 궁극적으로 사회에<br class="visible-xs">
-                   공헌할 수 있는 기업이 되는 것이 우정BSC의<br class="visible-xs">
-                   미션입니다.
-               </p>
+                <h4>
+                    국민의 풍요롭고 안전한<br class="visible-xs">
+                    삶을 위해 노력하는 기업
+                </h4>
             </header>
             <div class="section-content">
                 <div class="container">
-                    <h5><img src="/assets/images/introduce/logo_img.png" class="img-responsive" alt="logo"></h5>
-                    <p class="title">생명 과학 연구 솔루션 전문기업</p>
+                    <h5>
+                        <img src="/assets/images/introduce/logo_img.png" class="img-responsive visible-xs" alt="logo">
+                        <img src="/assets/images/introduce/logo_img_v.png" class="img-responsive hidden-xs" alt="logo">
+                    </h5>
                     <ul class="vision-list">
                         <li class="present">
                             <p class="figure">

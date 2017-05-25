@@ -19,19 +19,18 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    전문유지보수서비스
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li><a href="/business/infection.php">환경감염관리</a></li>
+                    <li class="active"><a href="/business/maintenance.php">전문유지보수서비스</a></li>
+                    <li><a href="/business/call_center.php">우정콜센터</a></li>
+                    <li><a href="#">정밀의학 CRO</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="maintenance">
@@ -53,7 +52,7 @@
                     <ul class="row">
                         <li class="col-xs-12 col-sm-6 col-lg-3">
                             <figure>
-                                <img src="/assets/images/business/maintenance_list_xs_img01.jpg" class="img-responsive" alt="">
+                                <img src="/assets/images/business/maintenance_list_img01.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <hr>
                                     <h5>모든장비가능</h5>
@@ -63,17 +62,7 @@
                         </li>
                         <li class="col-xs-12 col-sm-6 col-lg-3">
                             <figure>
-                                <img src="/assets/images/business/maintenance_list_xs_img02.jpg" class="img-responsive" alt="">
-                                <figcaption>
-                                    <hr>
-                                    <h5>폭 넓은 수행 범위</h5>
-                                    <p>전문가들로 이루어진 유지보수 전문<br>팀이 서비스 제공</p>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="col-xs-12 col-sm-6 col-lg-3">
-                            <figure>
-                                <img src="/assets/images/business/maintenance_list_xs_img03.jpg" class="img-responsive" alt="">
+                                <img src="/assets/images/business/maintenance_list_img02.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <hr>
                                     <h5>고객 맞춤형 서비스</h5>
@@ -83,11 +72,21 @@
                         </li>
                         <li class="col-xs-12 col-sm-6 col-lg-3">
                             <figure>
-                                <img src="/assets/images/business/maintenance_list_xs_img04.jpg" class="img-responsive" alt="">
+                                <img src="/assets/images/business/maintenance_list_img03.jpg" class="img-responsive" alt="">
+                                <figcaption>
+                                    <hr>
+                                    <h5>폭 넓은 수행 범위</h5>
+                                    <p>검교정, 유지보수, 점검 등 장비 종류<br>와 무관하게 다양한 서비스 제공</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-lg-3">
+                            <figure>
+                                <img src="/assets/images/business/maintenance_list_img04.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <hr>
                                     <h5>전문 유지보수팀</h5>
-                                    <p>검교정, 유지보수, 점검 등 장비 종류<br>와 무관하게 다양한 서비스 제공</p>
+                                    <p>전문가들로 이루어진 유지보수 전문<br>팀이 서비스 제공</p>
                                 </figcaption>
                             </figure>
                         </li>

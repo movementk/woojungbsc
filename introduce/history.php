@@ -19,7 +19,6 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     연혁
@@ -30,11 +29,10 @@
                     <li class="active"><a href="/introduce/history.php">연혁</a></li>
                     <li><a href="/introduce/ci_introduce.php">CI 소개</a></li>
                     <li><a href="/introduce/group.php">조직도</a></li>
-                    <li><a href="#">협력사</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="/introduce/partner.php">협력사</a></li>
+                    <li><a href="/introduce/location.php">오시는길</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="history">

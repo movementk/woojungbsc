@@ -19,7 +19,6 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     CEO인사말
@@ -30,26 +29,22 @@
                     <li><a href="/introduce/history.php">연혁</a></li>
                     <li><a href="/introduce/ci_introduce.php">CI 소개</a></li>
                     <li><a href="/introduce/group.php">조직도</a></li>
-                    <li><a href="#">협력사</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="/introduce/partner.php">협력사</a></li>
+                    <li><a href="/introduce/location.php">오시는길</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="greeting">
             <header>
                 <h3>CEO 인사말</h3>
-                <h4>Protect Your<br class="visible-xs">Research Investment</h4>
-                <p class="summary">
-                   바이오강국 도약의 발판 역할과 병원내<br class="visible-xs"> 감염문제의 종결자
-               </p>
             </header>
             <div class="visual-content">
                 <i class="icon-quote-left"></i>
                 <p class="intro">
-                    Since 1989, 생명과학연구<br class="visible-xs"> 솔루션 전문기업으로 도약해온<br>
-                    우정BSC를 찾아주신<br class="visible-xs"> 여러분 반갑습니다.
+                    환경감염관리 전문기업으로<br class="visible-xs">
+                    국민의 복지 향상을<br class="hidden-xs"> 위한 바이오<br class="visible-xs">
+                    강국 도약의 초석을 마련하겠습니다.
                 </p>
             </div>
             <div class="section-content">
@@ -67,7 +62,7 @@
                                     예산절감 및 효율적 운영을 위한 turn-key project 방식과 one-stop service를 추구하고 있으며 고객의 문제를 신속히 처리하기 위해 service call center를 운영하고 있습니다.
                                 </p>
                                 <p>
-                                    또한 ㈜우정비에스씨는, 항시 집단감염의 위험이 있는 실험동물실과 병원 내의 수퍼박테리아, 다제내성균, Clostridium difficile 등 기존의 항생제로 치료하기 어려운 미생물들의 멸균과 확산방지를 위한 첨단 시스템을 개발하여 감염관리 분야의 선도적 기업으로 성장하고 있습니다.
+                                    또한 ㈜우정비에스씨는, 항시 집단감염의 위험이 있는 실험동물실과 병원 내의 수퍼박테리아, 다제내성균, <i>Clostridium difficile</i> 등 기존의 항생제로 치료하기 어려운 미생물들의 멸균과 확산방지를 위한 첨단 시스템을 개발하여 감염관리 분야의 선도적 기업으로 성장하고 있습니다.
                                 </p>
                                 <p>
                                     독성이 강하고 빠르게 확산하는 바이러스 및 병원균에 의한 대역병, 바이오테러 및 생물학전 대비, 그리고 가축전염병 등의 신속하고 안전한 멸균과 확산방지를 위한 시스템 개발에도 노력하고 있습니다.
@@ -86,7 +81,7 @@
                         <div class="col-xs-12 col-sm-5 col-lg-4">
                             <figure>
                                 <img src="/assets/images/introduce/ceo.jpg" class="img-responsive" alt="유정bsc대표 천병년">
-                                <figcaption class="woojung-ceo"><small>우정BSC 대표</small>천병년</figcaption>
+                                <figcaption class="woojung-ceo"><small>우정BSC 대표</small>천 병 년</figcaption>
                             </figure>
                         </div>
                     </div>
