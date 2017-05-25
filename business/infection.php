@@ -19,19 +19,18 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    환경감염관리
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li class="active"><a href="/business/infection.php">환경감염관리</a></li>
+                    <li><a href="/business/maintenance.php">전문유지보수서비스</a></li>
+                    <li><a href="/business/call_center.php">우정콜센터</a></li>
+                    <li><a href="#">정밀의학 CRO</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="infection">
@@ -136,21 +135,6 @@
                             </li>
                             <li class="col-xs-12 col-sm-6">
                                 <div class="service">
-                                    <h5>서비스 기술 (전문인력, 노하우)</h5>
-                                    <ul>
-                                        <li>
-                                            질병관리본부 BSL3/4<br class="hidden-xs"> 시설 멸균 검증<br class="visible-xs"> 용역과제
-                                        </li>
-                                        <li>국내 최초 공간 멸균 검증</li>
-                                        <li>
-                                            국내 최대규모, 최다 구역 멸균 및 검증<br>(전문인력 보유)
-                                        </li>
-                                        <li>각 구역별 SOP 보유</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-xs-12 col-sm-6">
-                                <div class="infection">
                                     <h5>
                                         병원 감염관리 Total EZ-Decon<i>(Standard, Silver, Gold, Platinum)</i>
                                     </h5>
@@ -162,6 +146,21 @@
                                             공간 멸균과 검증 서비스 <br>
                                             ⇒ 관리 대상 구역, 병실 수, 환자 수에<br class="visible-xs"> 따라 상담을 통한 패키지 서비스 상품 선정
                                         </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6">
+                                <div class="infection">
+                                    <h5>서비스 기술 (전문인력, 노하우)</h5>
+                                    <ul>
+                                        <li>
+                                            질병관리본부 BSL3/4<br class="hidden-xs"> 시설 멸균 검증<br class="visible-xs"> 용역과제
+                                        </li>
+                                        <li>국내 최초 공간 멸균 검증</li>
+                                        <li>
+                                            국내 최대규모, 최다 구역 멸균 및 검증<br>(전문인력 보유)
+                                        </li>
+                                        <li>각 구역별 SOP 보유</li>
                                     </ul>
                                 </div>
                             </li>

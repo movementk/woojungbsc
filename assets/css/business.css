@@ -21,6 +21,9 @@ dl {
 address {
   margin-bottom: 0; }
 
+@media (min-width: 1280px) {
+  .business .page-header .sub-lnb .dropdown-menu li {
+    width: 20%; } }
 .business .section-content .nav-tabs {
   border-bottom: 0;
   margin-bottom: 50px; }
@@ -478,10 +481,19 @@ address {
         font-weight: 300;
         line-height: 24px; }
 
-.call-center header h4 i {
-  font-style: normal;
-  font-weight: 400;
-  font-family: 'Noto Sans KR', sans-serif; }
+.call-center-info .business {
+  padding-bottom: 0 !important; }
+
+.call-center header {
+  padding-bottom: 0 !important; }
+  @media (min-width: 768px) {
+    .call-center header {
+      margin-bottom: 60px; } }
+  .call-center header h3 i {
+    font-style: normal; }
+  .call-center header .summary .or-txt {
+    font-style: normal;
+    color: #ef4600; }
 .call-center .procedure {
   text-align: center;
   padding: 60px 0 70px;
@@ -499,62 +511,72 @@ address {
   .call-center .procedure .figure .img-responsive {
     display: block;
     margin: 0 auto; }
-.call-center .procedure-list ol li {
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 205px;
-  border-bottom: 1px solid #d0d2d4;
-  background-repeat: no-repeat;
-  background-position: 50% 100%; }
+.call-center .procedure-list {
+  padding-bottom: 90px; }
   @media (min-width: 768px) {
-    .call-center .procedure-list ol li {
-      text-align: left;
-      padding-top: 80px;
-      padding-bottom: 80px;
-      background-position: 100% 100%; } }
-  @media (min-width: 992px) {
-    .call-center .procedure-list ol li {
-      background-position: 95% 100%; } }
-  .call-center .procedure-list ol li h6 {
-    font-size: 18px;
-    color: #e00014;
-    margin-bottom: 25px; }
-  .call-center .procedure-list ol li .summary {
-    font-size: 14px;
-    color: #555;
-    line-height: 22px; }
+    .call-center .procedure-list {
+      padding-bottom: 110px; } }
+  @media (min-width: 1280px) {
+    .call-center .procedure-list {
+      padding-bottom: 130px; } }
+  .call-center .procedure-list ol li {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 205px;
+    border-bottom: 1px solid #d0d2d4;
+    background-repeat: no-repeat;
+    background-position: 50% 100%; }
+    .call-center .procedure-list ol li:last-child {
+      border-bottom: 0; }
     @media (min-width: 768px) {
-      .call-center .procedure-list ol li .summary {
-        font-size: 15px;
-        line-height: 25px; } }
-  .call-center .procedure-list ol li:nth-of-type(1) {
-    background-image: url(/assets/images/business/procedure_list_bg01.png);
-    background-size: 237px auto; }
-    @media (min-width: 768px) {
-      .call-center .procedure-list ol li:nth-of-type(1) {
-        background-size: 298px auto; } }
-  .call-center .procedure-list ol li:nth-of-type(2) {
-    background-image: url(/assets/images/business/procedure_list_bg02.png);
-    background-size: 239px auto; }
-    @media (min-width: 768px) {
-      .call-center .procedure-list ol li:nth-of-type(2) {
-        background-size: 287px auto; } }
-  .call-center .procedure-list ol li:nth-of-type(3) {
-    background-image: url(/assets/images/business/procedure_list_bg03.png);
-    background-position: 50% 90%;
-    background-size: 245px auto; }
-    @media (min-width: 768px) {
-      .call-center .procedure-list ol li:nth-of-type(3) {
-        background-size: 282px auto;
-        background-position: 100% 75%; } }
+      .call-center .procedure-list ol li {
+        text-align: left;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-position: 100% 100%; } }
     @media (min-width: 992px) {
-      .call-center .procedure-list ol li:nth-of-type(3) {
-        background-position: 95% 75%; } }
-  .call-center .procedure-list ol li:nth-of-type(4) {
-    background-image: url(/assets/images/business/procedure_list_bg04.png);
-    background-size: 239px auto; }
-    @media (min-width: 768px) {
-      .call-center .procedure-list ol li:nth-of-type(4) {
-        background-size: 298px auto; } }
+      .call-center .procedure-list ol li {
+        background-position: 95% 100%; } }
+    .call-center .procedure-list ol li h6 {
+      font-size: 18px;
+      color: #e00014;
+      margin-bottom: 25px; }
+    .call-center .procedure-list ol li .summary {
+      font-size: 14px;
+      color: #555;
+      line-height: 22px; }
+      @media (min-width: 768px) {
+        .call-center .procedure-list ol li .summary {
+          font-size: 15px;
+          line-height: 25px; } }
+    .call-center .procedure-list ol li:nth-of-type(1) {
+      background-image: url(/assets/images/business/procedure_list_bg01.png);
+      background-size: 237px auto; }
+      @media (min-width: 768px) {
+        .call-center .procedure-list ol li:nth-of-type(1) {
+          background-size: 298px auto; } }
+    .call-center .procedure-list ol li:nth-of-type(2) {
+      background-image: url(/assets/images/business/procedure_list_bg02.png);
+      background-size: 239px auto; }
+      @media (min-width: 768px) {
+        .call-center .procedure-list ol li:nth-of-type(2) {
+          background-size: 287px auto; } }
+    .call-center .procedure-list ol li:nth-of-type(3) {
+      background-image: url(/assets/images/business/procedure_list_bg03.png);
+      background-position: 50% 90%;
+      background-size: 245px auto; }
+      @media (min-width: 768px) {
+        .call-center .procedure-list ol li:nth-of-type(3) {
+          background-size: 282px auto;
+          background-position: 100% 75%; } }
+      @media (min-width: 992px) {
+        .call-center .procedure-list ol li:nth-of-type(3) {
+          background-position: 95% 75%; } }
+    .call-center .procedure-list ol li:nth-of-type(4) {
+      background-image: url(/assets/images/business/procedure_list_bg04.png);
+      background-size: 239px auto; }
+      @media (min-width: 768px) {
+        .call-center .procedure-list ol li:nth-of-type(4) {
+          background-size: 298px auto; } }
 
 /*# sourceMappingURL=business.css.map */

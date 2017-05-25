@@ -1,6 +1,17 @@
 @import 'common';
 
 .business {
+    .page-header {
+        .sub-lnb {
+            .dropdown-menu {
+                li {
+                    @media(min-width: $lg) {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
     .section-content {
         .nav-tabs {
             border-bottom: 0;
@@ -596,13 +607,26 @@
 }
 
 // 우정콜센터
+.call-center-info {
+    .business {
+        padding-bottom: 0 !important;
+    }
+}
 .call-center {
     header {
-        h4 {
+        padding-bottom: 0 !important;
+        @media(min-width: $sm) {
+            margin-bottom: 60px;
+        }
+        h3 {
             i {
                 font-style: normal;
-                font-weight: 400;
-                @include noto();
+            }
+        }
+        .summary {
+            .or-txt {
+                font-style: normal;
+                color: #ef4600;
             }
         }
     }
@@ -629,6 +653,13 @@
         
     }
     .procedure-list {
+        padding-bottom: 90px;
+        @media(min-width: $sm) {
+            padding-bottom: 110px;
+        }
+        @media(min-width: $lg) {
+            padding-bottom: 130px;
+        }
         ol {
             li {
                 text-align: center;
@@ -637,6 +668,9 @@
                 border-bottom: 1px solid #d0d2d4;
                 background-repeat: no-repeat;
                 background-position: 50% 100%;
+                &:last-child {
+                    border-bottom: 0;
+                }
                 @media(min-width: $sm) {
                     text-align: left;
                     padding-top: 80px;

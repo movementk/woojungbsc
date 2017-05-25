@@ -19,19 +19,18 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    연구시설구축
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li class="active"><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li><a href="/business/infection.php">환경감염관리</a></li>
+                    <li><a href="/business/maintenance.php">전문유지보수서비스</a></li>
+                    <li><a href="/business/call_center.php">우정콜센터</a></li>
+                    <li><a href="#">정밀의학 CRO</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="vivarium">
