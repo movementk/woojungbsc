@@ -209,6 +209,7 @@
                         font-size: 13px;
                         color: #555;
                         line-height: 22px;
+                        letter-spacing: -.5px;
                         @media(min-width: $sm) {
                             font-size: 15px;
                             line-height: 24px;
@@ -224,20 +225,19 @@
 .pharma {
     .section-content {
         .Perfect {
-            background-image: url(/assets/images/business/pharma_visual_bg.jpg);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: auto 100%;
-            background-attachment: fixed;
             .article-header {
                 text-align: center;
-                padding: 65px 0 90px;
+                padding: 50px 0 65px;
                 @media(min-width: $sm) {
-                    padding: 120px 0 125px;
+                    padding: 70px 0 80px;
+                }
+                @media(min-width: $md) {
+                    padding-top: 105px;
+                    padding-bottom: 105px;
                 }
                 h4 {
                     font-size: 25px;
-                    color: #fff;
+                    color: #2b2b2b;
                     font-weight: 400;
                     line-height: 34px;
                     @include titi();
@@ -250,13 +250,14 @@
                 }
                 .summary {
                     font-size: 14px;
-                    color: #fff;
+                    color: #2b2b2b;
                     font-weight: 400;
                     @include titi();
                     line-height: 24px;
                     i {
                         font-style: normal;
                         color: #f0840c;
+                        font-size: 20px;
                     }
                     @media(min-width: $sm) {
                         font-size: 15px;
@@ -268,44 +269,22 @@
                 }
             }
             .article-content {
-                padding-bottom: 80px;
+                padding: 125px 0 90px;
+                background-image: url(/assets/images/business/pharma_visual_bg.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: auto 100%;
+                background-attachment: fixed;
                 @media(min-width: $sm) {
-                    padding-bottom: 135px;
+                    padding-top: 145px;
                 }
-                ul {
-                    li {
-                        &:nth-of-type(1) {
-                            .figcaption {
-                                margin-bottom: 65px;
-                                @media(min-width: $sm) {
-                                    margin-bottom: 0;
-                                }
-                            }
-                        }
-                        &:nth-of-type(2) {
-                            .figcaption {
-                                margin-bottom: 65px;
-                                @media(min-width: $sm) {
-                                    margin-bottom: 0;
-                                }
-                            }
-                        }
-                        p {
-                            text-align: center;
-                            &.figure {
-                                height: 82px;
-                                line-height: 82px;
-                                .img-responsive {
-                                    display: inline-block;
-                                }
-                            }
-                            &.figcaption {
-                                font-size: 16px;
-                                color: #fff;
-                                line-height: 24px;
-                                margin-top: 30px;
-                            }
-                        }
+                @media(min-width: $lg) {
+                    padding: 150px 0 110px;
+                }
+                figure {
+                    .img-responsive {
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
             }

@@ -57,8 +57,8 @@
                             Modernization
                         </h4>
                         <p class="summary">
-                            동물실험실의 기획과 설계, 시공, 장비, 유지관리까지<br>
-                            시설구축과 운영 전 과정의 서비스를 제공하는<br>
+                            동물실험실의 기획과 설계, 시공, 장비, 유지관리까지<br class="visible-xs">
+                            시설구축과 운영 전 과정의<br class="hidden-xs"> 서비스를 제공하는<br class="visible-xs">
                             <i>ONE STOP TURN KEY SOLUTION</i> 입니다.
                         </p>
                     </div>

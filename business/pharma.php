@@ -21,7 +21,7 @@
             </div>
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    연구시설구축
+                    시설구축
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="active"><a href="/business/vivarium.php">시설구축</a></li>
@@ -35,19 +35,14 @@
         <!-- Sub Page 공통 -->
         <section class="pharma">
             <header>
-                <h3>연구시설구축</h3>
-                <p class="summary">
-                    바이오 전문가 양성교육과 외부 전문기관 특별 교육을<br class="visible-xs">
-                    실시하고 있으며,<br class="hidden-xs"> 온라인 교육 점수 이수제를<br class="visible-xs">
-                    통해 전문성을 갖추도록 하고 있습니다.
-                </p>
+                <h3>시설구축</h3>
             </header>
             <div class="section-content">
                 <!-- Nav tabs -->
                 <div class="container">
                     <ul class="nav nav-tabs" role="tablist">
                         <li>
-                            <a href="/business/vivarium.php">VIVARIUM SOLUTION</a>
+                            <a href="/business/vivarium.php">RESEARCH FACILITY<br class="visible-xs"> SOLUTION</a>
                         </li>
                         <li class="active">
                             <a href="/business/pharma.php">PHARMA SOLUTION</a>
@@ -55,46 +50,37 @@
                     </ul>
                 </div>
                 <article class="Perfect">
-                    <div class="container">
-                        <div class="article-header">
-                            <h4>
-                                Perfect Solutions for Pharmaceutical Facility
-                            </h4>
-                            <p class="summary">
-                                우정비에스씨는 cGMP 가이드라인을 완벽하게<br class="visible-xs">
-                                충족하는 장비,소모품 및 Bio Clean Room구축에<br class="visible-xs">
-                                이르기까지<br class="visible-sm"> 신약 개발을 위한<br class="visible-xs visible-lg">
-                                서비스를 제공하는 동물실험실<br class="visible-xs">
-                                <i>Total Solution</i> 입니다
-                            </p>
-                        </div>
-                        <div class="article-content">
-                            <ul class="row">
-                                <li class="col-xs-6 col-sm-3">
-                                    <p class="figure">
-                                        <img src="/assets/images/business/pharma_img01.png" class="img-responsive" alt="cGMP 충족">
-                                    </p>
-                                    <p class="figcaption">cGMP 충족</p>
-                                </li>
-                                <li class="col-xs-6 col-sm-3">
-                                    <p class="figure">
-                                        <img src="/assets/images/business/pharma_img02.png" class="img-responsive" alt="국제가이드라인에 부합하는 시설">
-                                    </p>
-                                    <p class="figcaption">국제가이드라인에 <br>부합하는 시설</p>
-                                </li>
-                                <li class="col-xs-6 col-sm-3">
-                                    <p class="figure">
-                                        <img src="/assets/images/business/pharma_img03.png" class="img-responsive" alt="요청에 따른 모듈형 제작">
-                                    </p>
-                                    <p class="figcaption">요청에 따른<br> 모듈형 제작</p>
-                                </li>
-                                <li class="col-xs-6 col-sm-3">
-                                    <p class="figure">
-                                        <img src="/assets/images/business/pharma_img04.png" class="img-responsive" alt="철저한 유지관리">
-                                    </p>
-                                    <p class="figcaption">철저한 유지관리</p>
-                                </li>
-                            </ul>
+                    <div class="article-header">
+                        <h4>
+                            Perfect Solutions for<br class="visible-xs">
+                            Pharmaceutical Facility
+                        </h4>
+                        <p class="summary">
+                            우정비에스씨는 cGMP 가이드라인을 완벽하게<br class="visible-xs">
+                            충족하는 장비,소모품 및 Bio Clean Room구축에<br class="visible-xs">
+                            이르기까지<br class="visible-sm"> 신약 개발을 위한<br class="visible-xs">
+                            <i>Total Solution</i> 입니다
+                        </p>
+                    </div>
+                    <div class="article-content">
+                        <div class="container">
+                            <figure>
+                                <img src="/assets/images/business/pharma_img_xs.png" class="img-responsive visible-xs" alt="innopharma">
+                                <img src="/assets/images/business/pharma_img_sm.png" class="img-responsive visible-sm" alt="innopharma">
+                                <img src="/assets/images/business/pharma_img_md.png" class="img-responsive visible-md visible-lg" alt="innopharma">
+                                <figcaption class="sr-only">
+                                    <h1>INNOVIVA &amp; innoConstruction</h1>
+                                    <h2>Construction</h2>
+                                    <h2>Innovative</h2>
+                                    <h2>Pharmaceutical</h2>
+                                    <ul>
+                                        <li>cGMP 충족</li>
+                                        <li>철저한 유지관리</li>
+                                        <li>국제 가이드라인에 부합하는 시설</li>
+                                        <li>요청에 따른 모듈형 제작</li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </article>
@@ -106,15 +92,14 @@
                             <li class="col-xs-12 col-sm-4">
                                 <div class="solution">
                                     <p class="figure">
-                                        <img src="/assets/images/business/viva-solution_img01.gif" class="img-responsive" alt="장비">
+                                        <img src="/assets/images/business/pharma_solution_img01.gif" class="img-responsive" alt="장비">
                                     </p>
                                     <div class="details">
                                         <hr>
                                         <h6>장비</h6>
                                         <p class="summary">
-                                            개별환기케이지(IVC), 생물 안전 작업대,<br class="visible-lg">아이솔레이터,<br class="visible-xs">
-                                            케이지 교체 작업대, 세척기,<br class="visible-lg"> 자동화 시스템 등<br class="visible-xs">
-                                            연구시설에서<br class="visible-lg"> 필요한 모든 장비
+                                            제약용 세척기, HPV, 아이솔레이터 등<br>
+                                            Bio Clean Room을 위한 장비
                                         </p>
                                     </div>
                                 </div>
@@ -122,15 +107,15 @@
                             <li class="col-xs-12 col-sm-4">
                                 <div class="solution">
                                     <p class="figure">
-                                        <img src="/assets/images/business/viva-solution_img02.gif" class="img-responsive" alt="소모품">
+                                        <img src="/assets/images/business/pharma_solution_img02.gif" class="img-responsive" alt="소모품">
                                     </p>
                                     <div class="details">
                                         <hr>
                                         <h6>소모품</h6>
                                         <p class="summary">
-                                            엔리치먼트, 사료, 깔짚, 세척제,<br class="visible-xs">
-                                            Biological<br class="visible-lg">  Indicator등 실험동물의 복지를 향상시키고<br class="visible-xs visible-lg">
-                                            신뢰할 수 있는 결과를 위한 환경을<br class="visible-lg"> 제공하는 모든 소모품 
+                                            Biological Indicator 및<br class="hidden-xs hidden-lg"> Chemical Indicator,<br class="visigle-lg"> 엔도톡신,<br class="hidden-lg">
+                                            유전독성(Ames Test) 등 의약품<br class="hidden-xs"> 및 의료기기<br class="visible-xs">
+                                            생산에 필수적인<br class="hidden-xs hidden-lg"> 소모품
                                         </p>
                                     </div>
                                 </div>
@@ -138,7 +123,7 @@
                             <li class="col-xs-12 col-sm-4">
                                 <div class="solution">
                                     <p class="figure">
-                                        <img src="/assets/images/business/viva-solution_img03.gif" class="img-responsive" alt="E&C">
+                                        <img src="/assets/images/business/pharma_solution_img03.gif" class="img-responsive" alt="E&C">
                                     </p>
                                     <div class="details">
                                         <hr>
