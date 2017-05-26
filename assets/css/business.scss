@@ -15,20 +15,15 @@
     .section-content {
         .nav-tabs {
             border-bottom: 0;
-            margin-bottom: 50px;
-            @media(min-width: $sm) {
-                margin-bottom: 65px;
-            }
-            @media(min-width: $md) {
-                margin-bottom: 80px;
-            }
             li {
+                display: table;
                 width: 50%;
                 a {
-                    display: block;
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 55px;
                     font-size: 13px;
                     color: #2b2b2b;
-                    line-height: 38px;
                     text-align: center;
                     padding: 0;
                     margin: 0;
@@ -41,6 +36,7 @@
                     @media(min-width: $sm) {
                         font-size: 15px;
                         line-height: 43px;
+                        height: 45px;
                     }
                 }
                 &.active {
@@ -79,30 +75,21 @@
 
 // 연구시설구축 tab-1
 .vivarium {
-    header {
-        .summary {
-            letter-spacing: -.5px;
-        }
-    }
     .section-content {
         .innoviva {
-                background-image: url(/assets/images/business/vivarium_visual_bg.jpg);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: auto 100%;
-                background-attachment: fixed;
             .article-header {
                 text-align: center;
-                padding: 65px 0 90px;
+                padding: 50px 0 65px;
                 @media(min-width: $sm) {
-                    padding: 120px 0 80px;
+                    padding: 70px 0 80px;
                 }
                 @media(min-width: $md) {
-                    padding-bottom: 60px;
+                    padding-top: 105px;
+                    padding-bottom: 105px;
                 }
                 h4 {
                     font-size: 25px;
-                    color: #fff;
+                    color: #2b2b2b;
                     font-weight: 400;
                     line-height: 34px;
                     @include titi();
@@ -115,7 +102,7 @@
                 }
                 .summary {
                     font-size: 14px;
-                    color: #fff;
+                    color: #2b2b2b;
                     font-weight: 400;
                     @include titi();
                     line-height: 24px;
@@ -133,11 +120,18 @@
                 }
             }
             .article-content {
+                padding-top: 120px;
                 padding-bottom: 85px;
+                background-image: url(/assets/images/business/vivarium_visual_bg.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: auto 100%;
+                background-attachment: fixed;
                 @media(min-width: $sm) {
-                    padding-bottom: 90px;
+                    padding-top: 90px;
                 }
                 @media(min-width: $md) {
+                    padding-top: 145px;
                     padding-bottom: 120px;
                 }
                 figure {

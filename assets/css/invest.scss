@@ -2,6 +2,15 @@
 
 // 공통
 .invest {
+    .page-header {
+        .sub-lnb {
+            li {
+                @media(min-width: $lg) {
+                    width: 20% !important;
+                }
+            }
+        }
+    }
     article {
         .article-header {
             text-align: left;

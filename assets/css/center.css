@@ -211,10 +211,12 @@ address {
             font-size: 15px; } }
 .notice-view .section-content .view .view-content {
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 30px; }
   @media (min-width: 768px) {
     .notice-view .section-content .view .view-content {
-      padding-top: 70px; } }
+      padding-top: 70px;
+      padding-bottom: 40px; } }
   .notice-view .section-content .view .view-content .view-txt {
     font-size: 13px;
     color: #666;

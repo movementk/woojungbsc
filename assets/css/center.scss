@@ -255,8 +255,10 @@
             .view-content {
                 text-align: center;
                 padding-top: 40px;
+                padding-bottom: 30px;
                 @media(min-width: $sm) {
                     padding-top: 70px;
+                    padding-bottom: 40px;
                 }
                 .view-txt {
                     font-size: 13px;

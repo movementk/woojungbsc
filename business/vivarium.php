@@ -21,10 +21,10 @@
             </div>
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    연구시설구축
+                    시설구축
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li class="active"><a href="/business/vivarium.php">시설구축</a></li>
                     <li><a href="/business/infection.php">환경감염관리</a></li>
                     <li><a href="/business/maintenance.php">전문유지보수서비스</a></li>
                     <li><a href="/business/call_center.php">우정콜센터</a></li>
@@ -35,19 +35,14 @@
         <!-- Sub Page 공통 -->
         <section class="vivarium">
             <header>
-                <h3>연구시설구축</h3>
-                <p class="summary">
-                    바이오 전문가 양성교육과 외부 전문기관 특별 교육을<br class="visible-xs">
-                    실시하고 있으며,<br class="hidden-xs"> 온라인 교육 점수 이수제를<br class="visible-xs">
-                    통해 전문성을 갖추도록 하고 있습니다.
-                </p>
+                <h3>시설구축</h3>
             </header>
             <div class="section-content">
                 <!-- Nav tabs -->
                 <div class="container">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active">
-                            <a href="/business/vivarium.php">VIVARIUM SOLUTION</a>
+                            <a href="/business/vivarium.php">RESEARCH FACILITY<br class="visible-xs"> SOLUTION</a>
                         </li>
                         <li>
                             <a href="/business/pharma.php">PHARMA SOLUTION</a>
@@ -55,21 +50,20 @@
                     </ul>
                 </div>
                 <article class="innoviva">
-                    <div class="container">
-                        <div class="article-header">
-                            <h4>
-                                Innovative Solutions for<br class="visible-xs visible-sm">
-                                Animal Facility<br class="visible-xs">
-                                Modernization
-                            </h4>
-                            <p class="summary">
-                                동물실험실의 기획과 설계, 시공, 장비,<br class="visible-xs">
-                                유지관리까지 시설구축과 운영 전 과정의<br> 
-                                서비스를 제공하는 동물실험실<br class="visible-xs">
-                                <i>ONE STOP TURN KEY SOLUTION</i> 입니다
-                            </p>
-                        </div>
-                        <div class="article-content">
+                    <div class="article-header">
+                        <h4>
+                            Innovative Solutions<br class="visible-xs">
+                            for<br class="visible-sm"> Animal Facility<br class="visible-xs">
+                            Modernization
+                        </h4>
+                        <p class="summary">
+                            동물실험실의 기획과 설계, 시공, 장비, 유지관리까지<br>
+                            시설구축과 운영 전 과정의 서비스를 제공하는<br>
+                            <i>ONE STOP TURN KEY SOLUTION</i> 입니다.
+                        </p>
+                    </div>
+                    <div class="article-content">
+                        <div class="container">
                             <figure>
                                 <img src="/assets/images/business/innoviva_img_xs.png" class="img-responsive visible-xs" alt="INNOVIVA">
                                 <img src="/assets/images/business/innoviva_img_sm.png" class="img-responsive visible-sm" alt="INNOVIVA">

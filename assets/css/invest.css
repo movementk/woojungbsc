@@ -20,6 +20,9 @@ dl {
 address {
   margin-bottom: 0; }
 
+@media (min-width: 1280px) {
+  .invest .page-header .sub-lnb li {
+    width: 20% !important; } }
 .invest article .article-header {
   text-align: left; }
   .invest article .article-header hr {

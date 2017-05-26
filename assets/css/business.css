@@ -25,21 +25,16 @@ address {
   .business .page-header .sub-lnb .dropdown-menu li {
     width: 20%; } }
 .business .section-content .nav-tabs {
-  border-bottom: 0;
-  margin-bottom: 50px; }
-  @media (min-width: 768px) {
-    .business .section-content .nav-tabs {
-      margin-bottom: 65px; } }
-  @media (min-width: 992px) {
-    .business .section-content .nav-tabs {
-      margin-bottom: 80px; } }
+  border-bottom: 0; }
   .business .section-content .nav-tabs li {
+    display: table;
     width: 50%; }
     .business .section-content .nav-tabs li a {
-      display: block;
+      display: table-cell;
+      vertical-align: middle;
+      height: 55px;
       font-size: 13px;
       color: #2b2b2b;
-      line-height: 38px;
       text-align: center;
       padding: 0;
       margin: 0;
@@ -51,7 +46,8 @@ address {
       @media (min-width: 768px) {
         .business .section-content .nav-tabs li a {
           font-size: 15px;
-          line-height: 43px; } }
+          line-height: 43px;
+          height: 45px; } }
     .business .section-content .nav-tabs li.active a {
       color: #fff;
       border-color: #f0840c;
@@ -70,61 +66,61 @@ address {
     .business .section-content article hr {
       padding-bottom: 15px; } }
 
-.vivarium header .summary {
-  letter-spacing: -.5px; }
-.vivarium .section-content .innoviva {
+.vivarium .section-content .innoviva .article-header {
+  text-align: center;
+  padding: 50px 0 65px; }
+  @media (min-width: 768px) {
+    .vivarium .section-content .innoviva .article-header {
+      padding: 70px 0 80px; } }
+  @media (min-width: 992px) {
+    .vivarium .section-content .innoviva .article-header {
+      padding-top: 105px;
+      padding-bottom: 105px; } }
+  .vivarium .section-content .innoviva .article-header h4 {
+    font-size: 25px;
+    color: #2b2b2b;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 45px; }
+    @media (min-width: 768px) {
+      .vivarium .section-content .innoviva .article-header h4 {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 40px; } }
+  .vivarium .section-content .innoviva .article-header .summary {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 24px; }
+    .vivarium .section-content .innoviva .article-header .summary i {
+      font-style: normal;
+      color: #f0840c; }
+    @media (min-width: 768px) {
+      .vivarium .section-content .innoviva .article-header .summary {
+        font-size: 15px;
+        line-height: 30px; } }
+    @media (min-width: 992px) {
+      .vivarium .section-content .innoviva .article-header .summary {
+        font-size: 16px; } }
+.vivarium .section-content .innoviva .article-content {
+  padding-top: 120px;
+  padding-bottom: 85px;
   background-image: url(/assets/images/business/vivarium_visual_bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: auto 100%;
   background-attachment: fixed; }
-  .vivarium .section-content .innoviva .article-header {
-    text-align: center;
-    padding: 65px 0 90px; }
-    @media (min-width: 768px) {
-      .vivarium .section-content .innoviva .article-header {
-        padding: 120px 0 80px; } }
-    @media (min-width: 992px) {
-      .vivarium .section-content .innoviva .article-header {
-        padding-bottom: 60px; } }
-    .vivarium .section-content .innoviva .article-header h4 {
-      font-size: 25px;
-      color: #fff;
-      font-weight: 400;
-      line-height: 34px;
-      font-family: 'Titillium Web', sans-serif;
-      margin-bottom: 45px; }
-      @media (min-width: 768px) {
-        .vivarium .section-content .innoviva .article-header h4 {
-          font-size: 36px;
-          line-height: 46px;
-          margin-bottom: 40px; } }
-    .vivarium .section-content .innoviva .article-header .summary {
-      font-size: 14px;
-      color: #fff;
-      font-weight: 400;
-      font-family: 'Titillium Web', sans-serif;
-      line-height: 24px; }
-      .vivarium .section-content .innoviva .article-header .summary i {
-        font-style: normal;
-        color: #f0840c; }
-      @media (min-width: 768px) {
-        .vivarium .section-content .innoviva .article-header .summary {
-          font-size: 15px;
-          line-height: 30px; } }
-      @media (min-width: 992px) {
-        .vivarium .section-content .innoviva .article-header .summary {
-          font-size: 16px; } }
-  .vivarium .section-content .innoviva .article-content {
-    padding-bottom: 85px; }
-    @media (min-width: 768px) {
-      .vivarium .section-content .innoviva .article-content {
-        padding-bottom: 90px; } }
-    @media (min-width: 992px) {
-      .vivarium .section-content .innoviva .article-content {
-        padding-bottom: 120px; } }
-    .vivarium .section-content .innoviva .article-content figure .img-responsive {
-      margin: 0 auto; }
+  @media (min-width: 768px) {
+    .vivarium .section-content .innoviva .article-content {
+      padding-top: 90px; } }
+  @media (min-width: 992px) {
+    .vivarium .section-content .innoviva .article-content {
+      padding-top: 145px;
+      padding-bottom: 120px; } }
+  .vivarium .section-content .innoviva .article-content figure .img-responsive {
+    margin: 0 auto; }
 
 .viva-solution {
   padding-top: 50px; }

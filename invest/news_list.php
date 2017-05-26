@@ -19,19 +19,18 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    회사소식
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/invest/finance.php">재무정보</a></li>
+                    <li><a href="#">IR요약</a></li>
+                    <li><a href="/invest/stocks_info.php">주식정보</a></li>
+                    <li><a href="/invest/disclosure_list.php">공시정보</a></li>
+                    <li class="active"><a href="/invest/news_list.php">회사소식</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="news-list">
