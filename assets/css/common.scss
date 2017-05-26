@@ -24,6 +24,18 @@ $kcolor: #e40009;
     font-family: 'Maven Pro', sans-serif;
 }
 
+.noto {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.titi {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.maven {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 @mixin trans($prop: all, $sec: .15s, $timing: linear, $delay: 0s) {
 	-webkit-transition-property: $prop;
     transition-property: $prop;

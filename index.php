@@ -367,7 +367,7 @@
 								<div class="col-xs-12 col-sm-7 col-lg-12">
 									<div class="cs-info">
 										<h5>고객지원센터</h5>
-										<p class="num">031-888-9368</p>
+										<p class="num">031-888-9369</p>
 										<p class="time">
 											평일(월~금)   AM09:00 ~ PM 06:00<br>
 											※ 주말 및 공휴일은 휴무입니다.

@@ -3,6 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import url("/assets/fontello/css/fontello.css");
+.noto {
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.titi {
+  font-family: 'Titillium Web', sans-serif; }
+
+.maven {
+  font-family: 'Maven Pro', sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; }
@@ -471,6 +480,9 @@ a {
         #top-nav .affiliates ul li a:hover, #top-nav .affiliates ul li a:focus {
           background-color: #f0840c;
           color: white; }
+        #top-nav .affiliates ul li a.active {
+          background-color: #f0840c;
+          color: white; }
   #top-nav .util {
     position: absolute;
     top: 0;
@@ -511,6 +523,7 @@ a {
         font-size: 15px; }
 
 #header {
+  overflow: hidden;
   z-index: 1001;
   position: fixed;
   top: 0;
@@ -521,10 +534,23 @@ a {
     position: relative; }
   #header .logo {
     float: left;
-    margin-top: 8px; }
-    #header .logo img {
+    margin-top: 8px;
+    width: 129px;
+    height: 24px;
+    /*
+    img {
+    	display: block;
+    	width: 129px;
+    }
+    */ }
+    #header .logo a {
       display: block;
-      width: 129px; }
+      width: 100%;
+      height: 100%;
+      background-image: url(/assets/images/logo.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 50% 50%; }
   #header #btn-nav-open {
     float: right;
     padding: 0;
@@ -541,9 +567,14 @@ a {
     #header {
       height: 80px; }
       #header .logo {
-        margin-top: 20px; }
-        #header .logo img {
-          width: auto; }
+        margin-top: 20px;
+        width: 215px;
+        height: 39px;
+        /*
+        img {
+        	width: auto;
+        }
+        */ }
       #header #btn-nav-open {
         /*
         top: 10px;
@@ -557,8 +588,7 @@ a {
   @media (min-width: 1280px) {
     #header {
       margin-top: 30px;
-      height: 90px;
-      background-color: #fff; }
+      height: 90px; }
       #header .logo {
         margin-top: 30px; }
       #header #nav {
@@ -602,43 +632,41 @@ a {
               -webkit-transition-delay: 0s;
               transition-delay: 0s; }
           #header #nav > ul > li > ul {
-            overflow: hidden;
-            position: absolute;
-            top: 90px;
-            left: 50%;
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-left: -85px;
-            width: 170px;
-            height: 0;
-            background-color: #fff;
-            -webkit-transition-property: all;
-            transition-property: all;
-            -webkit-transition-duration: 0.15s;
-            transition-duration: 0.15s;
-            -webkit-transition-timing-function: linear;
-            transition-timing-function: linear;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s; }
+            padding-top: 20px;
+            padding-bottom: 20px; }
             #header #nav > ul > li > ul > li > a {
               display: block;
               padding-top: 5px;
               padding-bottom: 5px;
-              font-size: 14px;
-              line-height: 20px;
+              font-size: 13px;
+              line-height: 22px;
               text-align: center;
-              text-decoration: none; }
+              text-decoration: none;
+              color: #aaa; }
               #header #nav > ul > li > ul > li > a:hover, #header #nav > ul > li > ul > li > a:focus {
-                color: #ef4600; }
+                color: #f0840c; }
           #header #nav > ul > li.active > a {
             color: #e00014; }
             #header #nav > ul > li.active > a > span {
               margin-left: -35px;
-              width: 70px; }
-          #header #nav > ul > li.active > ul {
-            height: auto;
-            padding-top: 30px;
-            padding-bottom: 30px; } }
+              width: 70px; } }
+
+@media (min-width: 1280px) {
+  body.nav-expanded #header {
+    height: 355px;
+    background-color: rgba(40, 40, 40, 0.9);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    body.nav-expanded #header .logo a {
+      background-image: url(/assets/images/logo_white.png); }
+    body.nav-expanded #header #nav > ul > li > a {
+      color: #fff; } }
 
 #nav-aside {
   z-index: 9999;

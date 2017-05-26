@@ -7,7 +7,16 @@
 				</button>
 			</div>
 			<div class="col-xs-8 col-xs-pull-4 col-lg-3 col-lg-pull-0">
-				<h1 class="logo"><a href="/"><img src="/assets/images/logo.png" alt="우정BSC"></a></h1>
+				<h1 class="logo">
+					<a href="/">
+						<span class="sr-only">우정BSC</span>
+						<!--
+						<img class="visible-xs" src="/assets/images/logo_xs.png" alt="우정BSC">
+						<img class="visible-sm visible-md" src="/assets/images/logo_sm.png" alt="우정BSC">
+						<img class="visible-lg" src="/assets/images/logo_lg.png" alt="우정BSC">
+						-->
+					</a>
+				</h1>
 			</div>
 			<div class="col-lg-9 visible-lg">
 				<nav id="nav">

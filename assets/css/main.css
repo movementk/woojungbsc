@@ -3,6 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import url("/assets/fontello/css/fontello.css");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+.noto {
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.titi {
+  font-family: 'Titillium Web', sans-serif; }
+
+.maven {
+  font-family: 'Maven Pro', sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; }
@@ -25,20 +34,42 @@ address {
   body {
     padding-top: 30px; } }
 
-@media (min-width: 1280px) {
-  #header {
-    background-color: transparent; }
-    #header #nav > ul > li > a {
-      color: #fff; }
-      #header #nav > ul > li > a:hover, #header #nav > ul > li > a:focus {
-        color: #e00014; } }
+/*
+#header {
+	@media (min-width: $lg) {
+		background-color: transparent;
+		#nav {
+			> ul {
+				> li {
+					> a {
+						color: #fff;
+						&:hover, &:focus {
+							color: #e00014;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-@media (min-width: 1280px) {
-  body.scrolled #header {
-    background-color: #fff; }
-    body.scrolled #header #nav > ul > li > a {
-      color: inherit; } }
-
+body.scrolled {
+	#header {
+		@media (min-width: $lg) {
+			background-color: #fff;
+			#nav {
+				> ul {
+					> li {
+						> a {
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+*/
 #introduce {
   position: relative; }
   #introduce .intro-item {
@@ -934,7 +965,7 @@ address {
                 float: right;
                 margin-right: 18px;
                 font-family: 'fontello';
-                content: '\e80c'; }
+                content: '\e801'; }
               #information #cs .cs-menu ul li a:hover, #information #cs .cs-menu ul li a:focus {
                 color: #e40009; }
                 #information #cs .cs-menu ul li a:hover:after, #information #cs .cs-menu ul li a:focus:after {

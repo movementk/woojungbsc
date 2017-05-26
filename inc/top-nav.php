@@ -4,7 +4,7 @@
 			<div class="col-md-6">
 				<div class="affiliates">
 					<ul>
-						<li><a href="#">우정BSC</a></li>
+						<li><a class="active" href="#">우정BSC</a></li>
 						<li><a href="#">우정E&amp;C</a></li>
 						<li><a href="#">INNOSERVICE</a></li>
 						<li><a href="#">BSMS</a></li>
