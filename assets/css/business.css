@@ -183,79 +183,68 @@ address {
     .viva-solution ul li .solution .details .summary {
       font-size: 13px;
       color: #555;
-      line-height: 22px; }
+      line-height: 22px;
+      letter-spacing: -.5px; }
       @media (min-width: 768px) {
         .viva-solution ul li .solution .details .summary {
           font-size: 15px;
           line-height: 24px; } }
 
-.pharma .section-content .Perfect {
+.pharma .section-content .Perfect .article-header {
+  text-align: center;
+  padding: 50px 0 65px; }
+  @media (min-width: 768px) {
+    .pharma .section-content .Perfect .article-header {
+      padding: 70px 0 80px; } }
+  @media (min-width: 992px) {
+    .pharma .section-content .Perfect .article-header {
+      padding-top: 105px;
+      padding-bottom: 105px; } }
+  .pharma .section-content .Perfect .article-header h4 {
+    font-size: 25px;
+    color: #2b2b2b;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 45px; }
+    @media (min-width: 768px) {
+      .pharma .section-content .Perfect .article-header h4 {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 40px; } }
+  .pharma .section-content .Perfect .article-header .summary {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 24px; }
+    .pharma .section-content .Perfect .article-header .summary i {
+      font-style: normal;
+      color: #f0840c;
+      font-size: 20px; }
+    @media (min-width: 768px) {
+      .pharma .section-content .Perfect .article-header .summary {
+        font-size: 15px;
+        line-height: 30px; } }
+    @media (min-width: 992px) {
+      .pharma .section-content .Perfect .article-header .summary {
+        font-size: 16px; } }
+.pharma .section-content .Perfect .article-content {
+  padding: 125px 0 90px;
   background-image: url(/assets/images/business/pharma_visual_bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: auto 100%;
   background-attachment: fixed; }
-  .pharma .section-content .Perfect .article-header {
-    text-align: center;
-    padding: 65px 0 90px; }
-    @media (min-width: 768px) {
-      .pharma .section-content .Perfect .article-header {
-        padding: 120px 0 125px; } }
-    .pharma .section-content .Perfect .article-header h4 {
-      font-size: 25px;
-      color: #fff;
-      font-weight: 400;
-      line-height: 34px;
-      font-family: 'Titillium Web', sans-serif;
-      margin-bottom: 45px; }
-      @media (min-width: 768px) {
-        .pharma .section-content .Perfect .article-header h4 {
-          font-size: 36px;
-          line-height: 46px;
-          margin-bottom: 40px; } }
-    .pharma .section-content .Perfect .article-header .summary {
-      font-size: 14px;
-      color: #fff;
-      font-weight: 400;
-      font-family: 'Titillium Web', sans-serif;
-      line-height: 24px; }
-      .pharma .section-content .Perfect .article-header .summary i {
-        font-style: normal;
-        color: #f0840c; }
-      @media (min-width: 768px) {
-        .pharma .section-content .Perfect .article-header .summary {
-          font-size: 15px;
-          line-height: 30px; } }
-      @media (min-width: 992px) {
-        .pharma .section-content .Perfect .article-header .summary {
-          font-size: 16px; } }
-  .pharma .section-content .Perfect .article-content {
-    padding-bottom: 80px; }
-    @media (min-width: 768px) {
-      .pharma .section-content .Perfect .article-content {
-        padding-bottom: 135px; } }
-    .pharma .section-content .Perfect .article-content ul li:nth-of-type(1) .figcaption {
-      margin-bottom: 65px; }
-      @media (min-width: 768px) {
-        .pharma .section-content .Perfect .article-content ul li:nth-of-type(1) .figcaption {
-          margin-bottom: 0; } }
-    .pharma .section-content .Perfect .article-content ul li:nth-of-type(2) .figcaption {
-      margin-bottom: 65px; }
-      @media (min-width: 768px) {
-        .pharma .section-content .Perfect .article-content ul li:nth-of-type(2) .figcaption {
-          margin-bottom: 0; } }
-    .pharma .section-content .Perfect .article-content ul li p {
-      text-align: center; }
-      .pharma .section-content .Perfect .article-content ul li p.figure {
-        height: 82px;
-        line-height: 82px; }
-        .pharma .section-content .Perfect .article-content ul li p.figure .img-responsive {
-          display: inline-block; }
-      .pharma .section-content .Perfect .article-content ul li p.figcaption {
-        font-size: 16px;
-        color: #fff;
-        line-height: 24px;
-        margin-top: 30px; }
+  @media (min-width: 768px) {
+    .pharma .section-content .Perfect .article-content {
+      padding-top: 145px; } }
+  @media (min-width: 1280px) {
+    .pharma .section-content .Perfect .article-content {
+      padding: 150px 0 110px; } }
+  .pharma .section-content .Perfect .article-content figure .img-responsive {
+    display: block;
+    margin: 0 auto; }
 
 .infection .section-content article h4 {
   font-size: 25px;
