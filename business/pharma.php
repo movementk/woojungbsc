@@ -24,7 +24,7 @@
                     연구시설구축
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li class="active"><a href="/business/vivarium.php">시설구축</a></li>
                     <li><a href="/business/infection.php">환경감염관리</a></li>
                     <li><a href="/business/maintenance.php">전문유지보수서비스</a></li>
                     <li><a href="/business/call_center.php">우정콜센터</a></li>

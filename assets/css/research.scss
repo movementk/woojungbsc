@@ -1,5 +1,17 @@
 @import 'common';
 
+.research {
+    .page-header {
+        .sub-lnb {
+            li {
+                @media(min-width: $lg) {
+                    width: 33.33% !important;
+                }
+            }
+        }
+    }
+}
+
 // 특허
 .patent {
     .section-content {

@@ -19,25 +19,21 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    장비연구소
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/research/current_state.php">바이오연구소</a></li>
+                    <li class="active"><a href="/research/equipment.php">장비연구소</a></li>
+                    <li><a href="/research/patent.php">특허</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="equipment">
             <header>
-                <h3>특허</h3>
-                <p class="summary">우정BSC의 특허출원 실적입니다.</p>
+                <h3>장비연구소</h3>
             </header>
             <div class="section-content">
                 <article class="develop-backdrop">

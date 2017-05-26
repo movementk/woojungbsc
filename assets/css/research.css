@@ -30,6 +30,10 @@ dl {
 address {
   margin-bottom: 0; }
 
+@media (min-width: 1280px) {
+  .research .page-header .sub-lnb li {
+    width: 33.33% !important; } }
+
 .patent .section-content .list {
   width: 100%;
   border-top: 3px solid #595757; }

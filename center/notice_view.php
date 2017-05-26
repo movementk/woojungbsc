@@ -19,7 +19,6 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     공지사항
@@ -27,11 +26,10 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
                     <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/center/e_catalog.php">E-카달로그</a></li>
+                    <li><a href="/center/inquiry_write.php">고객문의</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="notice-view">
