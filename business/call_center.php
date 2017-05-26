@@ -2,7 +2,7 @@
 <link href="/assets/css/sub.css" rel="stylesheet">
 <link href="/assets/css/business.css" rel="stylesheet">
 </head>
-<body class="sub">
+<body class="sub call-center-info">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/nav-aside.php'); ?>
@@ -19,86 +19,36 @@
                     </p>
                 </div>
             </div>
-<!--
             <div class="sub-lnb dropdown">
                 <button class="btn btn-default dropdown-toggle hidden-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    공지사항
+                    우정콜센터
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="active"><a href="/center/notice_list.php">공지사항</a></li>
-                    <li><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="#">E-카달로그</a></li>
-                    <li><a href="#">고객문의</a></li>
+                    <li><a href="/business/vivarium.php">연구시설구축</a></li>
+                    <li><a href="/business/infection.php">환경감염관리</a></li>
+                    <li><a href="/business/maintenance.php">전문유지보수서비스</a></li>
+                    <li class="active"><a href="/business/call_center.php">우정콜센터</a></li>
+                    <li><a href="#">정밀의학 CRO</a></li>
                 </ul>
             </div>
--->
         </div>
         <!-- Sub Page 공통 -->
         <section class="call-center">
             <header>
-                <h3>우정콜센터</h3>
-                <h4>
-                    <i>우정콜센터 오픈</i><br class="visible-xs">
-                    1522 - 1277
-                </h4>
+                <h3>우정콜센터<i class="hidden-xs">(1522-1277)</i></h3>
                 <p class="summary">
-                    한 발 앞선 우정비에스씨는 업계 최초로 더욱<br class="visible-xs">
-                    더 신속한 A/S 서비스를 제공하기 위해<br class="hidden-xs"> 전용 콜센터를<br class="visible-xs">
-                    구축하였습니다. 이제는 우정과 함께라면 장비가<br class="visible-xs">
-                    멈춰도 걱정없습니다.
+                    한 발 앞선 우정비에스씨는 <i class="or-txt">고객만족</i>을 위해<br class="visible-xs">
+                    <i class="or-txt">업계 최초</i>로<br class="hidden-xs"> <i class="or-txt">더욱 신속한 A/S 서비스</i>를 제공하기<br class="visible-xs">
+                    위해 <i class="or-txt">A/S전용 콜센터</i>를 구축하였습니다.<br>
+                    이제는 우정과 함께라면 장비가 멈춰도 걱정없습니다.
                 </p>
             </header>
             <div class="section-content">
-                <article class="procedure">
-                    <p class="figure">
-                        <img src="/assets/images/business/procedure_list_xs.png" class="img-responsive visible-xs" alt="콜센터 접수 절차 목록">
-                        <img src="/assets/images/business/procedure_list_sm.png" class="img-responsive visible-sm visible-md" alt="콜센터 접수 절차 목록">
-                        <img src="/assets/images/business/procedure_list_lg.png" class="img-responsive visible-lg" alt="콜센터 접수 절차 목록">
-                    </p>
-                    <ol class="sr-only figcaption">
-                        <li>
-                            <i class="num">01</i>
-                            <h5>콜센터<br>A/S 접수</h5>
-                        </li>
-                        <li>
-                            <i class="num">02</i>
-                            <h5>A/S 접수<br>안내메일발송</h5>
-                        </li>
-                        <li>
-                            <i class="num">03</i>
-                            <h5>1차 상담 및<br>엔지니어 배정</h5>
-                        </li>
-                        <li>
-                            <i class="num">04</i>
-                            <h5>방문일, 엔지니어<br>안내메일발송</h5>
-                        </li>
-                        <li>
-                            <i class="num">05</i>
-                            <h5>A/S 방문<br>및 완</h5>
-                        </li>
-                        <li>
-                            <i class="num">06</i>
-                            <h5>A/S 완료내용<br>안내메일발송</h5>
-                        </li>
-                        <li>
-                            <i class="num">07</i>
-                            <h5>A/S 리포트<br>발송</h5>
-                        </li>
-                        <li>
-                            <i class="num">08</i>
-                            <h5>고객 만족도 조사<br>메일 발송</h5>
-                        </li>
-                        <li>
-                            <i class="num">09</i>
-                            <h5>고객 만족도 조사<br>및 사후관리</h5>
-                        </li>
-                    </ol>
-                </article>
                 <article class="procedure-list">
                     <div class="container">
                         <ol>
                             <li>
-                                <h6>1. 신속한 A/S 접수 및 안</h6>
+                                <h6>1. 신속한 A/S 접수 및 안내</h6>
                                 <p class="summary">
                                     A/S 전용 콜센터를 구축하여 장비 관련 돌발상황에<br>
                                     언제든지 더욱 신속하게 처리 해 드립니다.
@@ -131,6 +81,39 @@
                             </li>
                         </ol>
                     </div>
+                </article>
+                <article class="procedure">
+                    <p class="figure">
+                        <img src="/assets/images/business/procedure_list_xs.png" class="img-responsive visible-xs" alt="콜센터 접수 절차 목록">
+                        <img src="/assets/images/business/procedure_list_sm.png" class="img-responsive visible-sm visible-md" alt="콜센터 접수 절차 목록">
+                        <img src="/assets/images/business/procedure_list_lg.png" class="img-responsive visible-lg" alt="콜센터 접수 절차 목록">
+                    </p>
+                    <ol class="sr-only figcaption">
+                        <li>
+                            <i class="num">01</i>
+                            <h5>콜센터<br>A/S 접수</h5>
+                            <h6>A/S 접수<br>안내메일발송</h6>
+                        </li>
+                        <li>
+                            <i class="num">02</i>
+                            <h5>1차 상담 및<br>엔지니어 배정</h5>
+                            <h6>방문일, 엔지니어<br>안내메일발송</h6>
+                        </li>
+                        <li>
+                            <i class="num">03</i>
+                            <h5>A/S 방문<br>및 완료</h5>
+                            <h6>A/S 완료내용<br>안내메일발송</h6>
+                        </li>
+                        <li>
+                            <i class="num">04</i>
+                            <h5>A/S 리포트<br>발송</h5>
+                            <h6>고객 만족도 조사<br>메일 발송</h6>
+                        </li>
+                        <li>
+                            <i class="num">05</i>
+                            <h5>고객 만족도 조사<br>및 사후관리</h5>
+                        </li>
+                    </ol>
                 </article>
             </div>
         </section>

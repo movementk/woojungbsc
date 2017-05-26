@@ -75,6 +75,7 @@ address {
   .greeting .section-content .ceo-greeting p {
     font-size: 13px;
     color: #333;
+    font-weight: 300;
     line-height: 22px;
     text-align: justify; }
     .greeting .section-content .ceo-greeting p + p {
@@ -122,8 +123,19 @@ address {
 .vision-main #content {
   padding-bottom: 0 !important; }
 
+.vision h4 {
+  font-size: 22px !important;
+  line-height: 30px !important;
+  font-weight: 400 !important;
+  font-family: 'Noto Sans KR', sans-serif !important; }
+  @media (min-width: 768px) {
+    .vision h4 {
+      font-size: 26px !important; } }
+  @media (min-width: 1280px) {
+    .vision h4 {
+      font-size: 30px !important; } }
 .vision .section-content {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 120px;
   background-image: url(/assets/images/introduce/vision_xs_bg.jpg);
   background-repeat: no-repeat;
@@ -134,42 +146,30 @@ address {
       padding-top: 75px;
       padding-bottom: 160px;
       background-image: url(/assets/images/introduce/vision_sm_bg.jpg);
-      background-size: 100% 556px;
+      background-size: 100% 489px;
       background-position: 50% 0; } }
   @media (min-width: 1280px) {
     .vision .section-content {
-      padding-top: 100px;
+      padding-top: 85px;
       padding-bottom: 150px;
       background-image: url(/assets/images/introduce/vision_lg_bg.jpg);
-      background-size: 100% 610px; } }
+      background-size: 100% 551px; } }
   .vision .section-content h5 {
     display: block;
-    padding: 0 30px;
-    margin-bottom: 30px; }
+    padding: 0 30px; }
     .vision .section-content h5 .img-responsive {
       display: block;
       margin: 0 auto; }
-    @media (min-width: 768px) {
-      .vision .section-content h5 {
-        margin-bottom: 15px; } }
-  .vision .section-content .title {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 300;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .vision .section-content .title {
-        font-size: 22px; } }
   .vision .section-content .vision-list {
-    margin-top: 65px;
+    margin-top: 95px;
     font-size: 0; }
     @media (min-width: 768px) {
       .vision .section-content .vision-list {
         text-align: center;
         margin-top: 96px; } }
-    @media (min-width: 1280px) {
+    @media (min-width: 768px) {
       .vision .section-content .vision-list {
-        margin-top: 73px; } }
+        margin-top: 75px; } }
     .vision .section-content .vision-list > li {
       padding-bottom: 140px;
       background-image: url(/assets/images/introduce/plus_img.png);
@@ -396,10 +396,12 @@ address {
       color: #222;
       border: 1px solid #bfbfbf !important;
       background-color: #fff; }
-    .ci-introduce .section-content .concept .details .btn-area p .btn-orange {
-      color: #fff;
-      border: 1px solid #f08501 !important;
-      background-color: #f08501; }
+      @media (min-width: 1280px) {
+        .ci-introduce .section-content .concept .details .btn-area p .btn-white:hover {
+          color: #fff;
+          opacity: 1 !important;
+          background-color: #f08501;
+          border-color: #f08501 !important; } }
   @media (min-width: 768px) {
     .ci-introduce .section-content .concept .details {
       width: 535px;
@@ -642,15 +644,16 @@ address {
           .partner .section-content .partner-list li a:hover .figure .img-responsive {
             display: none; }
           .partner .section-content .partner-list li a:hover .figure .hover-point {
-            position: relative;
             display: table-cell;
             vertical-align: middle;
             font-size: 15px;
-            color: #fff; }
+            color: #fff;
+            text-align: center; }
             .partner .section-content .partner-list li a:hover .figure .hover-point .icon-search {
-              position: absolute;
-              top: 31px;
-              left: 14px; }
+              position: relative;
+              top: -2px;
+              left: 0;
+              margin-right: 10px; }
         .partner .section-content .partner-list li a:hover .figcaption {
           color: #f08707; } }
 
