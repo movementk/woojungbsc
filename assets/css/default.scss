@@ -120,6 +120,10 @@ a {
 						background-color: #f0840c;
 						color: rgba(#fff, 1);
 					}
+					&.active {
+						background-color: #f0840c;
+						color: rgba(#fff, 1);
+					}
 				}
 			}
 		}
@@ -183,6 +187,7 @@ a {
 }
 
 #header {
+	overflow: hidden;
 	z-index: 1001;
 	position: fixed;
 	top: 0;
@@ -195,9 +200,22 @@ a {
 	.logo {
 		float: left;
 		margin-top: 8px;
+		width: 129px;
+		height: 24px;
+		/*
 		img {
 			display: block;
 			width: 129px;
+		}
+		*/
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-image: url(/assets/images/logo.png);
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: 50% 50%;
 		}
 	}
 	#btn-nav-open {
@@ -218,9 +236,13 @@ a {
 		height: 80px;
 		.logo {
 			margin-top: 20px;
+			width: 215px;
+			height: 39px;
+			/*
 			img {
 				width: auto;
 			}
+			*/
 		}
 		#btn-nav-open {
 			/*
@@ -238,7 +260,6 @@ a {
 	@media (min-width: $lg) {
 		margin-top: 30px;
 		height: 90px;
-		background-color: #fff;
 		.logo {
 			margin-top: 30px;
 		}
@@ -273,28 +294,29 @@ a {
 						}
 					}
 					> ul {
-						overflow: hidden;
-						position: absolute;
-						top: 90px;
-						left: 50%;
-						padding-top: 0;
-						padding-bottom: 0;
-						margin-left: -85px;
-						width: 170px;
-						height: 0;
-						background-color: #fff;
-						@include trans();
+						//overflow: hidden;
+						//position: absolute;
+						//top: 90px;
+						//left: 50%;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						//margin-left: -85px;
+						//width: 170px;
+						//height: 0;
+						//background-color: #fff;
+						//@include trans();
 						> li {
 							> a {
 								display: block;
 								padding-top: 5px;
 								padding-bottom: 5px;
-								font-size: 14px;
-								line-height: 20px;
+								font-size: 13px;
+								line-height: 22px;
 								text-align: center;
 								text-decoration: none;
+								color: #aaa;
 								&:hover, &:focus {
-									color: #ef4600;
+									color: #f0840c;
 								}
 							}
 						}
@@ -308,9 +330,33 @@ a {
 							}
 						}
 						> ul {
-							height: auto;
-							padding-top: 30px;
-							padding-bottom: 30px;
+							//height: auto;
+							//padding-top: 30px;
+							//padding-bottom: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body.nav-expanded {
+	#header {
+		@media (min-width: $lg) {
+			height: 355px;
+			background-color: rgba(#000, .9);
+			@include trans();
+			.logo {
+				a {
+					background-image: url(/assets/images/logo_lg.png);
+				}
+			}
+			#nav {
+				> ul {
+					> li {
+						> a {
+							color: #fff;
 						}
 					}
 				}

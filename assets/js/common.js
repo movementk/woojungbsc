@@ -1,21 +1,28 @@
 (function($) {
+	
+	/* 헤더 네비게이션 관련 이벤트 */
+	$(document).on('mouseenter focusin', '#header .container #nav > ul > li > a', function() {
+		$('body').addClass('nav-expanded');
+	});
+	$(document).on('mouseleave', '#header', function() {
+		$('body').removeClass('nav-expanded');
+		$('#header #nav > ul > li').removeClass('active');
+	});
 			
 	/* 데스크탑용 네비게이션 관련 이벤트 */
 	$(document).on('click', '#header #btn-nav-open', function() {
 		$('body').addClass('nav-opened');
 	});
-	$(document).on('mouseenter focus', '#header #nav > ul > li > a', function(e) {
-		if ($(this).parent().hasClass('active')) {
-			$(this).parent().removeClass('active');
-		} else {
-			$(this).parent().siblings('.active').removeClass('active');
-			$(this).parent().addClass('active');
-		}
+	$(document).on('mouseenter', '#header #nav > ul > li', function(e) {
+		$(this).siblings('.active').removeClass('active');
+		$(this).addClass('active');
 		e.preventDefault();
 	});
+	/*
 	$(document).on('mouseleave', '#header #nav > ul > li', function(e) {
 		$(this).removeClass('active');
 	});
+	*/
 
 	/* 모바일, 테블릿 네비게이션 관련 이벤트 */
 	$(document).on('click', '#nav-aside', function(e) {
