@@ -94,11 +94,11 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo05.gif" class="img-responsive" alt="Reichert SPR">
+                                        <img src="/assets/images/introduce/partner_list_logo05.gif" class="img-responsive" alt="plas labs">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
-                                <p class="figcaption">Reichert SPR</p>
+                                <p class="figcaption">Plas-labs</p>
                             </a>
                         </li>
                         
