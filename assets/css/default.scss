@@ -345,18 +345,18 @@ body.nav-expanded {
 	#header {
 		@media (min-width: $lg) {
 			height: 355px;
-			background-color: rgba(#282828, .9);
+			background-color: rgba(#282828, .9) !important;
 			@include trans();
 			.logo {
 				a {
-					background-image: url(/assets/images/logo_white.png);
+					background-image: url(/assets/images/logo_white.png) !important;
 				}
 			}
 			#nav {
 				> ul {
 					> li {
 						> a {
-							color: #fff;
+							color: #fff !important;
 						}
 					}
 				}

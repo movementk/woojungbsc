@@ -654,7 +654,7 @@ a {
 @media (min-width: 1280px) {
   body.nav-expanded #header {
     height: 355px;
-    background-color: rgba(40, 40, 40, 0.9);
+    background-color: rgba(40, 40, 40, 0.9) !important;
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 0.15s;
@@ -664,9 +664,9 @@ a {
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
     body.nav-expanded #header .logo a {
-      background-image: url(/assets/images/logo_white.png); }
+      background-image: url(/assets/images/logo_white.png) !important; }
     body.nav-expanded #header #nav > ul > li > a {
-      color: #fff; } }
+      color: #fff !important; } }
 
 #nav-aside {
   z-index: 9999;

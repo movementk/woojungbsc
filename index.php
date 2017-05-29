@@ -13,60 +13,61 @@
 	
 		<section id="introduce" class="scene">
 			<div class="slider">
-				<div class="intro-item intro-item-1" style="background-image: url(/assets/images/main/bg_intro_1.jpg);">
-					<div class="container">
-						<div class="content">
-							<div class="text">
-								<h2>Protect Your<br>Research<br>Investment</h2>
-								<hr>
-								<p>
-									국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
-									<span class="typed" data-typed="지금까지 걸어온 30년... 이제부터가 시작입니다."></span>
-								</p>
-							</div>
-							<div class="bar">
-								<span class="left"></span>
-								<span class="dot"></span>
-								<span class="right"></span>
-							</div>
+				<div class="intro-item intro-item-1">
+					<img class="figure" src="/assets/images/main/bg_intro_1.jpg">
+					<div class="content">
+						<div class="text">
+							<h2>Protect Your<br>Research<br>Investment</h2>
+							<hr>
+							<p>
+								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
+								<span class="typed" data-typed="지금까지 걸어온 30년... 이제부터가 시작입니다."></span>
+							</p>
+						</div>
+						<div class="bar">
+							<span class="left"></span>
+							<span class="dot"></span>
+							<span class="right"></span>
 						</div>
 					</div>
 				</div>
-				<div class="intro-item intro-item-2" style="background-image: url(/assets/images/main/bg_intro_2.jpg);">
-					<div class="container">
-						<div class="content">
-							<div class="text">
-								<h2>Protect Your<br>Research<br>Investment</h2>
-								<hr>
-								<p>
-									국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
-									<span class="typed" data-typed="지금까지 걸어온 20년... 이제부터가 시작입니다."></span>
-								</p>
-							</div>
-							<div class="bar">
-								<span class="left"></span>
-								<span class="dot"></span>
-								<span class="right"></span>
-							</div>
+				<div class="intro-item intro-item-2">
+					<video id="video-2" class="video" loop muted>
+						<source src="/assets/images/main/mv_intro_1.mp4" type="video/mp4">
+				  		<source src="/assets/images/main/mv_intro_1.ogv" type="video/ogv">
+					  	이 브라우저는 동영상을 지원하지 않습니다.
+					</video>
+					<div class="content">
+						<div class="text">
+							<h2>Protect Your<br>Research<br>Investment</h2>
+							<hr>
+							<p>
+								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
+								<span class="typed" data-typed="지금까지 걸어온 20년... 이제부터가 시작입니다."></span>
+							</p>
+						</div>
+						<div class="bar">
+							<span class="left"></span>
+							<span class="dot"></span>
+							<span class="right"></span>
 						</div>
 					</div>
 				</div>
-				<div class="intro-item intro-item-2" style="background-image: url(/assets/images/main/bg_intro_2.jpg);">
-					<div class="container">
-						<div class="content">
-							<div class="text">
-								<h2>Protect Your<br>Research<br>Investment</h2>
-								<hr>
-								<p>
-									국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
-									<span class="typed" data-typed="지금까지 걸어온 10년... 이제부터가 시작입니다."></span>
-								</p>
-							</div>
-							<div class="bar">
-								<span class="left"></span>
-								<span class="dot"></span>
-								<span class="right"></span>
-							</div>
+				<div class="intro-item intro-item-2">
+					<img class="figure" src="/assets/images/main/bg_intro_2.jpg">
+					<div class="content">
+						<div class="text">
+							<h2>Protect Your<br>Research<br>Investment</h2>
+							<hr>
+							<p>
+								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
+								<span class="typed" data-typed="지금까지 걸어온 10년... 이제부터가 시작입니다."></span>
+							</p>
+						</div>
+						<div class="bar">
+							<span class="left"></span>
+							<span class="dot"></span>
+							<span class="right"></span>
 						</div>
 					</div>
 				</div>
@@ -402,7 +403,7 @@
 	<script src="/assets/jquery.mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="/assets/jquery.easing.1.3.js"></script>
 	<script src="/assets/js/main.js"></script>
-	<script>
+	<!-- script>
 		(function($) {
 			
 			var sceneIndex = 0;
@@ -441,7 +442,7 @@
 			});
 
 		})(jQuery);
-	</script>
+	</script -->
 	
 </body>
 </html>

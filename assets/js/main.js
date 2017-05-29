@@ -29,6 +29,10 @@
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
 			$('#introduce .intro-item.active').removeClass('active');
+			var video = document.getElementById('video-'+(oldIndex+1));
+			if (video) {
+				video.pause();
+			}
 		},
 		onSlideAfter: function($slideElement, oldIndex, newIndex) {
 			$slideElement.addClass('active');
@@ -39,6 +43,10 @@
 				typingSpeed: 1000,
 				startDelay: 1500
 			});
+			var video = document.getElementById('video-'+(newIndex+1));
+			if (video) {
+				video.play();
+			}
 		}
 	});
 	
@@ -49,6 +57,7 @@
 		speed: 0,
 		adaptiveHeight: true,
 		touchEnabled: false,
+		tickerHover: true,
 		nextText: '<i class="icon-right-open"></i>',
 		prevText: '<i class="icon-left-open"></i>',
 		pagerCustom: '#rnd .pager:eq(0)',
