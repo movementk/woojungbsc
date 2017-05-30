@@ -94,11 +94,11 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo05.gif" class="img-responsive" alt="plas labs">
+                                        <img src="/assets/images/introduce/partner_list_logo05.gif" class="img-responsive" alt="Reichert SPR">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
-                                <p class="figcaption">Plas-labs</p>
+                                <p class="figcaption">Reichert SPR</p>
                             </a>
                         </li>
                         
@@ -106,11 +106,11 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo06.gif" class="img-responsive" alt="Reichert SPR">
+                                        <img src="/assets/images/introduce/partner_list_logo06.gif" class="img-responsive" alt="plas labs">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
-                                <p class="figcaption">Reichert SPR</p>
+                                <p class="figcaption">Plas-labs</p>
                             </a>
                         </li>
                         <li>
@@ -173,18 +173,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo12.gif" class="img-responsive" alt="QM Diagnostics">
-                                    </p>
-                                    <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
-                                </div>
-                                <p class="figcaption">QM Diagnostics</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="figure">
-                                    <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo13.gif" class="img-responsive" alt="Edstrom">
+                                        <img src="/assets/images/introduce/partner_list_logo12.gif" class="img-responsive" alt="Edstrom">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -195,7 +184,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo14.gif" class="img-responsive" alt="Bioquell">
+                                        <img src="/assets/images/introduce/partner_list_logo13.gif" class="img-responsive" alt="Bioquell">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -206,32 +195,30 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/partner_list_logo15.gif" class="img-responsive" alt="Aircuity">
+                                        <img src="/assets/images/introduce/partner_list_logo14.gif" class="img-responsive" alt="Aircuity">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
                                 <p class="figcaption">Aircuity</p>
                             </a>
                         </li>
-                        
-                        
-                        <!--// 이하 이미지 없음 추후 받고 이미지 등록 -->
                         <li>
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="GSE">
+                                        <img src="/assets/images/introduce/partner_list_logo15.gif" class="img-responsive" alt="BSE">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
-                                <p class="figcaption">GSE</p>
+                                <p class="figcaption">BSE</p>
                             </a>
                         </li>
+                        
                         <li>
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="Phamacal Research lab">
+                                        <img src="/assets/images/introduce/partner_list_logo16.gif" class="img-responsive" alt="Phamacal Research lab">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -242,7 +229,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="SAFE lab diets">
+                                        <img src="/assets/images/introduce/partner_list_logo17.gif" class="img-responsive" alt="SAFE lab diets">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -253,7 +240,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="A.C.C.">
+                                        <img src="/assets/images/introduce/partner_list_logo18.gif" class="img-responsive" alt="A.C.C.">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -264,11 +251,22 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="Sheperd">
+                                        <img src="/assets/images/introduce/partner_list_logo19.gif" class="img-responsive" alt="Sheperd">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
                                 <p class="figcaption">Sheperd</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="figure">
+                                    <p class="figure-img">
+                                        <img src="/assets/images/introduce/partner_list_logo20.gif" class="img-responsive" alt="ELLEGAARD">
+                                    </p>
+                                    <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
+                                </div>
+                                <p class="figcaption">ELLEGAARD</p>
                             </a>
                         </li>
                         
@@ -276,18 +274,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="QM Diagnostics">
-                                    </p>
-                                    <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
-                                </div>
-                                <p class="figcaption">QM Diagnostics</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="figure">
-                                    <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="ZMS">
+                                        <img src="/assets/images/introduce/partner_list_logo21.gif" class="img-responsive" alt="ZMS">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
@@ -298,7 +285,7 @@
                             <a href="#">
                                 <div class="figure">
                                     <p class="figure-img">
-                                        <img src="/assets/images/introduce/none_img.gif" class="img-responsive" alt="EchoMRI">
+                                        <img src="/assets/images/introduce/partner_list_logo22.gif" class="img-responsive" alt="EchoMRI">
                                     </p>
                                     <p class="hover-point"><i class="icon-search"></i>사이트 바로가기</p>
                                 </div>
