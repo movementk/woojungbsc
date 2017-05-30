@@ -88,16 +88,17 @@ address {
           margin-top: 10px; } }
   .greeting .section-content figure {
     display: block;
-    width: 100%;
-    max-width: 370px;
+    max-width: 300px;
     margin: 0 auto;
     padding-top: 35px; }
     .greeting .section-content figure .img-responsive {
       width: 100%;
-      max-width: 370px; }
+      max-width: 300px; }
     @media (min-width: 768px) {
       .greeting .section-content figure {
-        padding-top: 0; } }
+        padding-top: 0;
+        max-width: 100%;
+        width: 100%; } }
   .greeting .section-content .woojung-ceo {
     text-align: right;
     font-size: 25px;

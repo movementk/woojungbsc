@@ -50,7 +50,7 @@
             <div class="section-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-7 col-lg-8">
+                        <div class="col-xs-12 col-sm-8 col-sm-9">
                             <div class="ceo-greeting">
                                 <p>
                                     ㈜우정비에스씨는 대한민국이 신약개발국이 되겠다는 원대한 꿈을 꾸던 시기에 전임상 실험분야의 도우미 역할을 하고자 1989년 설립하였습니다. 
@@ -78,7 +78,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-5 col-lg-4">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
                             <figure>
                                 <img src="/assets/images/introduce/ceo.jpg" class="img-responsive" alt="유정bsc대표 천병년">
                                 <figcaption class="woojung-ceo"><small>우정BSC 대표</small>천 병 년</figcaption>

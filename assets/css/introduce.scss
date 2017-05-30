@@ -73,16 +73,17 @@
         }
         figure {
             display: block;
-            width: 100%;
-            max-width: 370px;
+            max-width: 300px;
             margin: 0 auto;
             padding-top: 35px;
             .img-responsive {
                 width: 100%;
-                max-width: 370px;
+                max-width: 300px;
             }
             @media(min-width: $sm) {
                 padding-top: 0;
+                max-width: 100%;
+                width: 100%;
             }
         }
         .woojung-ceo {
