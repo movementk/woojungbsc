@@ -32,7 +32,9 @@ address {
 
 html {
   min-width: 320px;
-  height: 100%; }
+  height: 100%;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; }
   html.nav-opened {
     overflow: hidden; }
   @media (min-width: 1280px) {
@@ -44,7 +46,9 @@ body {
   min-width: 320px;
   height: 100%;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; }
   body.nav-opened {
     overflow: hidden; }
   @media (min-width: 768px) {

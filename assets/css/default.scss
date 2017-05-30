@@ -3,6 +3,8 @@
 html {
 	min-width: 320px;
 	height: 100%;
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
 	&.nav-opened {
 		overflow: hidden;
 	}
@@ -19,6 +21,8 @@ body {
 	height: 100%;
 	@include noto;
 	font-size: 12px;
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
 	&.nav-opened {
 		overflow: hidden;
 	}

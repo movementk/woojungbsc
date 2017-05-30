@@ -13,6 +13,7 @@
 	$('#introduce .slider').bxSlider({
 		mode: 'fade',
 		preventDefaultSwipeY: true,
+		preventDefaultSwipeX: true,
 		buildPager: function(slideIndex) {
 			return '<span class="sr-only">'+slideIndex+'</span>';
 		},
@@ -26,6 +27,10 @@
 				typingSpeed: 1000,
 				startDelay: 1500
 			});
+			var video = document.getElementById('video-'+(currentIndex+1));
+			if (video) {
+				video.play();
+			}
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
 			$('#introduce .intro-item.active').removeClass('active');
@@ -66,6 +71,12 @@
 				top: newIndex * 35 + newIndex * 10
 			});
 		}
+	});
+	
+	// 뉴스 더보기 버튼
+	$(document).on('click', '#news .btn-more', function() {
+		$('#news ul li').filter(':hidden').attr('style', 'display: block !important');
+		$(this).attr('style', 'display: none !important');
 	});
 	
 })(jQuery);
