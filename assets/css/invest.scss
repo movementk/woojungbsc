@@ -1,5 +1,6 @@
 @import 'common';
 
+
 // 공통
 .invest {
     .page-header {
@@ -844,38 +845,183 @@
 }
 
 
+// 회사소식 뷰
+.notice-view {
+    .view {
+        .article-header {
+            h4 {
+                display: block;
+                font-size: 15px;
+                color: #595757;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 18px;
+                    float: left;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// IR 요약
+.ir-summary {
+    .section-content {
+        .row {
+            > div {
+                &:last-child {
+                    .graph {
+                        margin-bottom: 0;
+                    }
+                }
+                @media(min-width: $md) {
+                    &:nth-of-type(3) {
+                        .graph {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .graph {
+            margin-bottom: 50px;
+            @media(min-width: $sm) {
+                margin-bottom: 80px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 110px;
+            }
+            hr {
+                display: inline-block;
+                width: 24px;
+                border-top: 3px solid #e00014;
+                padding-bottom: 10px;
+                margin: 0;
+                @media(min-width: $sm) {
+                    padding-bottom: 15px;
+                }
+            }
+            h4 {
+                font-size: 25px;
+                color: #2b2b2b;
+                font-weight: 300;
+                margin-bottom: 30px;
+                @media(min-width: $sm) {
+                    font-size: 30px;
+                    margin-bottom: 40px;
+                }
+            }
+            figure {
+                .img-responsive {
+                    margin: 0 auto;
+                }
+            }
+            .progress-graph {
+                padding: 30px 20px;
+                border: 1px solid #dfdfdf;
+                background-color: #fbfbfb;
+                @media(min-width: $sm) {
+                    padding: 35px 40px;
+                }
+                dl {
+                    text-align: right;
+                    margin-bottom: 10px;
+                    dt {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #666;
+                        font-weight: 300;
+                        &:before {
+                            content: "(";
+                        }
+                        &:after {
+                            content: ":";
+                            padding: 0 2px;
+                        }
+                    }
+                    dd {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #666;
+                        font-weight: 300;
+                        &:after {
+                            content: ")";
+                        }
+                    }
+                }
+                .progress {
+                    height: 35px;
+                    margin: 0;
+                    border-radius: 0;
+                    @media(min-width: $sm) {
+                        height: 45px;
+                    }
+                    > div {
+                        height: 35px;
+                        line-height: 35px;
+                        box-shadow: none;
+                        @media(min-width: $sm) {
+                            height: 45px;
+                            line-height: 45px;
+                        }
+                        span {
+                            font-size: 12px;
+                            color: #fff;
+                            text-align: center;
+                            
+                            @media(min-width: $sm) {
+                                font-size: 13px;
+                            }
+                        }
+                        &.progress-bar-red {
+                            background-color: #e10013;
+                        }
+                        &.progress-bar-gray {
+                            background-color: #aeaeaf;
+                        }
+                        &.progress-bar-orange {
+                            background-color: #f08501;
+                        }
+                    }
+                }
+                .total {
+                    position: relative;
+                    width: 100%;
+                    height: 20px;
+                    border-left: 1px solid #bbb;
+                    border-right: 1px solid #bbb;
+                    margin-top: 20px;
+                    @media(min-width: $sm) {
+                        margin-top: 30px;
+                    }
+                    .bar {
+                        position: absolute;
+                        top: 9.5px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #bbb;
+                    }
+                    .sum {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        margin-left: -30px;
+                        display: block;
+                        width: 60px;
+                        height: 20px;
+                        font-size: 15px;
+                        color: #333;
+                        line-height: 20px;
+                        background-color: #fbfbfb;
+                        text-align: center;
+                        @media(min-width: $sm) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

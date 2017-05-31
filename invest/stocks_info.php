@@ -25,7 +25,7 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a href="/invest/finance.php">재무정보</a></li>
-                    <li><a href="#">IR요약</a></li>
+                    <li><a href="/invest/ir_summary.php">IR요약</a></li>
                     <li class="active"><a href="/invest/stocks_info.php">주식정보</a></li>
                     <li><a href="/invest/disclosure_list.php">공시정보</a></li>
                     <li><a href="/invest/news_list.php">회사소식</a></li>

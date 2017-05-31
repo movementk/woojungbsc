@@ -13,7 +13,6 @@
     box-shadow: none; 
 }
 
-
 .sub {
     section, 
     article {
@@ -400,6 +399,294 @@
                 a {
                     margin-left: 15px;
                 }
+            }
+        }
+    }
+}
+
+// 공지사항 뷰
+.notice-view {
+    .section-content {
+        .view {
+            .article-header {
+                padding: 15px 10px;
+                border-top: 3px solid #595757;
+                border-bottom: 1px solid #ccc;
+                background-color: #f8f8f8;
+                @media(min-width: $sm) {
+                    padding: 24px 20px;
+                    overflow: hidden;
+                    &:after {
+                        content: " ";
+                        display: inline-block;
+                        clear: both;
+                    }
+                }
+                h4 {
+                    display: block;
+                    font-size: 15px;
+                    color: #595757;
+                    margin-bottom: 10px;
+                    @media(min-width: $sm) {
+                        font-size: 18px;
+                        float: left;
+                        margin-bottom: 0;
+                    }
+                }
+                > ul {
+                    @media(min-width: $sm) {
+                        float: right;
+                        > li {
+                            text-align: right;
+                        }
+                    }
+                    > li {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #888;
+                        font-weight: 300;
+                        &:first-child {
+                            &:after {
+                                font-size: 10px;
+                                content: "|";
+                                padding: 0 6px 0 8px;
+                                vertical-align: top;
+                                @media(min-width: $sm) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 15px;
+                        }
+                        > dl {
+                            font-size: 0;
+                            > dt {
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #888;
+                                font-weight: 300;
+                                &:after {
+                                    content: ":";
+                                    padding: 0 3px;
+                                }
+                                @media(min-width: $sm) {
+                                    font-size: 15px;
+                                }
+                            }
+                            > dd {
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #888;
+                                font-weight: 300;
+                                @media(min-width: $sm) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .view-content {
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 30px;
+                @media(min-width: $sm) {
+                    padding-top: 70px;
+                    padding-bottom: 40px;
+                }
+                .view-txt {
+                    font-size: 13px;
+                    color: #666;
+                    line-height: 20px;
+                    @media(min-width: $sm) {
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+                > .figure {
+                    margin-top: 50px;
+                    .img-responsive {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    @media(min-width: $sm) {
+                        margin-top: 60px;
+                    }
+                }
+            }
+            .attach {
+                overflow: hidden;
+                font-size: 0;
+                margin: 80px 0 30px;
+                padding: 30px 10px;
+                background-color: #fafafa;
+                @media(min-width: $sm) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                dt {
+                    position: relative;
+                    display: inline-block;
+                    width: 62px;
+                    font-size: 13px;
+                    color: #2b2b2b;
+                    font-weight: 300;
+                    vertical-align: top;
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        content: "|";
+                        color: #ccc;
+                    }
+                    @media(min-width: $sm) {
+                        width: 70px;
+                        font-size: 14px;
+                    }
+                }
+                dd {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 80%;
+                    padding-left: 15px;
+                    @media(min-width: $sm) {
+                        padding-left: 30px;
+                    }
+                    &:before {
+                        content: "\E80D";
+                        font-family: "fontello";
+                        font-size: 12px;
+                        color: #888;
+                        padding-right: 10px;
+                    }
+                    a {
+                        display: inline-block;
+                        font-size: 13px;
+                        color: #888;
+                        font-weight: 300;
+                        &:after {
+                            content: ",";
+                            padding-right: 10px;
+                        }
+                        &:last-child {
+                            &:after {
+                                content: "";
+                                padding: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .next-link {
+                border-top: 1px solid #595757;
+                border-bottom: 1px solid #595757;
+                > li {
+                    display: block;
+                    padding: 20px 10px;
+                    &:first-child {
+                        border-bottom: 1px solid #ccc;
+                    }
+                    dl {
+                        table-layout: fixed;
+                        dt {
+                            display: inline-block;
+                            width: 64px;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #2b2b2b;
+                            &:after {
+                                font-size: 10px;
+                                color: #ccc;
+                                content: "|";
+                                padding: 0 10px 0 15px;
+                                vertical-align: top;
+                            }
+                            @media(min-width: $sm) {
+                                width: 95px;
+                                font-size: 15px;
+                                &:after {
+                                    font-size: 13px;
+                                    padding: 0 20px 0 30px;
+                                }
+                            }
+                        }
+                        dd {
+                            display: inline-block;
+                            width: 76%;
+                            vertical-align: top;
+                            a {
+                                display: block;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                font-size: 13px;
+                                color: #666;
+                            }
+                            @media(min-width: 550px) {
+                                width: 86%;
+                            }
+                            @media(min-width: $sm) {
+                                width: 84%;
+                                a {
+                                    font-size: 15px;
+                                }
+                                
+                            }
+                            @media(min-width: $md) {
+                                width: 88%;
+                            }
+                            @media(min-width: $lg) {
+                                width: 90%;
+                            }
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        padding: 20px 30px;
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 30px;
+            p {
+                font-size: 0;
+                text-align: center;
+                .btn {
+                    display: inline-block;
+                    width: 90px;
+                    height: 40px;
+                    font-size: 13px;
+                    color: #fff;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.btn-orange {
+                        background-color: #f08501;
+                    }
+                    &.btn-gray {
+                        background-color: #595757;
+                    }
+                    @media(min-width: $sm) {
+                        width: 166px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                    @media(min-width: $lg) {
+                        width: 170px;
+                    }
+                }
+            }
+            @media(min-width: $sm) {
+                margin-top: 60px;
             }
         }
     }
