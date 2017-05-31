@@ -1,20 +1,30 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/dochead.php'); ?>
 <link href="/assets/css/main.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#quick-nav" data-offset="120">
 
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
 	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
 	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/nav-aside.php'); ?>
+	
+	<div id="quick-nav" class="visible-lg">
+		<ul class="nav" role="tablist">
+			<li><a href="#introduce"></a></li>
+			<li><a href="#business-area"></a></li>
+			<li><a href="#rnd"></a></li>
+			<li><a href="#news"></a></li>
+			<li><a href="#campaign"></a></li>
+		</ul>
+	</div>
 
 	<main id="content">
 	
-		<section id="introduce" class="scene">
+		<section id="introduce">
 			<div class="slider">
 				<div class="intro-item intro-item-1">
-					<img class="figure" src="/assets/images/main/bg_intro_1.jpg">
+					<div class="figure" style="background-image: url(/assets/images/main/img_intro_1.jpg);"></div>
 					<div class="content">
 						<div class="text">
 							<h2>Protect Your<br>Research<br>Investment</h2>
@@ -32,7 +42,8 @@
 					</div>
 				</div>
 				<div class="intro-item intro-item-2">
-					<video id="video-2" class="video" loop muted>
+					<div class="figure" style="background-image: url(/assets/images/main/img_intro_2.jpg);"></div>
+					<video id="intro-video-2" class="video" loop muted>
 						<source src="/assets/images/main/mv_intro_1.mp4" type="video/mp4">
 				  		<source src="/assets/images/main/mv_intro_1.ogv" type="video/ogv">
 					  	이 브라우저는 동영상을 지원하지 않습니다.
@@ -43,7 +54,7 @@
 							<hr>
 							<p>
 								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
-								<span class="typed" data-typed="지금까지 걸어온 20년... 이제부터가 시작입니다."></span>
+								<span class="typed" data-typed="지금까지 걸어온 30년... 이제부터가 시작입니다."></span>
 							</p>
 						</div>
 						<div class="bar">
@@ -54,7 +65,7 @@
 					</div>
 				</div>
 				<div class="intro-item intro-item-2">
-					<img class="figure" src="/assets/images/main/bg_intro_2.jpg">
+					<div class="figure" style="background-image: url(/assets/images/main/img_intro_3.jpg);"></div>
 					<div class="content">
 						<div class="text">
 							<h2>Protect Your<br>Research<br>Investment</h2>
@@ -74,7 +85,7 @@
 			</div>
 		</section>
 	
-		<section id="business-area" class="scene">
+		<section id="business-area">
 			<div class="container section-header">
 				<div class="row">
 					<div class="col-xs-12">
@@ -165,7 +176,7 @@
 			</div>	
 		</section>
 		
-		<section id="rnd" class="scene">
+		<section id="rnd">
 			<div class="slider">
 				<div class="container-fluid">
 					<div class="row">
@@ -233,7 +244,7 @@
 			</div>
 		</section>
 
-		<section id="news" class="scene">
+		<section id="news">
 			<div class="container section-header">
 				<div class="row">
 					<div class="col-xs-12">
@@ -309,7 +320,7 @@
 			</div>
 		</section>
 		
-		<section id="campaign" class="scene">
+		<section id="campaign">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -324,12 +335,12 @@
 			</div>
 		</section>
 		
-		<div id="information" class="scene">
+		<div id="information">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-lg-5">
 						<section id="press">
-							<span class="label">PRESS</span>
+							<span class="label">NEWS</span>
 							<h5><a href="#">비정규직 0%… 메르스 물리친 젊은 기업 ‘우정비에스씨’</a></h5>
 							<p>청년실업률 10%를 돌파한 시대. 질 좋은 일자리는 대기업과 공공기관에 몰려 있는 
 것만 같고, 이들 회사의 입사 경쟁률은 매년 수백 대 일이다.</p>
@@ -369,9 +380,10 @@
 									<div class="cs-info">
 										<h5>고객지원센터</h5>
 										<p class="num">031-888-9369</p>
+										<p class="for-as">A/S접수전용 <b class="lato">1522-1277</b></p>
 										<p class="time">
-											평일(월~금)   AM09:00 ~ PM 06:00<br>
-											※ 주말 및 공휴일은 휴무입니다.
+											평일(월~금) AM09:00 ~ PM 06:00 <span class="hidden-xs">/</span><br class="visible-xs">
+											주말 및 공휴일은 휴무
 										</p>
 									</div>
 								</div>
@@ -403,46 +415,6 @@
 	<script src="/assets/jquery.mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="/assets/jquery.easing.1.3.js"></script>
 	<script src="/assets/js/main.js"></script>
-	<!-- script>
-		(function($) {
-			
-			var sceneIndex = 0;
-			var $scene = $('.scene');
-			var isScrolling = false;
-
-			function moveScene() {
-				isScrolling = true;
-				$('html, body').stop().animate({
-					scrollTop: $scene.eq(sceneIndex).offset().top - ($(this).width() > 1280 ? $('#top-nav').height() + $('#header').height() : $('#header').height())
-				}, 1000, 'easeOutQuint', function() {
-					$scene.removeClass('on');
-					$scene.eq(sceneIndex).addClass('on');
-					isScrolling = false;
-				});
-			}
-
-			$(document).on('mousewheel', function(event) {
-				if (event.deltaY == 1) {
-					if (isScrolling == false && sceneIndex > 0) {
-						sceneIndex--;
-						moveScene();
-					}
-				}
-				if (event.deltaY == -1) {
-					if (isScrolling == false && sceneIndex < $scene.length - 1) {
-						sceneIndex++;
-						moveScene();
-					}
-				}
-				event.preventDefault();
-			});
-			
-			$(window).on('load resize', function() {
-				moveScene();
-			});
-
-		})(jQuery);
-	</script -->
 	
 </body>
 </html>

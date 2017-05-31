@@ -9,14 +9,30 @@
 		}
 	});
 	
+	// 스크롤 스파이 관련
+	$(document).on('click', '#quick-nav > ul > li > a', function(e) {
+		var $target = $($(this).attr('href'));
+		var scrollTop = $target.offset().top - $('#top-nav').height() - $('#header').height();
+		if ($(this).parent().index() == 0) {
+			scrollTop = 0;
+		}
+		$('html, body').stop().animate({
+			scrollTop: scrollTop
+		}, 500, 'swing');
+		e.preventDefault();
+	});
+	
 	// 메인 슬라이더 관련
 	$('#introduce .slider').bxSlider({
 		mode: 'fade',
 		preventDefaultSwipeY: true,
 		preventDefaultSwipeX: true,
+		touchEnabled: false,
 		buildPager: function(slideIndex) {
 			return '<span class="sr-only">'+slideIndex+'</span>';
 		},
+		prevText: '<img src="/assets/images/main/ico_slider_prev.png" alt="이전">',
+		nextText: '<img src="/assets/images/main/ico_slider_next.png" alt="다음">',
 		onSliderLoad: function(currentIndex) {
 			var $currentElem = $('#introduce .intro-item:not(.bx-clone):eq(0)');
 			$currentElem.addClass('active');
@@ -27,16 +43,16 @@
 				typingSpeed: 1000,
 				startDelay: 1500
 			});
-			var video = document.getElementById('video-'+(currentIndex+1));
-			if (video) {
-				video.play();
+			var introVideo = document.getElementById('intro-video-'+(currentIndex+1));
+			if (introVideo) {
+				introVideo.play();
 			}
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
 			$('#introduce .intro-item.active').removeClass('active');
-			var video = document.getElementById('video-'+(oldIndex+1));
-			if (video) {
-				video.pause();
+			var introVideo = document.getElementById('intro-video-'+(oldIndex+1));
+			if (introVideo) {
+				introVideo.pause();
 			}
 		},
 		onSlideAfter: function($slideElement, oldIndex, newIndex) {
@@ -48,9 +64,9 @@
 				typingSpeed: 1000,
 				startDelay: 1500
 			});
-			var video = document.getElementById('video-'+(newIndex+1));
-			if (video) {
-				video.play();
+			var introVideo = document.getElementById('intro-video-'+(newIndex+1));
+			if (introVideo) {
+				introVideo.play();
 			}
 		}
 	});

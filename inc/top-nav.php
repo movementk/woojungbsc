@@ -7,7 +7,7 @@
 						<li><a class="active" href="#">우정BSC</a></li>
 						<li><a href="#">우정E&amp;C</a></li>
 						<li><a href="#">INNOSERVICE</a></li>
-						<li><a href="#">BSMS</a></li>
+						<li><a href="http://www.biosafemedicare.co.kr" target="_blank">BSMS</a></li>
 					</ul>
 				</div>
 			</div>

@@ -48,31 +48,60 @@ address {
     body.scrolled #header #nav > ul > li > a {
       color: inherit; } }
 
+#quick-nav {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  z-index: 1001;
+  margin-top: -60px; }
+  #quick-nav > ul > li > a {
+    display: block;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #b5b6b6;
+    border-radius: 50%; }
+  #quick-nav > ul > li.active > a {
+    background-color: #f08501; }
+  #quick-nav > ul > li + li a {
+    margin-top: 20px; }
+
 #introduce {
   position: relative; }
   #introduce .intro-item {
     height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    background-color: #2b2b2b; }
     #introduce .intro-item .figure {
       z-index: 0;
       position: absolute;
-      left: 50%;
+      left: 0;
       top: 50%;
-      margin-left: -1000px;
-      margin-top: -480px;
-      width: 2000px;
-      height: 960px;
+      margin-top: -225px;
+      width: 100%;
+      height: 450px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
       -ms-transform: scale(1.4);
       -webkit-transform: scale(1.4);
-      transform: scale(1.4); }
+      transform: scale(1.4);
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 10s;
+      transition-duration: 10s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
     #introduce .intro-item .video {
-      z-index: 0;
+      display: none;
+      z-index: 1;
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
       height: 450px;
       background-color: #000;
       -ms-transform: scale(2.5);
@@ -146,15 +175,7 @@ address {
     #introduce .intro-item.active .figure {
       -ms-transform: scale(1);
       -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 10s;
-      transition-duration: 10s;
-      -webkit-transition-timing-function: linear;
-      transition-timing-function: linear;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s; }
+      transform: scale(1); }
     #introduce .intro-item.active .content {
       margin-left: -150px;
       margin-top: -180px;
@@ -164,10 +185,10 @@ address {
       transition-property: all;
       -webkit-transition-duration: 1s;
       transition-duration: 1s;
-      -webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-      transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s; }
+      -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      -webkit-transition-delay: 0.5s;
+      transition-delay: 0.5s; }
       #introduce .intro-item.active .content .text h2 {
         -webkit-transition-property: all;
         transition-property: all;
@@ -256,7 +277,13 @@ address {
   @media (min-width: 768px) {
     #introduce .intro-item {
       height: 750px; }
+      #introduce .intro-item .figure {
+        margin-top: -375px;
+        height: 750px; }
+        #introduce .intro-item .figure + .video {
+          display: block; }
       #introduce .intro-item .video {
+        width: 100%;
         height: 750px;
         -ms-transform: scale(1.8);
         -webkit-transform: scale(1.8);
@@ -296,6 +323,9 @@ address {
   @media (min-width: 1280px) {
     #introduce .intro-item {
       height: 930px; }
+      #introduce .intro-item .figure {
+        margin-top: -465px;
+        height: 930px; }
       #introduce .intro-item .video {
         height: 930px;
         -ms-transform: scale(1.5);
@@ -306,6 +336,22 @@ address {
         margin-left: -343px;
         width: 686px;
         height: 460px; }
+    #introduce .bx-controls .bx-controls-direction {
+      display: block; }
+      #introduce .bx-controls .bx-controls-direction .bx-prev {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 51;
+        margin-top: 20px;
+        margin-left: -560px; }
+      #introduce .bx-controls .bx-controls-direction .bx-next {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: 51;
+        margin-top: 20px;
+        margin-right: -560px; }
     #introduce .bx-controls .bx-pager {
       bottom: 50px; } }
 
@@ -885,7 +931,8 @@ address {
       #information #ir a:hover h5, #information #ir a:focus h5 {
         color: #e40009; }
   #information #cs .cs-info {
-    padding: 25px 20px; }
+    padding: 25px 20px;
+    text-align: center; }
     #information #cs .cs-info h5 {
       margin-bottom: 10px;
       font-size: 13px; }
@@ -895,6 +942,15 @@ address {
       font-family: 'Lato', sans-serif;
       font-weight: bolder;
       color: #e40009; }
+    #information #cs .cs-info .for-as {
+      margin: 5px auto 10px;
+      max-width: 300px;
+      height: 31px;
+      line-height: 31px;
+      background-color: #f08501;
+      color: #fff;
+      font-size: 13px;
+      letter-spacing: 1px; }
     #information #cs .cs-info .time {
       color: #666;
       line-height: 16px; }
@@ -975,19 +1031,24 @@ address {
               color: #666;
               word-break: keep-all; }
       #information #cs {
-        height: 180px; }
+        height: 200px; }
         #information #cs .cs-info {
           padding-right: 0;
-          padding-left: 30px; }
+          padding-left: 30px;
+          text-align: left; }
           #information #cs .cs-info h5 {
             font-size: 16px; }
           #information #cs .cs-info .num {
             margin-bottom: 10px; }
+          #information #cs .cs-info .for-as {
+            margin-left: 0;
+            max-width: 320px;
+            text-align: center; }
           #information #cs .cs-info .time {
             line-height: 20px;
             font-size: 13px; }
         #information #cs .cs-menu {
-          margin-top: 13px;
+          margin-top: 23px;
           margin-left: -20px;
           padding-right: 30px; }
           #information #cs .cs-menu ul li {
@@ -1040,7 +1101,14 @@ address {
       #information #cs {
         height: 334px; }
         #information #cs .cs-info {
-          padding: 25px 30px 30px; }
+          padding: 25px 30px 20px; }
+          #information #cs .cs-info h5 {
+            margin-bottom: 5px; }
+          #information #cs .cs-info .num {
+            margin-bottom: 5px;
+            text-align: center; }
+          #information #cs .cs-info .time {
+            word-spacing: -1px; }
         #information #cs .cs-menu {
           margin-top: 0;
           margin-left: 0;

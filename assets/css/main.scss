@@ -47,6 +47,36 @@ body.scrolled {
 	}
 }
 
+#quick-nav {
+	position: fixed;
+	top: 50%;
+	right: 3%;
+	z-index: 1001;
+	margin-top: -60px;
+	> ul {
+		> li {
+			> a {
+				display: block;
+				padding: 0;
+				width: 15px;
+				height: 15px;
+				background-color: #b5b6b6;
+				border-radius: 50%;
+			}
+			&.active {
+				> a {
+					background-color: #f08501;
+				}
+			}
+			& + li {
+				a {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
+
 #introduce {
 	position: relative;
 	.intro-item {
@@ -54,25 +84,29 @@ body.scrolled {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
+		background-color: #2b2b2b;
 		.figure {
 			z-index: 0;
 			position: absolute;
-			left: 50%;
+			left: 0;
 			top: 50%;
-			margin-left: -1000px;
-			margin-top: -480px;
-			width: 2000px;
-			height: 960px;
+			margin-top: -225px;
+			width: 100%;
+			height: 450px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 50%;
 			-ms-transform: scale(1.4);
 			-webkit-transform: scale(1.4);
 			transform: scale(1.4);
+			@include trans($prop: transform, $sec: 10s);
 		}
 		.video {
-			z-index: 0;
+			display: none;
+			z-index: 1;
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 100%;
 			height: 450px;
 			background-color: #000;
 			-ms-transform: scale(2.5);
@@ -159,14 +193,13 @@ body.scrolled {
 				-ms-transform: scale(1);
 				-webkit-transform: scale(1);
 				transform: scale(1);
-				@include trans($sec: 10s);
 			}
 			.content {
 				margin-left: -150px;
 				margin-top: -180px;
 				width: 300px;
 				height: 320px;
-				@include trans($sec: 1s, $timing: cubic-bezier(0.22, 0.61, 0.36, 1));
+				@include trans($sec: 1s, $timing: cubic-bezier(0, 0, 0.2, 1), $delay: .5s);
 				.text {
 					h2 {
 						@include trans($prop: all, $sec: .5s, $delay: 1s);
@@ -236,7 +269,15 @@ body.scrolled {
 	@media (min-width: $sm) {
 		.intro-item {
 			height: 750px;
+			.figure {
+				margin-top: -375px;
+				height: 750px;
+				& + .video {
+					display: block;
+				}
+			}
 			.video {
+				width: 100%;
 				height: 750px;
 				-ms-transform: scale(1.8);
 				-webkit-transform: scale(1.8);
@@ -300,6 +341,10 @@ body.scrolled {
 	@media (min-width: $lg) {
 		.intro-item {
 			height: 930px;
+			.figure {
+				margin-top: -465px;
+				height: 930px;
+			}
 			.video {
 				height: 930px;
 				-ms-transform: scale(1.5);
@@ -316,6 +361,25 @@ body.scrolled {
 			}
 		}
 		.bx-controls {
+			.bx-controls-direction {
+				display: block;
+				.bx-prev {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					z-index: 51;
+					margin-top: 20px;
+					margin-left: -560px;
+				}
+				.bx-next {
+					position: absolute;
+					top: 50%;
+					right: 50%;
+					z-index: 51;
+					margin-top: 20px;
+					margin-right: -560px;
+				}
+			}
 			.bx-pager {
 				bottom: 50px;
 			}
@@ -1083,6 +1147,7 @@ body.scrolled {
 	#cs {
 		.cs-info {
 			padding: 25px 20px;
+			text-align: center;
 			h5 {
 				margin-bottom: 10px;
 				font-size: 13px;
@@ -1093,6 +1158,16 @@ body.scrolled {
 				@include lato();
 				font-weight: bolder;
 				color: #e40009;
+			}
+			.for-as {
+				margin: 5px auto 10px;
+				max-width: 300px;
+				height: 31px;
+				line-height: 31px;
+				background-color: #f08501;
+				color: #fff;
+				font-size: 13px;
+				letter-spacing: 1px;
 			}
 			.time {
 				color: #666;
@@ -1193,15 +1268,22 @@ body.scrolled {
 			}
 		}
 		#cs {
-			height: 180px;
+			height: 200px;
 			.cs-info {
 				padding-right: 0;
 				padding-left: 30px;
+				text-align: left;
 				h5 {
 					font-size: 16px;
 				}
 				.num {
 					margin-bottom: 10px;
+				}
+				.for-as {
+					//margin: 0 0 10px 0;
+					margin-left: 0;
+					max-width: 320px;
+					text-align: center;
 				}
 				.time {
 					line-height: 20px;
@@ -1209,7 +1291,7 @@ body.scrolled {
 				}
 			}
 			.cs-menu {
-				margin-top: 13px;
+				margin-top: 23px;
 				margin-left: -20px;
 				padding-right: 30px;
 				ul {
@@ -1292,7 +1374,19 @@ body.scrolled {
 		#cs {
 			height: 334px;
 			.cs-info {
-				padding: 25px 30px 30px;
+				padding: 25px 30px 20px;
+				h5 {
+					margin-bottom: 5px;
+				}
+				.num {
+					margin-bottom: 5px;
+					text-align: center;
+				}
+				.for-as {
+				}
+				.time {
+					word-spacing: -1px;
+				}
 			}
 			.cs-menu {
 				margin-top: 0;

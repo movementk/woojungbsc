@@ -734,7 +734,8 @@ a {
         top: 0;
         right: 5px;
         padding: 0;
-        border: 0; }
+        border: 0;
+        text-decoration: none; }
         #nav-aside .nav-content .nav-header #btn-nav-close i:before {
           color: #e10013;
           font-size: 28px;

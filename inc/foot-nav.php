@@ -59,7 +59,7 @@
 					<h4><img src="/assets/images/logo_foot.png" alt="우정BSC"></h4>
 					<dl class="addr">
 						<dt>주소</dt>
-						<dd><address>경기도 수원시 영통구 광교로 145 <br>차세대융합 기술연구원 A동 3층 (주)우정비에스씨</address></dd>
+						<dd><address>경기도 수원시 영통구 광교로 145 <br>차세대융합 기술연구원 A동 8층 (주)우정비에스씨</address></dd>
 					</dl>
 					<dl class="phone">
 						<dt>TEL</dt>
