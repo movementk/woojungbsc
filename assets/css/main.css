@@ -322,12 +322,12 @@ address {
           margin-left: 10px; } }
   @media (min-width: 1280px) {
     #introduce .intro-item {
-      height: 930px; }
+      height: 820px; }
       #introduce .intro-item .figure {
-        margin-top: -465px;
-        height: 930px; }
+        margin-top: -410px;
+        height: 820px; }
       #introduce .intro-item .video {
-        height: 930px;
+        height: 820px;
         -ms-transform: scale(1.5);
         -webkit-transform: scale(1.5);
         transform: scale(1.5); }
