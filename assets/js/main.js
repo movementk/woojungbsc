@@ -45,9 +45,9 @@
 			});
 			var introVideo = document.getElementById('intro-video-'+(currentIndex+1));
 			if (introVideo) {
-				if (introVideo.readyState === 4) {
-					introVideo.play();
-				}
+				introVideo.addEventListener("loadeddata", function() {
+					this.play();
+				}, false);
 			}
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
