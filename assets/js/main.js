@@ -45,14 +45,18 @@
 			});
 			var introVideo = document.getElementById('intro-video-'+(currentIndex+1));
 			if (introVideo) {
-				introVideo.play();
+				if (introVideo.readyState === 4) {
+					introVideo.play();
+				}
 			}
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
 			$('#introduce .intro-item.active').removeClass('active');
 			var introVideo = document.getElementById('intro-video-'+(oldIndex+1));
 			if (introVideo) {
-				introVideo.pause();
+				if (introVideo.readyState === 4) {
+					introVideo.pause();
+				}
 			}
 		},
 		onSlideAfter: function($slideElement, oldIndex, newIndex) {
@@ -66,7 +70,9 @@
 			});
 			var introVideo = document.getElementById('intro-video-'+(newIndex+1));
 			if (introVideo) {
-				introVideo.play();
+				if (introVideo.readyState === 4) {
+					introVideo.play();
+				}
 			}
 		}
 	});

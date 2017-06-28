@@ -34,14 +34,25 @@ address {
   body {
     padding-top: 30px; } }
 
-@media (min-width: 1280px) {
-  #header {
-    background-color: transparent; }
-    #header #nav > ul > li > a {
-      color: #fff; }
-      #header #nav > ul > li > a:hover, #header #nav > ul > li > a:focus {
-        color: #e00014; } }
-
+/*
+#header {
+	@media (min-width: $lg) {
+		background-color: transparent;
+		#nav {
+			> ul {
+				> li {
+					> a {
+						color: #fff;
+						&:hover, &:focus {
+							color: #e00014;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+*/
 @media (min-width: 1280px) {
   body.scrolled #header {
     background-color: #fff; }
