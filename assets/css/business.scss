@@ -704,3 +704,148 @@
         }
     }
 }
+
+// CRO
+.cro {
+    .section-content {
+        .cro-tab {
+            font-size: 0;
+            > li {
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                > a {
+                    display: block;
+                    font-size: 13px;
+                    color: #2b2b2b;
+                    padding: 17px 0;
+                    border: 1px solid #dfdfdf;
+                    &:hover, &:focus {
+                        text-decoration: none;
+                    }
+                }
+                &.active {
+                    a {
+                        color: #fff;
+                        border-color: #f0840c;
+                        background-color: #f0840c;
+                    }
+                }
+            }
+        }
+        .medicine {
+            .article-header {
+                padding: 45px 0 55px;
+                text-align: center;
+                h4 {
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: #2b2b2b;
+                    margin-bottom: 30px;
+                    @media(min-width: $sm) {
+                        font-size: 36px;
+                        margin-bottom: 40px;
+                    }
+                }
+                .summary {
+                    font-size: 14px;
+                    color: #2b2b2b;
+                    line-height: 25px;
+                    @media(min-width: $sm) {
+                        font-size: 15px;
+                    }
+                    @media(min-width: $md) {
+                        font-size: 16px;
+                    }
+                }
+                @media(min-width: $sm) {
+                    padding: 65px 0 70px;
+                }
+                @media(min-width: $md) {
+                    padding: 100px 0;
+                }
+            }
+            .article-content {
+                .medicine-cro {
+                    padding: 34px 0 54px;
+                    background-attachment: fixed;
+                    background-image: url(/assets/images/business/cro_bg.jpg);
+                    background-repeat: no-repeat;
+                    background-size: auto 100%;
+                    background-position: 50% 100%;
+                    @media(min-width: $sm) {
+                        padding: 96px 0 192px;
+                    }
+                    @media(min-width: $md) {
+                        padding: 76px 0 120px;
+                    }
+                    .figure {
+                        .img-responsive {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .cro-details {
+                    padding: 70px 0;
+                    @media(min-width: $sm) {
+                        padding: 100px 0;
+                    }
+                    @media(min-width: $md) {
+                        padding: 110px 0;
+                    }
+                    .figure {
+                        .img-responsive {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

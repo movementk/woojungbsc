@@ -573,4 +573,76 @@ address {
         .call-center .procedure-list ol li:nth-of-type(4) {
           background-size: 298px auto; } }
 
+.cro .section-content .cro-tab {
+  font-size: 0; }
+  .cro .section-content .cro-tab > li {
+    display: inline-block;
+    width: 50%;
+    text-align: center; }
+    .cro .section-content .cro-tab > li > a {
+      display: block;
+      font-size: 13px;
+      color: #2b2b2b;
+      padding: 17px 0;
+      border: 1px solid #dfdfdf; }
+      .cro .section-content .cro-tab > li > a:hover, .cro .section-content .cro-tab > li > a:focus {
+        text-decoration: none; }
+    .cro .section-content .cro-tab > li.active a {
+      color: #fff;
+      border-color: #f0840c;
+      background-color: #f0840c; }
+.cro .section-content .medicine .article-header {
+  padding: 45px 0 55px;
+  text-align: center; }
+  .cro .section-content .medicine .article-header h4 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #2b2b2b;
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .cro .section-content .medicine .article-header h4 {
+        font-size: 36px;
+        margin-bottom: 40px; } }
+  .cro .section-content .medicine .article-header .summary {
+    font-size: 14px;
+    color: #2b2b2b;
+    line-height: 25px; }
+    @media (min-width: 768px) {
+      .cro .section-content .medicine .article-header .summary {
+        font-size: 15px; } }
+    @media (min-width: 992px) {
+      .cro .section-content .medicine .article-header .summary {
+        font-size: 16px; } }
+  @media (min-width: 768px) {
+    .cro .section-content .medicine .article-header {
+      padding: 65px 0 70px; } }
+  @media (min-width: 992px) {
+    .cro .section-content .medicine .article-header {
+      padding: 100px 0; } }
+.cro .section-content .medicine .article-content .medicine-cro {
+  padding: 34px 0 54px;
+  background-attachment: fixed;
+  background-image: url(/assets/images/business/cro_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 100%; }
+  @media (min-width: 768px) {
+    .cro .section-content .medicine .article-content .medicine-cro {
+      padding: 96px 0 192px; } }
+  @media (min-width: 992px) {
+    .cro .section-content .medicine .article-content .medicine-cro {
+      padding: 76px 0 120px; } }
+  .cro .section-content .medicine .article-content .medicine-cro .figure .img-responsive {
+    margin: 0 auto; }
+.cro .section-content .medicine .article-content .cro-details {
+  padding: 70px 0; }
+  @media (min-width: 768px) {
+    .cro .section-content .medicine .article-content .cro-details {
+      padding: 100px 0; } }
+  @media (min-width: 992px) {
+    .cro .section-content .medicine .article-content .cro-details {
+      padding: 110px 0; } }
+  .cro .section-content .medicine .article-content .cro-details .figure .img-responsive {
+    margin: 0 auto; }
+
 /*# sourceMappingURL=business.css.map */
