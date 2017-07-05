@@ -31,7 +31,7 @@ address {
 
 @media (min-width: 1280px) {
   .center .page-header .sub-lnb .dropdown-menu li {
-    width: 25%; } }
+    width: 50%; } }
 .center .search-form {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
