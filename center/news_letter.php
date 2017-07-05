@@ -24,9 +24,9 @@
                     뉴스레터
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="/center/notice_list.php">공지사항</a></li>
+<!--                    <li><a href="/center/notice_list.php">공지사항</a></li>-->
                     <li class="active"><a href="/center/news_letter.php">뉴스레터</a></li>
-                    <li><a href="/center/e_catalog.php">E-카달로그</a></li>
+<!--                    <li><a href="/center/e_catalog.php">E-카달로그</a></li>-->
                     <li><a href="/center/inquiry_write.php">고객문의</a></li>
                 </ul>
             </div>
