@@ -12,7 +12,7 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="util">
+				<div class="util" style="display: none;">
 					<ul>
 						<li><a href="#">채용정보</a></li>
 						<li><a href="#">E-러닝</a></li>
@@ -21,8 +21,7 @@
 				</div>
 				<div class="sns">
 					<ul>
-						<li class="fb"><a href="#"><i class="icon-facebook"></i><span class="sr-only">페이스북</span></a></li>
-						<li class="bl"><a href="#"><i>b</i><span class="sr-only">블로그</span></a></li>
+						<li class="fb"><a href="//www.facebook.com/WoojungBSC" target="_blank"><i class="icon-facebook"></i><span class="sr-only">페이스북</span></a></li>
 					</ul>
 				</div>
 			</div>

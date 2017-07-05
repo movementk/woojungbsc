@@ -574,8 +574,6 @@ address {
         font-weight: 300;
         word-break: keep-all;
         word-wrap: normal; }
-        #rnd .details div p br {
-          line-height: 2.4em; }
   #rnd .bx-controls .bx-controls-direction {
     z-index: 51;
     position: absolute;
@@ -622,8 +620,6 @@ address {
       #rnd .details div p {
         font-size: 14px;
         line-height: 25px; }
-        #rnd .details div p br {
-          line-height: 3em; }
     #rnd .bx-controls .bx-controls-direction {
       position: absolute;
       bottom: 0;
@@ -672,7 +668,7 @@ address {
       left: 58.5%;
       display: block;
       margin-left: 100px;
-      width: 200px;
+      width: 250px;
       border-left: 3px solid rgba(255, 255, 255, 0.15); }
       #rnd .pager a {
         display: block;
@@ -737,22 +733,26 @@ address {
         width: 100%;
         height: 100%; }
         #news .news-item figure figcaption > div {
-          display: table;
+          position: relative;
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          background: transparent;
+          background: -webkit-linear-gradient(transparent 50%, #000 100%);
+          background: -o-linear-gradient(transparent 50%, #000 100%);
+          background: -moz-linear-gradient(transparent 50%, #000 100%);
+          background: linear-gradient(transparent 50%, #000 100%); }
           #news .news-item figure figcaption > div > div {
-            display: table-cell;
+            position: absolute;
+            bottom: 0;
+            left: 0;
             padding: 15px;
             width: 100%;
-            height: 100%;
-            vertical-align: bottom;
-            background: transparent;
-            background: -webkit-linear-gradient(transparent 50%, #000 100%);
-            background: -o-linear-gradient(transparent 50%, #000 100%);
-            background: -moz-linear-gradient(transparent 50%, #000 100%);
-            background: linear-gradient(transparent 50%, #000 100%); }
+            height: 70px; }
             #news .news-item figure figcaption > div > div p {
-              margin-bottom: 5px; }
+              overflow: hidden;
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
             #news .news-item figure figcaption > div > div span {
               font-family: 'Maven Pro', sans-serif;
               opacity: .5; }
@@ -775,7 +775,8 @@ address {
       #news .news-item {
         margin-bottom: 20px; }
         #news .news-item figure figcaption > div > div {
-          padding: 40px; }
+          padding: 40px;
+          height: 120px; }
           #news .news-item figure figcaption > div > div p {
             font-size: 15px; }
       #news .btn-more {
@@ -788,7 +789,8 @@ address {
       #news .news-item {
         margin-bottom: 30px; }
         #news .news-item figure figcaption > div > div {
-          padding: 30px; } }
+          padding: 30px;
+          height: 100px; } }
 
 #campaign {
   padding-top: 60px;

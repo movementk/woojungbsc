@@ -25,6 +25,8 @@
 	// 메인 슬라이더 관련
 	$('#introduce .slider').bxSlider({
 		mode: 'fade',
+		auto: true,
+		pause: 10000,
 		preventDefaultSwipeY: true,
 		preventDefaultSwipeX: true,
 		touchEnabled: false,
@@ -78,7 +80,7 @@
 	});
 	
 	// 연구개발 슬라이더 관련
-	$('#rnd .slider').bxSlider({
+	var rndSlider = $('#rnd .slider').bxSlider({
 		mode: 'fade',
 		auto: true,
 		speed: 0,
@@ -93,6 +95,12 @@
 				top: newIndex * 35 + newIndex * 10
 			});
 		}
+	});
+	$(document).on("mouseenter focus", "#rnd .pager, #rnd .bx-controls-direction", function() {
+		rndSlider.stopAuto();
+	});
+	$(document).on("mouseleave blur", "#rnd .pager, #rnd .bx-controls-direction", function() {
+		rndSlider.startAuto();
 	});
 	
 	// 뉴스 더보기 버튼
