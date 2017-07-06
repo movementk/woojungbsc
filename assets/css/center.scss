@@ -359,6 +359,19 @@
                             }
                         }
                     }
+                    @media(min-width: $sm) {
+                        &:nth-of-type(2n + 1) {
+                            clear: both;
+                        }
+                    }
+                    @media(min-width: $md) {
+                        &:nth-of-type(2n + 1) {
+                            clear: none;
+                        }
+                        &:nth-of-type(3n + 1) {
+                            clear: both;
+                        }
+                    }
                 }
             }
         }
