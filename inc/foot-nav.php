@@ -67,10 +67,15 @@
 						<dt>FAX</dt>
 						<dd>031-888-9368</dd>
 					</dl>
+					<dl class="as">
+						<dt>A/S<span class="noto">접수전용</span></dt>
+						<dd>1522-1277</dd>
+					</dl>
 					<dl class="email">
 						<dt>E-mail</dt>
 						<dd><a href="mailto:wj@woojungbsc.co.kr" target="_blank">wj@woojungbsc.co.kr</a></dd>
 					</dl>
+					<a class="fb" href="//www.facebook.com/WoojungBSC" target="_blank"><i class="icon-facebook-rect"></i></a>
 				</div>
 			</div>
 		</div>

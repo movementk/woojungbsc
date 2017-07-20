@@ -25,13 +25,14 @@
 	// 메인 슬라이더 관련
 	$('#introduce .slider').bxSlider({
 		mode: 'fade',
-		auto: true,
-		pause: 10000,
+		//auto: true,
+		pause: 12000,
 		preventDefaultSwipeY: true,
 		preventDefaultSwipeX: true,
 		touchEnabled: false,
+		controls: false,
 		buildPager: function(slideIndex) {
-			return '<span class="sr-only">'+slideIndex+'</span>';
+			return "<span class='sr-only'>"+$('#introduce .slider .intro-item').eq(slideIndex).attr('data-title')+"</span>";
 		},
 		prevText: '<img src="/assets/images/main/ico_slider_prev.png" alt="이전">',
 		nextText: '<img src="/assets/images/main/ico_slider_next.png" alt="다음">',
@@ -43,22 +44,18 @@
 			typeContainer.text("").unityping({
 				string: [typeString],
 				typingSpeed: 1000,
-				startDelay: 1500
+				startDelay: 3000
 			});
 			var introVideo = document.getElementById('intro-video-'+(currentIndex+1));
 			if (introVideo) {
-				introVideo.addEventListener("loadeddata", function() {
-					this.play();
-				}, false);
+				introVideo.play();
 			}
 		},
 		onSlideBefore: function($slideElement, oldIndex, newIndex) {
 			$('#introduce .intro-item.active').removeClass('active');
 			var introVideo = document.getElementById('intro-video-'+(oldIndex+1));
 			if (introVideo) {
-				if (introVideo.readyState === 4) {
-					introVideo.pause();
-				}
+				introVideo.pause();
 			}
 		},
 		onSlideAfter: function($slideElement, oldIndex, newIndex) {
@@ -68,13 +65,11 @@
 			typeContainer.text("").unityping({
 				string: [typeString],
 				typingSpeed: 1000,
-				startDelay: 1500
+				startDelay: 3000
 			});
 			var introVideo = document.getElementById('intro-video-'+(newIndex+1));
 			if (introVideo) {
-				if (introVideo.readyState === 4) {
-					introVideo.play();
-				}
+				introVideo.play();
 			}
 		}
 	});
@@ -83,18 +78,14 @@
 	var rndSlider = $('#rnd .slider').bxSlider({
 		mode: 'fade',
 		auto: true,
+		pause: 6000,
 		speed: 0,
+		pager: false,
 		adaptiveHeight: true,
 		touchEnabled: false,
 		tickerHover: true,
 		nextText: '<i class="icon-right-open"></i>',
-		prevText: '<i class="icon-left-open"></i>',
-		pagerCustom: '#rnd .pager:eq(0)',
-		onSlideBefore: function($slideElement, oldIndex, newIndex) {
-			$('#rnd .pager .bar').css({
-				top: newIndex * 35 + newIndex * 10
-			});
-		}
+		prevText: '<i class="icon-left-open"></i>'
 	});
 	$(document).on("mouseenter focus", "#rnd .pager, #rnd .bx-controls-direction", function() {
 		rndSlider.stopAuto();
@@ -103,10 +94,20 @@
 		rndSlider.startAuto();
 	});
 	
-	// 뉴스 더보기 버튼
-	$(document).on('click', '#news .btn-more', function() {
-		$('#news ul li').filter(':hidden').attr('style', 'display: block !important');
-		$(this).attr('style', 'display: none !important');
+	/* TOP 버튼 */
+	$(window).on("scroll", function() {
+		if ( $(this).scrollTop() >= $("#news").offset().top - $("#header").height() - $("#top-nav").height()) {
+			$("#btn-goto-top").fadeIn();
+		} else {
+			$("#btn-goto-top").fadeOut();
+		}
+	});
+	$(document).on('click', '#btn-goto-top', function(e) {
+		$('html, body').stop().animate({
+			scrollTop: 0
+		}, 500, 'swing');
+		$(this).blur();
+		e.preventDefault();
 	});
 	
 })(jQuery);

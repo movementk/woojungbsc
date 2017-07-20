@@ -2,7 +2,9 @@
 <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#quick-nav" data-offset="120">
-
+	
+	<a id="btn-goto-top" href="#"><i class="icon-up-small"></i>TOP</a>
+	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/top-nav.php'); ?>
 	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
@@ -23,25 +25,28 @@
 	
 		<section id="introduce">
 			<div class="slider">
-				<div class="intro-item intro-item-1">
+				<div class="intro-item intro-item-1" data-title="<span class='titi'>SINCE1989</span>">
 					<div class="figure" style="background-image: url(/assets/images/main/img_intro_1.jpg);"></div>
 					<div class="content">
-						<div class="text">
-							<h2>Protect Your<br>Research<br>Investment</h2>
-							<hr>
+						<div class="text text-right">
+							<h2>
+								PROVIDING<br>
+								HEALTHY, SAFE, RICH<br>
+								HUMAN LIVES
+							</h2>
+							<div class="bar">
+								<span class="left"></span>
+								<span class="dot"></span>
+								<span class="right"></span>
+							</div>
 							<p>
 								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
 								<span class="typed" data-typed="지금까지 걸어온 30년... 이제부터가 시작입니다."></span>
 							</p>
 						</div>
-						<div class="bar">
-							<span class="left"></span>
-							<span class="dot"></span>
-							<span class="right"></span>
-						</div>
 					</div>
 				</div>
-				<div class="intro-item intro-item-2">
+				<div class="intro-item intro-item-2" data-title="원스톱-풀서비스">
 					<div class="figure" style="background-image: url(/assets/images/main/img_intro_2.jpg);"></div>
 					<video id="intro-video-2" class="video" loop muted>
 						<source src="/assets/images/main/mv_intro_1.mp4" type="video/mp4">
@@ -50,35 +55,54 @@
 					</video>
 					<div class="content">
 						<div class="text">
-							<h2>Protect Your<br>Research<br>Investment</h2>
-							<hr>
+							<h2>
+								PROTECT YOUR<br>
+								RESEARCH<br>
+								INVESTMENT
+							</h2>
+							<div class="bar">
+								<span class="left"></span>
+								<span class="dot"></span>
+								<span class="right"></span>
+							</div>
 							<p>
 								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
 								<span class="typed" data-typed="지금까지 걸어온 30년... 이제부터가 시작입니다."></span>
 							</p>
 						</div>
-						<div class="bar">
-							<span class="left"></span>
-							<span class="dot"></span>
-							<span class="right"></span>
-						</div>
 					</div>
 				</div>
-				<div class="intro-item intro-item-2">
+				<div class="intro-item intro-item-3" data-title="정밀의학CRO">
 					<div class="figure" style="background-image: url(/assets/images/main/img_intro_3.jpg);"></div>
 					<div class="content">
 						<div class="text">
 							<h2>Protect Your<br>Research<br>Investment</h2>
-							<hr>
+							<div class="bar">
+								<span class="left"></span>
+								<span class="dot"></span>
+								<span class="right"></span>
+							</div>
 							<p>
 								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
 								<span class="typed" data-typed="지금까지 걸어온 10년... 이제부터가 시작입니다."></span>
 							</p>
 						</div>
-						<div class="bar">
-							<span class="left"></span>
-							<span class="dot"></span>
-							<span class="right"></span>
+					</div>
+				</div>
+				<div class="intro-item intro-item-4" data-title="현대적 실험실 구축">
+					<div class="figure" style="background-image: url(/assets/images/main/img_intro_3.jpg);"></div>
+					<div class="content">
+						<div class="text">
+							<h2>Protect Your<br>Research<br>Investment</h2>
+							<div class="bar">
+								<span class="left"></span>
+								<span class="dot"></span>
+								<span class="right"></span>
+							</div>
+							<p>
+								국내 최고의 바이오 인프라 솔루션 기업 우정비에스씨<br>
+								<span class="typed" data-typed="지금까지 걸어온 10년... 이제부터가 시작입니다."></span>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -100,6 +124,24 @@
 			</div>
 			<div class="container section-body">
 				<div class="row">
+					<div class="col-xs-6">
+						<a href="#" class="business-item cro">
+							<div>
+								<i></i>
+								<h4>CRO</h4>
+								<span class="bar"></span>
+								<p>
+									최신 시설과 장비를 도입한 연구소와 동물실을<br>
+									구축하여 국내 연구자분들에게 신뢰성 높은 시험대행<br>
+									서비스와 위탁 관리를 지원해드리고 있습니다.
+								</p>
+								<span class="bar"></span>
+								<div class="btn btn-default">
+									DETAIL VIEW
+								</div>
+							</div>
+						</a>
+					</div>
 					<div class="col-xs-6">
 						<a href="#" class="business-item project">
 							<div>
@@ -154,24 +196,6 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-xs-6">
-						<a href="#" class="business-item cro">
-							<div>
-								<i></i>
-								<h4>CRO</h4>
-								<span class="bar"></span>
-								<p>
-									최신 시설과 장비를 도입한 연구소와 동물실을<br>
-									구축하여 국내 연구자분들에게 신뢰성 높은 시험대행<br>
-									서비스와 위탁 관리를 지원해드리고 있습니다.
-								</p>
-								<span class="bar"></span>
-								<div class="btn btn-default">
-									DETAIL VIEW
-								</div>
-							</div>
-						</a>
-					</div>
 				</div>
 			</div>	
 		</section>
@@ -180,17 +204,17 @@
 			<div class="slider">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-12 col-md-7">
+						<div class="col-xs-12 col-md-6">
 							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_1.jpg);"></div>
 						</div>
-						<div class="col-xs-12 col-md-5">
+						<div class="col-xs-12 col-md-6">
 							<div class="details">
 								<div>
-									<span class="field">RESEARCH AND DEVELOPMENT</span>
-									<h4>연구시설구축</h4>
-									<p>
-										우정비에스씨는 최신 시설과 장비를 도입한 연구소와 동물실을 구축하여 국내 연구자 분들에게 신뢰성 높은 시험대행 서비스와 위탁 관리를 지원해 드리고 있습니다.<br>
-										실험동물 위탁사육을 시작으로 효능평가, 독성평가를 제공하게 됨으로써연구자들이 자체 연구소 및 동물 실험실을 직접 구축/운영하는 어려움으로 부터 벗어나보다 효율적인 연구에 전념할 수 있는 환경과 서비스를 제공합니다.
+									<h4>감염관리 전문기업</h4>
+									<hr>
+									<p class="summary">인류의 풍요롭고 안전한 삶을 위해 노력하는 기업 우정비에스씨</p>
+									<p class="chart">
+										<img src="/assets/images/main/img_rnd_chart_1_lg.png" alt="">
 									</p>
 								</div>
 							</div>
@@ -199,17 +223,19 @@
 				</div>
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-12 col-md-7">
-							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_1.jpg);"></div>
+						<div class="col-xs-12 col-md-6">
+							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_2.jpg);"></div>
 						</div>
-						<div class="col-xs-12 col-md-5">
+						<div class="col-xs-12 col-md-6">
 							<div class="details">
 								<div>
-									<span class="field">RESEARCH AND DEVELOPMENT</span>
-									<h4>환경감염관리</h4>
-									<p>
-										우정비에스씨는 최신 시설과 장비를 도입한 연구소와 동물실을 구축하여 국내 연구자 분들에게 신뢰성 높은 시험대행 서비스와 위탁 관리를 지원해 드리고 있습니다.<br>
-										실험동물 위탁사육을 시작으로 효능평가, 독성평가를 제공하게 됨으로써연구자들이 자체 연구소 및 동물 실험실을 직접 구축/운영하는 어려움으로 부터 벗어나보다 효율적인 연구에 전념할 수 있는 환경과 서비스를 제공합니다.
+									<h4>바이오 연구 인프라 구축</h4>
+									<hr>
+									<p class="summary">
+										인류의 풍요롭고 안전한 삶을 위해 노력하는 기업 우정비에스씨
+									</p>
+									<p class="chart">
+										<img src="/assets/images/main/img_rnd_chart_2_lg.png" alt="">
 									</p>
 								</div>
 							</div>
@@ -218,17 +244,40 @@
 				</div>
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-12 col-md-7">
-							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_1.jpg);"></div>
+						<div class="col-xs-12 col-md-6">
+							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_3.jpg);"></div>
 						</div>
-						<div class="col-xs-12 col-md-5">
+						<div class="col-xs-12 col-md-6">
 							<div class="details">
 								<div>
-									<span class="field">RESEARCH AND DEVELOPMENT</span>
-									<h4>정밀의학 CRO</h4>
-									<p>
-										우정비에스씨는 최신 시설과 장비를 도입한 연구소와 동물실을 구축하여 국내 연구자 분들에게 신뢰성 높은 시험대행 서비스와 위탁 관리를 지원해 드리고 있습니다.<br>
-										실험동물 위탁사육을 시작으로 효능평가, 독성평가를 제공하게 됨으로써연구자들이 자체 연구소 및 동물 실험실을 직접 구축/운영하는 어려움으로 부터 벗어나보다 효율적인 연구에 전념할 수 있는 환경과 서비스를 제공합니다.
+									<h4>바이오신약<br>신물질 개발사업</h4>
+									<hr>
+									<p class="summary">
+										인류의 풍요롭고 안전한 삶을 위해 노력하는 기업 우정비에스씨
+									</p>
+									<p class="chart">
+										<img src="/assets/images/main/img_rnd_chart_3_lg.png" alt="">
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<div class="figure" style="background-image: url(/assets/images/main/img_rnd_4.jpg);"></div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="details">
+								<div>
+									<h4>차세대 CRO 사업</h4>
+									<hr>
+									<p class="summary">
+										인류의 풍요롭고 안전한 삶을 위해 노력하는 기업 우정비에스씨
+									</p>
+									<p class="chart">
+										<img src="/assets/images/main/img_rnd_chart_4_lg.png" alt="">
 									</p>
 								</div>
 							</div>
@@ -236,12 +285,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="pager">
+			<!-- div class="pager">
 				<a data-slide-index="0" href="#"><span class="num">01</span> 연구시설구축</a>
 				<a data-slide-index="1" href="#"><span class="num">02</span> 환경감염관리</a>
 				<a data-slide-index="2" href="#"><span class="num">03</span> 정밀의학 CRO</a>
 				<span class="bar"></span>
-			</div>
+			</div -->
 		</section>
 
 		<section id="news">
@@ -339,15 +388,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-lg-5">
+						<section id="pr-video">
+							<a href="#" class="label">MEDIA</a>
+							<div class="embed-responsive embed-responsive-4by3">
+								<iframe src="https://www.youtube.com/embed/c2eCme8ZE0E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</section>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-lg-4">
 						<section id="press">
-							<span class="label">NEWS</span>
+							<a class="label" href="#">NEWS</a>
 							<h5><a href="#">비정규직 0%… 메르스 물리친 젊은 기업 ‘우정비에스씨’</a></h5>
 							<p>청년실업률 10%를 돌파한 시대. 질 좋은 일자리는 대기업과 공공기관에 몰려 있는 
 것만 같고, 이들 회사의 입사 경쟁률은 매년 수백 대 일이다.</p>
 							<div class="figure" style="background-image: url(/assets/images/main/img_press_dummy.jpg);"></div>
 						</section>
 					</div>
-					<div class="col-xs-12 col-sm-5 col-lg-3">
+					<!-- div class="col-xs-12 col-sm-5 col-lg-3">
 						<div class="row">
 							<div class="col-xs-6 col-sm-12">
 								<section id="contact">
@@ -372,8 +429,8 @@
 								</section>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-12 col-lg-4">
+					</div -->
+					<div class="col-xs-12 col-lg-3">
 						<section id="cs">
 							<div class="row">
 								<div class="col-xs-12 col-sm-7 col-lg-12">
@@ -382,7 +439,7 @@
 										<p class="num">031-888-9369</p>
 										<p class="for-as">A/S접수전용 <b class="lato">1522-1277</b></p>
 										<p class="time">
-											평일(월~금) AM09:00 ~ PM 06:00 <span class="hidden-xs">/</span><br class="visible-xs">
+											평일(월~금) AM09:00 ~ PM 06:00 <span class="hidden-xs">/</span><br class="visible-xs visible-lg">
 											주말 및 공휴일은 휴무
 										</p>
 									</div>
